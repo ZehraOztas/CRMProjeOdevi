@@ -73,7 +73,7 @@
             this.pnlBack.ShadowDepth = 5;
             this.pnlBack.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlBack.ShadowTopLeftVisible = false;
-            this.pnlBack.Size = new System.Drawing.Size(1227, 819);
+            this.pnlBack.Size = new System.Drawing.Size(1227, 953);
             this.pnlBack.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlBack.TabIndex = 0;
             // 
@@ -160,7 +160,7 @@
             // 
             // btnprevious
             // 
-            this.btnprevious.Location = new System.Drawing.Point(1046, 780);
+            this.btnprevious.Location = new System.Drawing.Point(1045, 918);
             this.btnprevious.Name = "btnprevious";
             this.btnprevious.Size = new System.Drawing.Size(75, 23);
             this.btnprevious.TabIndex = 0;
@@ -170,7 +170,7 @@
             // 
             // btnnext
             // 
-            this.btnnext.Location = new System.Drawing.Point(1127, 780);
+            this.btnnext.Location = new System.Drawing.Point(1126, 918);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(75, 23);
             this.btnnext.TabIndex = 1;
@@ -182,14 +182,14 @@
             // 
             this.daycontainer.Location = new System.Drawing.Point(12, 105);
             this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(1203, 669);
+            this.daycontainer.Size = new System.Drawing.Size(1203, 791);
             this.daycontainer.TabIndex = 0;
             // 
             // Takvim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 819);
+            this.ClientSize = new System.Drawing.Size(1227, 953);
             this.Controls.Add(this.pnlBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Takvim";

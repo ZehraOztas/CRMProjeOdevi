@@ -28,13 +28,13 @@ namespace NewCRM
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lblDate.Text = monthname+" "+year;
             //Ayın ilk gününü alma
-            DateTime startofthemonth = new DateTime(year, month,1);
+            DateTime startofthemonth = new DateTime(year, month, 1);
             //Ayın gün sayısını alma
             int days = DateTime.DaysInMonth(year, month);
             //startofthemonth int'te çevirme
            int daysofteweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"))+1;
 
-           for (int i = 0; i < daysofteweek; i++)
+           for (int i = 1; i < daysofteweek; i++)
             {
                 UC_Blank ucBlank = new UC_Blank();
                 daycontainer.Controls.Add(ucBlank);
@@ -46,6 +46,7 @@ namespace NewCRM
                 ucdays.days(i);
                 daycontainer.Controls.Add(ucdays);
             }
+
         }
 
         private void Takvim_Load(object sender, EventArgs e)

@@ -35,7 +35,7 @@
             // 
             this.lblDays.AutoSize = true;
             this.lblDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDays.Location = new System.Drawing.Point(56, 45);
+            this.lblDays.Location = new System.Drawing.Point(3, 2);
             this.lblDays.Name = "lblDays";
             this.lblDays.Size = new System.Drawing.Size(27, 20);
             this.lblDays.TabIndex = 0;
