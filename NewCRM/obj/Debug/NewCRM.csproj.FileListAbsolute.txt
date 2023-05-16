@@ -1,0 +1,381 @@
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 29.03.2023\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 05.0.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 08.0.2023\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.UC_MuseriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 09.04.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 03.05.2023\NewCRM\obj\Debug\NewCRM.UC_MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgiDuzenleme.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.UC_MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 054.05.2023\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgiDuzenleme.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.UC_MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.Chat.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023\NewCRM\obj\Debug\NewCRM.UC_Kisiler.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Chat.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.MusteriBilgiDuzenleme.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.UC_Gelen_Mesaj.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.UC_Gonderilen_Mesaj.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.UC_Kisiler.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.UC_MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.Chat.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.MusteriBilgiDuzenleme.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.UC_Gelen_Mesaj.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.UC_Gonderilen_Mesaj.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.UC_Kisiler.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.UC_MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.UC_Notlar.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 12.05.2023 - Kopya - Kopya (2)\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\NewCRM.exe.config
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.csproj.AssemblyReference.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.csproj.SuggestedBindingRedirects.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.Ana_Sayfa.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.Takvim.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.UC_Blank.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.UC_Notlar.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.Chat.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgiDuzenleme.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.UC_Gelen_Mesaj.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.UC_Gonderilen_Mesaj.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.UC_Kisiler.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.UC_MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.Login.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgileri.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.Personel.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.Properties.Resources.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.csproj.GenerateResource.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.exe.licenses
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.exe
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.pdb
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 15.05.2023\NewCRM\obj\Debug\NewCRM.UC_Days.resources

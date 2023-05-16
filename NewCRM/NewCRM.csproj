@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{179370B0-139E-4661-8C6C-1B5521540ABB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NewCRM</RootNamespace>
+    <AssemblyName>NewCRM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\BUNIFU TOOLS (1)\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\BUNIFU TOOLS (1)\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\BUNIFU TOOLS (1)\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\BUNIFU TOOLS (1)\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ana_Sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ana_Sayfa.Designer.cs">
+      <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat.Designer.cs">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClassesMusteriBilgileri.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClassesMusteriBilgileri.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriBilgiDuzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriBilgiDuzenleme.Designer.cs">
+      <DependentUpon>MusteriBilgiDuzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_Bilgileri.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriBilgileri.Designer.cs">
+      <DependentUpon>MusteriBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resimleme.cs" />
+    <Compile Include="Takvim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Takvim.Designer.cs">
+      <DependentUpon>Takvim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Blank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Blank.Designer.cs">
+      <DependentUpon>UC_Blank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Days.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Days.Designer.cs">
+      <DependentUpon>UC_Days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Gelen_Mesaj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Gelen_Mesaj.Designer.cs">
+      <DependentUpon>UC_Gelen_Mesaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Gonderilen_Mesaj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Gonderilen_Mesaj.Designer.cs">
+      <DependentUpon>UC_Gonderilen_Mesaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Kisiler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Kisiler.Designer.cs">
+      <DependentUpon>UC_Kisiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_MusteriBilgileri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_MusteriBilgileri.Designer.cs">
+      <DependentUpon>UC_MusteriBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Notlar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Notlar.Designer.cs">
+      <DependentUpon>UC_Notlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uilist.cs" />
+    <EmbeddedResource Include="Ana_Sayfa.resx">
+      <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Takvim.resx">
+      <DependentUpon>Takvim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Blank.resx">
+      <DependentUpon>UC_Blank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Days.resx">
+      <DependentUpon>UC_Days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Notlar.resx">
+      <DependentUpon>UC_Notlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClassesMusteriBilgileri.dbml.layout">
+      <DependentUpon>DataClassesMusteriBilgileri.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Chat.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriBilgiDuzenleme.resx">
+      <DependentUpon>MusteriBilgiDuzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Gelen_Mesaj.resx">
+      <DependentUpon>UC_Gelen_Mesaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Gonderilen_Mesaj.resx">
+      <DependentUpon>UC_Gonderilen_Mesaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Kisiler.resx">
+      <DependentUpon>UC_Kisiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_MusteriBilgileri.resx">
+      <DependentUpon>UC_MusteriBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriBilgileri.resx">
+      <DependentUpon>MusteriBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataClassesMusteriBilgileri.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClassesMusteriBilgileri.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ikon\login.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ikon\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ikon\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ikon\bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ikon\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ikon\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ikon\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ikon\cancel-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
