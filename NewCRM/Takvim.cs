@@ -28,7 +28,7 @@ namespace NewCRM
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lblDate.Text = monthname+" "+year;
             //Ayın ilk gününü alma
-            DateTime startofthemonth = new DateTime(year, month, 1);
+            DateTime startofthemonth = new DateTime(year, month,1);
             //Ayın gün sayısını alma
             int days = DateTime.DaysInMonth(year, month);
             //startofthemonth int'te çevirme
@@ -82,6 +82,11 @@ namespace NewCRM
                 ucdays.days(i);
                 daycontainer.Controls.Add(ucdays);
             }
+        }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnnext_Click(object sender, EventArgs e)
