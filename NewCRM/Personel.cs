@@ -150,8 +150,7 @@ namespace NewCRM
             catch (Exception hata)
             {
                 MessageBox.Show(hata.Message);
-            }*/
-                       
+            }*/                       
         }
     }
 }

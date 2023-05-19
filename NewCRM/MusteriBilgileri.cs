@@ -24,8 +24,10 @@ namespace NewCRM
         SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
         DataClassesMusteriBilgileriDataContext dcMb = new DataClassesMusteriBilgileriDataContext();
 
-        private void tekrariEngelle()
+        private void tekrariEngelle()// Listeleme işlemii yaparken tekrar yaparak aynı verileri yazdırıyordu. Bunu engellemek için
         {
+            
+
             int personelSayisi = dcMb.Musteri.Count(); // Mevcut personel sayısını alın
 
             // Panele eklenen nesne sayısını alın
@@ -37,7 +39,7 @@ namespace NewCRM
         }
 
         private void filtre(string durum) //Burada filtreleme işlemi yapıyoruz. Combobox'in index numarasına göre aldığımız duruma göre listeleme işlemi yapıyoruz.
-        {
+        {         
             pnlMusteriBilgileri.Controls.Clear();
             foreach (var deg in dcMb.Musteri)
             {
@@ -92,6 +94,7 @@ namespace NewCRM
                     uc.dtpSontarih.Text = oku.GetDateTime(oku.GetOrdinal("son_tarih")).ToString();
                     uc.lblDurum.Text = oku.GetString(oku.GetOrdinal("durum"));
                     uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
+
                     uc.Dock = DockStyle.Top;
                     uc.rbtnSec.Checked = false;
                     uc.pnlBack.BackColor = Color.WhiteSmoke;
@@ -115,9 +118,9 @@ namespace NewCRM
         }
 
 
-        private void txtAra_TextChanged(object sender, EventArgs e)
+        private void txtAra_TextChanged(object sender, EventArgs e)//Textbox'a yazdıklarımıza göre arama yapması için 
         {
-            //Textbox'a yazdıklarımıza göre arama yapması için 
+            
             pnlMusteriBilgileri.Controls.Clear();
             if (txtAra.Text == " " || txtAra.Text == "")
             {
@@ -157,10 +160,10 @@ namespace NewCRM
             }
         }
 
-        private void cbxFiltre_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbxFiltre_SelectedIndexChanged(object sender, EventArgs e)//Burada combobox'ın index numarasıdaki yazıyı alıp filtre adındaki fonksiyona gönderiyor ve durum tipine göre listeleme işlemi yapılıyor.
         {
             string durum;
-            //Burada combobox'ın index numarasıdaki yazıyı alıp filtre adındaki fonksiyona gönderiyor ve durum tipine göre listeleme işlemi yapılıyor.
+            
 
             switch (cbxFiltre.SelectedIndex)
             {
@@ -215,6 +218,7 @@ namespace NewCRM
             Personel_Bilgileri.m_id = null;
             MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
             f.btnMusteriBilgileriDegisikleri.Text = "Kaydet";
+            f.pnlMusteriBilgi.Enabled = true;
             f.deger = "Yeni Kayıt";
             MusteriBilgileri mbl = (MusteriBilgileri)Application.OpenForms["MusteriBilgileri"];
             mbl.Close();
@@ -226,7 +230,7 @@ namespace NewCRM
         {
             if (Personel_Bilgileri.m_id == null)
             {
-                MessageBox.Show("İlk önce bir kayıt seçiniz.");
+                MessageBox.Show("Bilgilerini değiştirmek istediğiniz kişiyi seçiniz.");
             }
             else
             {
@@ -244,11 +248,11 @@ namespace NewCRM
         {
             if (Personel_Bilgileri.m_id == null)
             {
-                MessageBox.Show("İlk önce bir kayıt seçiniz.");
+                MessageBox.Show("Bilgilerini silmek istediğiniz kişiyi seçiniz.");
             }
             else
             {
-                SqlCommand sil = new SqlCommand("DELETE * From Musteri Where m_id=@id", baglan);
+                SqlCommand sil = new SqlCommand("DELETE From Musteri Where m_id=@id", baglan);
                 sil.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
                 baglan.Open();
                 sil.ExecuteNonQuery();

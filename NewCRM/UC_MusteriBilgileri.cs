@@ -77,10 +77,12 @@ namespace NewCRM
         private void btnDuzenle_Click(object sender, EventArgs e)
         {
             backcolor();
+
             Personel_Bilgileri.m_id = lblid.Text.ToString();
             MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
             f.pnlMusteriBilgi.Enabled = true;
             f.deger = "Güncelle";
+            f.btnMusteriBilgileriDegisikleri.Text = "Güncelle";
             MusteriBilgileri mbl = (MusteriBilgileri)Application.OpenForms["MusteriBilgileri"];
             mbl.Close();
             Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];

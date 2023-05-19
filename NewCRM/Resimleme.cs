@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace NewCRM
 {
@@ -14,10 +16,11 @@ namespace NewCRM
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                Resim.Save(ms,System.Drawing.Imaging.ImageFormat.Jpeg);
-                return ms.ToArray();
+                Resim.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                return ms.GetBuffer();
             }
         }
+
 
         public Image ResimGetirme(byte[] GelenByteArray)
         {
