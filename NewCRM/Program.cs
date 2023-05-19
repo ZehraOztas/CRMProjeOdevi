@@ -16,7 +16,7 @@ namespace NewCRM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ana_Sayfa());
+            Application.Run(new Login());
         }
     }
 }

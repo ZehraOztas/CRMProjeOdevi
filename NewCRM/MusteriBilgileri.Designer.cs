@@ -120,7 +120,7 @@
             this.btnEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnEkle.TabIndex = 18;
             this.btnEkle.TabStop = false;
-            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click_1);
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // bunifuShadowPanel2
             // 
@@ -150,7 +150,6 @@
             this.bunifuShadowPanel2.Size = new System.Drawing.Size(1221, 43);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 4;
-            this.bunifuShadowPanel2.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel2_ControlAdded);
             // 
             // label1
             // 
@@ -161,7 +160,6 @@
             this.label1.Size = new System.Drawing.Size(179, 16);
             this.label1.TabIndex = 24;
             this.label1.Text = "İletişime Geçilecek Tarih";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblPrjAdi
             // 
@@ -172,7 +170,6 @@
             this.lblPrjAdi.Size = new System.Drawing.Size(71, 16);
             this.lblPrjAdi.TabIndex = 23;
             this.lblPrjAdi.Text = "Proje Adı";
-            this.lblPrjAdi.Click += new System.EventHandler(this.lblPrjAdi_Click);
             // 
             // lblDurum
             // 
@@ -183,7 +180,6 @@
             this.lblDurum.Size = new System.Drawing.Size(100, 16);
             this.lblDurum.TabIndex = 22;
             this.lblDurum.Text = "Proje Durumu";
-            this.lblDurum.Click += new System.EventHandler(this.lblDurum_Click);
             // 
             // lblPozisyon
             // 
@@ -194,7 +190,6 @@
             this.lblPozisyon.Size = new System.Drawing.Size(70, 16);
             this.lblPozisyon.TabIndex = 21;
             this.lblPozisyon.Text = "Pozisyon";
-            this.lblPozisyon.Click += new System.EventHandler(this.lblPozisyon_Click);
             // 
             // lblCalistigiYer
             // 
@@ -205,7 +200,6 @@
             this.lblCalistigiYer.Size = new System.Drawing.Size(91, 16);
             this.lblCalistigiYer.TabIndex = 20;
             this.lblCalistigiYer.Text = "Çalıştığı Yer";
-            this.lblCalistigiYer.Click += new System.EventHandler(this.lblCalistigiYer_Click);
             // 
             // lblEp
             // 
@@ -216,7 +210,6 @@
             this.lblEp.Size = new System.Drawing.Size(70, 16);
             this.lblEp.TabIndex = 19;
             this.lblEp.Text = "E - Posta";
-            this.lblEp.Click += new System.EventHandler(this.lblEp_Click);
             // 
             // lblTel
             // 
@@ -227,7 +220,6 @@
             this.lblTel.Size = new System.Drawing.Size(60, 16);
             this.lblTel.TabIndex = 18;
             this.lblTel.Text = "Telefon";
-            this.lblTel.Click += new System.EventHandler(this.lblTel_Click);
             // 
             // lblAdSoyad
             // 
@@ -238,7 +230,6 @@
             this.lblAdSoyad.Size = new System.Drawing.Size(75, 16);
             this.lblAdSoyad.TabIndex = 17;
             this.lblAdSoyad.Text = "Ad Soyad";
-            this.lblAdSoyad.Click += new System.EventHandler(this.lblAdSoyad_Click);
             // 
             // cbxFiltre
             // 
@@ -292,7 +283,6 @@
             this.cbxFiltre.Text = "Filtrele";
             this.cbxFiltre.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.cbxFiltre.TextLeftMargin = 5;
-            this.cbxFiltre.SelectedIndexChanged += new System.EventHandler(this.cbxFiltre_SelectedIndexChanged);
             // 
             // txtAra
             // 
@@ -376,7 +366,6 @@
             this.pnlMusteriBilgileri.Name = "pnlMusteriBilgileri";
             this.pnlMusteriBilgileri.Size = new System.Drawing.Size(1221, 521);
             this.pnlMusteriBilgileri.TabIndex = 1;
-            this.pnlMusteriBilgileri.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMusteriBilgileri_Paint);
             // 
             // bunifuElipse1
             // 

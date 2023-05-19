@@ -26,6 +26,6 @@ namespace NewCRM
         public static int yetki; //çalışanlara 0, yöneticilere 1 verdim.
         public static string sifre;
         public static string foto;
-
+        public static string m_id;
     }
 }

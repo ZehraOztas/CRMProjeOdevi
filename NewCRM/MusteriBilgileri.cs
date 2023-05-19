@@ -24,17 +24,18 @@ namespace NewCRM
         SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
         DataClassesMusteriBilgileriDataContext dcMb = new DataClassesMusteriBilgileriDataContext();
 
-        
-        private void notekrar()  // Eleman Sayısını kontrol eder ve o kadar listelememizi sağlar.
+        private void tekrariEngelle()
         {
-            int personelSayisi = dcMb.Musteri.Count();  // Mevcut personel sayısını alın
-            int nesneSayisi = pnlMusteriBilgileri.Controls.OfType<UC_MusteriBilgileri>().Count();  // Panele eklenen nesne sayısını alın
+            int personelSayisi = dcMb.Musteri.Count(); // Mevcut personel sayısını alın
 
+            // Panele eklenen nesne sayısını alın
+            int nesneSayisi = pnlMusteriBilgileri.Controls.OfType<UC_MusteriBilgileri>().Count();
             while (pnlMusteriBilgileri.Controls.OfType<UC_MusteriBilgileri>().Count() > personelSayisi)
             {
                 pnlMusteriBilgileri.Controls.RemoveAt(pnlMusteriBilgileri.Controls.Count - 1);
             }
         }
+
         private void filtre(string durum) //Burada filtreleme işlemi yapıyoruz. Combobox'in index numarasına göre aldığımız duruma göre listeleme işlemi yapıyoruz.
         {
             pnlMusteriBilgileri.Controls.Clear();
@@ -45,7 +46,6 @@ namespace NewCRM
                 command.Parameters.AddWithValue("@d", durum);
                 baglan.Open();
                 SqlDataReader oku = command.ExecuteReader();
-                
                 while (oku.Read())
                 {
                     UC_MusteriBilgileri uc = new UC_MusteriBilgileri(); // kontrol nesnesi oluşturulur
@@ -63,10 +63,12 @@ namespace NewCRM
                     pnlMusteriBilgileri.Controls.Add(uc);
                 }
                 oku.Close();
-                baglan.Close();
+                tekrariEngelle();
             }
-         //   notekrar();
+            baglan.Close();
+            
         }
+
 
 
         private void listele() //Form açıldığı zaman yapılacak listeleme
@@ -74,14 +76,14 @@ namespace NewCRM
             pnlMusteriBilgileri.Controls.Clear();
             foreach (var deg in dcMb.Musteri)
             {
-                SqlCommand command = new SqlCommand("SELECT ad,soyad,ep,tel,calistigi_yer, pozisyonu, son_tarih, durum, proje_adi FROM Musteri WHERE projeyi_yoneten=@y ORDER BY son_tarih desc", baglan);
+                SqlCommand command = new SqlCommand("SELECT m_id,ad,soyad,ep,tel,calistigi_yer, pozisyonu, son_tarih, durum, proje_adi FROM Musteri WHERE projeyi_yoneten=@y ORDER BY son_tarih desc", baglan);
                 command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
                 baglan.Open();
                 SqlDataReader oku = command.ExecuteReader();
-               
                 while (oku.Read())
                 {
                     UC_MusteriBilgileri uc = new UC_MusteriBilgileri(); // kontrol nesnesi oluşturulur
+                    uc.lblid.Text = oku.GetInt32(oku.GetOrdinal("m_id")).ToString();
                     uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
                     uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
                     uc.lblTel.Text = oku.GetString(oku.GetOrdinal("tel"));
@@ -95,11 +97,13 @@ namespace NewCRM
                     uc.pnlBack.BackColor = Color.WhiteSmoke;
                     pnlMusteriBilgileri.Controls.Add(uc);
                 }
-
                 oku.Close();
                 baglan.Close();
+                tekrariEngelle();
             }
+            Personel_Bilgileri.m_id = null;
         }
+
         private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
         {
 
@@ -108,7 +112,6 @@ namespace NewCRM
         private void MusteriBilgileri_Load(object sender, EventArgs e)
         {
             listele();
-            notekrar();
         }
 
 
@@ -119,11 +122,9 @@ namespace NewCRM
             if (txtAra.Text == " " || txtAra.Text == "")
             {
                 listele();
-                notekrar();
             }
             else
             {
-
                 foreach (var deg in dcMb.Musteri)
                 {
                     SqlCommand ara = new SqlCommand("SELECT ad,soyad,ep,tel,calistigi_yer, pozisyonu, ilk_tarih, son_tarih, durum, proje_adi FROM Musteri WHERE (ad LIKE @ad+'%' or soyad LIKE @sad+'%' or calistigi_yer LIKE '%'+@cyer+'%')and(projeyi_yoneten=@y)", baglan);
@@ -135,6 +136,8 @@ namespace NewCRM
                     SqlDataReader oku = ara.ExecuteReader();
                     while (oku.Read())
                     {
+
+
                         UC_MusteriBilgileri uc = new UC_MusteriBilgileri();
                         uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
                         uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
@@ -149,56 +152,9 @@ namespace NewCRM
                         pnlMusteriBilgileri.Controls.Add(uc);
                     }
                     baglan.Close();
-                } 
-                notekrar();
+                    tekrariEngelle();
+                }
             }
-
-           
-        }
-
-        private void bunifuShadowPanel2_ControlAdded(object sender, ControlEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPrjAdi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblDurum_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPozisyon_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblCalistigiYer_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblEp_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblTel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAdSoyad_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void cbxFiltre_SelectedIndexChanged(object sender, EventArgs e)
@@ -253,31 +209,51 @@ namespace NewCRM
             }
         }
 
-        private void pnlMusteriBilgileri_Paint(object sender, PaintEventArgs e)
+
+        private void btnEkle_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnSil_Click(object sender, EventArgs e)
-        {
-
+            Personel_Bilgileri.m_id = null;
+            MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
+            f.btnMusteriBilgileriDegisikleri.Text = "Kaydet";
+            f.deger = "Yeni Kayıt";
+            MusteriBilgileri mbl = (MusteriBilgileri)Application.OpenForms["MusteriBilgileri"];
+            mbl.Close();
+            Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
+            asd.formGetir(f);
         }
 
         private void btnDuzenle_Click(object sender, EventArgs e)
         {
-           
+            if (Personel_Bilgileri.m_id == null)
+            {
+                MessageBox.Show("İlk önce bir kayıt seçiniz.");
+            }
+            else
+            {
+                MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
+                f.btnMusteriBilgileriDegisikleri.Text = "Güncelle";
+                f.deger = "Güncelle";
+                MusteriBilgileri mbl = (MusteriBilgileri)Application.OpenForms["MusteriBilgileri"];
+                mbl.Close();
+                Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
+                asd.formGetir(f);
+            }
         }
 
-
-        private void btnEkle_Click_1(object sender, EventArgs e)
+        private void btnSil_Click(object sender, EventArgs e)
         {
-            this.Close();
-            MessageBox.Show("Sayfa kapatıldı");
-            Ana_Sayfa ana_Sayfa = new Ana_Sayfa();
-            MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
-            ana_Sayfa.formGetir(f);
-
-
+            if (Personel_Bilgileri.m_id == null)
+            {
+                MessageBox.Show("İlk önce bir kayıt seçiniz.");
+            }
+            else
+            {
+                SqlCommand sil = new SqlCommand("DELETE * From Musteri Where m_id=@id", baglan);
+                sil.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
+                baglan.Open();
+                sil.ExecuteNonQuery();
+                baglan.Close();
+            }
         }
     }
 }

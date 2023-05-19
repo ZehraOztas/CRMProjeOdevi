@@ -16,13 +16,14 @@ namespace NewCRM
         {
             InitializeComponent();
         }
-
+        
         private void backcolor()
         {
             if (rbtnSec.Checked == false)
             {
                 rbtnSec.Checked = true;
                 pnlBack.BackColor = Color.AliceBlue;
+                Personel_Bilgileri.m_id = lblid.Text;
             }
             else
             {
@@ -76,26 +77,21 @@ namespace NewCRM
         private void btnDuzenle_Click(object sender, EventArgs e)
         {
             backcolor();
-
+            Personel_Bilgileri.m_id = lblid.Text.ToString();
             MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
-            /*  f.TopLevel = false;
-              Ana_Sayfa asd = new Ana_Sayfa();
-              asd.pnlGecis.Controls.Add(f);
-              f.Show();
-              f.Dock = DockStyle.Fill;
-              f.BringToFront();*/
-            f.deger = true;
+            f.pnlMusteriBilgi.Enabled = true;
+            f.deger = "Güncelle";
+            MusteriBilgileri mbl = (MusteriBilgileri)Application.OpenForms["MusteriBilgileri"];
+            mbl.Close();
+            Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
+            asd.formGetir(f);
+
         }
 
         private void rbtnSec_Click(object sender, EventArgs e)
         {
             backcolor();
         }
-
-        private void pnlBack_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
         private void pnlBack_Click(object sender, EventArgs e)
         {
             backcolor();

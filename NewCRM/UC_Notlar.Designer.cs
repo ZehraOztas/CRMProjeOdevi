@@ -30,23 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Notlar));
             this.pnlBack = new Bunifu.UI.WinForms.BunifuPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnDuzenle = new System.Windows.Forms.PictureBox();
-            this.pbxPrjAd = new System.Windows.Forms.PictureBox();
             this.pbxTarih = new System.Windows.Forms.PictureBox();
             this.pbxTel = new System.Windows.Forms.PictureBox();
             this.dtpTarih = new System.Windows.Forms.DateTimePicker();
-            this.pbxAd = new System.Windows.Forms.PictureBox();
-            this.lblPrjAdi = new System.Windows.Forms.Label();
             this.lblNot = new System.Windows.Forms.Label();
-            this.lblAdSoyad = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblPrjAdi = new System.Windows.Forms.Label();
+            this.pbxPrjAd = new System.Windows.Forms.PictureBox();
             this.pnlBack.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDuzenle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPrjAd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTarih)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxAd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPrjAd)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBack
@@ -62,10 +59,8 @@
             this.pnlBack.Controls.Add(this.pbxTarih);
             this.pnlBack.Controls.Add(this.pbxTel);
             this.pnlBack.Controls.Add(this.dtpTarih);
-            this.pnlBack.Controls.Add(this.pbxAd);
             this.pnlBack.Controls.Add(this.lblPrjAdi);
             this.pnlBack.Controls.Add(this.lblNot);
-            this.pnlBack.Controls.Add(this.lblAdSoyad);
             this.pnlBack.Controls.Add(this.pictureBox1);
             this.pnlBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBack.Location = new System.Drawing.Point(0, 0);
@@ -73,16 +68,6 @@
             this.pnlBack.ShowBorders = true;
             this.pnlBack.Size = new System.Drawing.Size(1084, 71);
             this.pnlBack.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(996, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
             // 
             // btnDuzenle
             // 
@@ -93,16 +78,6 @@
             this.btnDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnDuzenle.TabIndex = 45;
             this.btnDuzenle.TabStop = false;
-            // 
-            // pbxPrjAd
-            // 
-            this.pbxPrjAd.Image = ((System.Drawing.Image)(resources.GetObject("pbxPrjAd.Image")));
-            this.pbxPrjAd.Location = new System.Drawing.Point(195, 17);
-            this.pbxPrjAd.Name = "pbxPrjAd";
-            this.pbxPrjAd.Size = new System.Drawing.Size(41, 38);
-            this.pbxPrjAd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbxPrjAd.TabIndex = 44;
-            this.pbxPrjAd.TabStop = false;
             // 
             // pbxTarih
             // 
@@ -117,7 +92,7 @@
             // pbxTel
             // 
             this.pbxTel.Image = ((System.Drawing.Image)(resources.GetObject("pbxTel.Image")));
-            this.pbxTel.Location = new System.Drawing.Point(387, 17);
+            this.pbxTel.Location = new System.Drawing.Point(195, 16);
             this.pbxTel.Name = "pbxTel";
             this.pbxTel.Size = new System.Drawing.Size(41, 38);
             this.pbxTel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -132,45 +107,45 @@
             this.dtpTarih.Size = new System.Drawing.Size(102, 20);
             this.dtpTarih.TabIndex = 41;
             // 
-            // pbxAd
-            // 
-            this.pbxAd.Image = ((System.Drawing.Image)(resources.GetObject("pbxAd.Image")));
-            this.pbxAd.Location = new System.Drawing.Point(6, 17);
-            this.pbxAd.Name = "pbxAd";
-            this.pbxAd.Size = new System.Drawing.Size(41, 38);
-            this.pbxAd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbxAd.TabIndex = 40;
-            this.pbxAd.TabStop = false;
-            // 
-            // lblPrjAdi
-            // 
-            this.lblPrjAdi.AutoSize = true;
-            this.lblPrjAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPrjAdi.Location = new System.Drawing.Point(239, 29);
-            this.lblPrjAdi.Name = "lblPrjAdi";
-            this.lblPrjAdi.Size = new System.Drawing.Size(56, 15);
-            this.lblPrjAdi.TabIndex = 39;
-            this.lblPrjAdi.Text = "Proje Adı";
-            // 
             // lblNot
             // 
             this.lblNot.AutoSize = true;
             this.lblNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblNot.Location = new System.Drawing.Point(431, 29);
+            this.lblNot.Location = new System.Drawing.Point(239, 28);
             this.lblNot.Name = "lblNot";
             this.lblNot.Size = new System.Drawing.Size(36, 15);
             this.lblNot.TabIndex = 38;
             this.lblNot.Text = "İçerik";
             // 
-            // lblAdSoyad
+            // pictureBox1
             // 
-            this.lblAdSoyad.AutoSize = true;
-            this.lblAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAdSoyad.Location = new System.Drawing.Point(50, 29);
-            this.lblAdSoyad.Name = "lblAdSoyad";
-            this.lblAdSoyad.Size = new System.Drawing.Size(73, 15);
-            this.lblAdSoyad.TabIndex = 37;
-            this.lblAdSoyad.Text = "Personel Ad";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(996, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 46;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblPrjAdi
+            // 
+            this.lblPrjAdi.AutoSize = true;
+            this.lblPrjAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPrjAdi.Location = new System.Drawing.Point(47, 28);
+            this.lblPrjAdi.Name = "lblPrjAdi";
+            this.lblPrjAdi.Size = new System.Drawing.Size(56, 15);
+            this.lblPrjAdi.TabIndex = 39;
+            this.lblPrjAdi.Text = "Proje Adı";
+            // 
+            // pbxPrjAd
+            // 
+            this.pbxPrjAd.Image = ((System.Drawing.Image)(resources.GetObject("pbxPrjAd.Image")));
+            this.pbxPrjAd.Location = new System.Drawing.Point(3, 16);
+            this.pbxPrjAd.Name = "pbxPrjAd";
+            this.pbxPrjAd.Size = new System.Drawing.Size(41, 38);
+            this.pbxPrjAd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbxPrjAd.TabIndex = 44;
+            this.pbxPrjAd.TabStop = false;
             // 
             // UC_Notlar
             // 
@@ -181,12 +156,11 @@
             this.Size = new System.Drawing.Size(1084, 71);
             this.pnlBack.ResumeLayout(false);
             this.pnlBack.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDuzenle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxPrjAd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTarih)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxAd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxPrjAd)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,13 +170,11 @@
         private Bunifu.UI.WinForms.BunifuPanel pnlBack;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.PictureBox btnDuzenle;
-        public System.Windows.Forms.PictureBox pbxPrjAd;
         public System.Windows.Forms.PictureBox pbxTarih;
         public System.Windows.Forms.PictureBox pbxTel;
         public System.Windows.Forms.DateTimePicker dtpTarih;
-        public System.Windows.Forms.PictureBox pbxAd;
-        public System.Windows.Forms.Label lblPrjAdi;
         public System.Windows.Forms.Label lblNot;
-        public System.Windows.Forms.Label lblAdSoyad;
+        public System.Windows.Forms.PictureBox pbxPrjAd;
+        public System.Windows.Forms.Label lblPrjAdi;
     }
 }

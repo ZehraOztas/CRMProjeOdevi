@@ -36,6 +36,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.pnlChat = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlMesaj = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtIcerik = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pbxGonder = new System.Windows.Forms.PictureBox();
             this.pnlTittle = new Bunifu.UI.WinForms.BunifuPanel();
@@ -46,14 +47,13 @@
             this.uC_Gelen_Mesaj1 = new NewCRM.UC_Gelen_Mesaj();
             this.pnlKisiListesi = new Bunifu.UI.WinForms.BunifuPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlChat.SuspendLayout();
             this.pnlMesaj.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGonder)).BeginInit();
             this.pnlTittle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).BeginInit();
             this.pnlİcerik.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlChat
@@ -102,6 +102,16 @@
             this.pnlMesaj.TabIndex = 7;
             this.pnlMesaj.Visible = false;
             this.pnlMesaj.Click += new System.EventHandler(this.pnlMesaj_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(902, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // txtIcerik
             // 
@@ -238,6 +248,7 @@
             // 
             // pnlİcerik
             // 
+            this.pnlİcerik.AutoScroll = true;
             this.pnlİcerik.AutoSize = true;
             this.pnlİcerik.BackgroundColor = System.Drawing.Color.Transparent;
             this.pnlİcerik.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlİcerik.BackgroundImage")));
@@ -294,16 +305,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(902, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,12 +318,12 @@
             this.pnlChat.ResumeLayout(false);
             this.pnlChat.PerformLayout();
             this.pnlMesaj.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGonder)).EndInit();
             this.pnlTittle.ResumeLayout(false);
             this.pnlTittle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).EndInit();
             this.pnlİcerik.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

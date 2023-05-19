@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_MusteriBilgileri));
             this.pnlBack = new System.Windows.Forms.Panel();
+            this.lblid = new System.Windows.Forms.Label();
             this.rbtnSec = new System.Windows.Forms.RadioButton();
             this.btnDuzenle = new System.Windows.Forms.PictureBox();
             this.pbxdurum = new System.Windows.Forms.PictureBox();
@@ -63,6 +64,7 @@
             // pnlBack
             // 
             this.pnlBack.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlBack.Controls.Add(this.lblid);
             this.pnlBack.Controls.Add(this.rbtnSec);
             this.pnlBack.Controls.Add(this.btnDuzenle);
             this.pnlBack.Controls.Add(this.pbxdurum);
@@ -86,7 +88,17 @@
             this.pnlBack.Size = new System.Drawing.Size(1227, 80);
             this.pnlBack.TabIndex = 0;
             this.pnlBack.Click += new System.EventHandler(this.pnlBack_Click);
-            this.pnlBack.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBack_Paint);
+//            this.pnlBack.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBack_Paint);
+            // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(3, 62);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(35, 13);
+            this.lblid.TabIndex = 37;
+            this.lblid.Text = "label1";
+            this.lblid.Visible = false;
             // 
             // rbtnSec
             // 
@@ -328,5 +340,6 @@
         public System.Windows.Forms.Label lblTel;
         public System.Windows.Forms.Label lblAdSoyad;
         public System.Windows.Forms.Panel pnlBack;
+        public System.Windows.Forms.Label lblid;
     }
 }

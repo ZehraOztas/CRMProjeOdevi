@@ -58,7 +58,7 @@ namespace NewCRM
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            SqlCommand guncelle = new SqlCommand("UPDATE Personel SET tel1=@tel1, tel2=@tel2, ep1=@ep1 , ep2=@ep2, adres=@adres, il=@il, ilce=@ilce, posta_kodu=@pkod, foto=@foto WHERE tc=@tc",baglanti);
+            SqlCommand guncelle = new SqlCommand("UPDATE PersonelTablosu SET tel1=@tel1, tel2=@tel2, ep1=@ep1 , ep2=@ep2, adres=@adres, il=@il, ilce=@ilce, posta_kodu=@pkod, foto=@foto WHERE tc=@tc",baglanti);
             baglanti.Open();
             guncelle.Parameters.AddWithValue("@tel1",txtTel1.Text);
             guncelle.Parameters.AddWithValue("@tel2", txtTel2.Text);
