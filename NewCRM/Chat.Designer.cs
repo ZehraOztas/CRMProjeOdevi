@@ -35,6 +35,9 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.pnlChat = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pnlKisiListesi = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pnlBilgi = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlMesaj = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtIcerik = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -43,17 +46,13 @@
             this.lblAd = new System.Windows.Forms.Label();
             this.pbxProfil = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pnlİcerik = new Bunifu.UI.WinForms.BunifuPanel();
-            this.uC_Gonderilen_Mesaj1 = new NewCRM.UC_Gonderilen_Mesaj();
-            this.uC_Gelen_Mesaj1 = new NewCRM.UC_Gelen_Mesaj();
-            this.pnlKisiListesi = new Bunifu.UI.WinForms.BunifuPanel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlChat.SuspendLayout();
+            this.pnlBilgi.SuspendLayout();
             this.pnlMesaj.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGonder)).BeginInit();
             this.pnlTittle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).BeginInit();
-            this.pnlİcerik.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlChat
@@ -62,10 +61,8 @@
             this.pnlChat.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.pnlChat.BorderRadius = 15;
             this.pnlChat.BorderThickness = 1;
-            this.pnlChat.Controls.Add(this.pnlMesaj);
-            this.pnlChat.Controls.Add(this.pnlTittle);
-            this.pnlChat.Controls.Add(this.pnlİcerik);
             this.pnlChat.Controls.Add(this.pnlKisiListesi);
+            this.pnlChat.Controls.Add(this.pnlBilgi);
             this.pnlChat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlChat.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnlChat.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
@@ -81,7 +78,36 @@
             this.pnlChat.Size = new System.Drawing.Size(1227, 699);
             this.pnlChat.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlChat.TabIndex = 0;
-        //    this.pnlChat.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.pnlChat_ControlAdded);
+            // 
+            // pnlKisiListesi
+            // 
+            this.pnlKisiListesi.BackgroundColor = System.Drawing.Color.LightGray;
+            this.pnlKisiListesi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlKisiListesi.BackgroundImage")));
+            this.pnlKisiListesi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlKisiListesi.BorderColor = System.Drawing.Color.Transparent;
+            this.pnlKisiListesi.BorderRadius = 30;
+            this.pnlKisiListesi.BorderThickness = 1;
+            this.pnlKisiListesi.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlKisiListesi.Location = new System.Drawing.Point(0, 0);
+            this.pnlKisiListesi.Name = "pnlKisiListesi";
+            this.pnlKisiListesi.ShowBorders = true;
+            this.pnlKisiListesi.Size = new System.Drawing.Size(212, 699);
+            this.pnlKisiListesi.TabIndex = 4;
+            // 
+            // pnlBilgi
+            // 
+            this.pnlBilgi.Controls.Add(this.pnlMesaj);
+            this.pnlBilgi.Controls.Add(this.pnlTittle);
+            this.pnlBilgi.Controls.Add(this.pnlİcerik);
+            this.pnlBilgi.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlBilgi.Location = new System.Drawing.Point(217, 0);
+            this.pnlBilgi.Name = "pnlBilgi";
+            this.pnlBilgi.Size = new System.Drawing.Size(1010, 699);
+            this.pnlBilgi.TabIndex = 5;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pnlMesaj
             // 
@@ -95,13 +121,11 @@
             this.pnlMesaj.Controls.Add(this.txtIcerik);
             this.pnlMesaj.Controls.Add(this.pbxGonder);
             this.pnlMesaj.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlMesaj.Location = new System.Drawing.Point(212, 609);
+            this.pnlMesaj.Location = new System.Drawing.Point(0, 609);
             this.pnlMesaj.Name = "pnlMesaj";
             this.pnlMesaj.ShowBorders = true;
-            this.pnlMesaj.Size = new System.Drawing.Size(1015, 90);
-            this.pnlMesaj.TabIndex = 7;
-            this.pnlMesaj.Visible = false;
-           // this.pnlMesaj.Click += new System.EventHandler(this.pnlMesaj_Click);
+            this.pnlMesaj.Size = new System.Drawing.Size(1010, 90);
+            this.pnlMesaj.TabIndex = 13;
             // 
             // pictureBox1
             // 
@@ -186,7 +210,6 @@
             this.txtIcerik.TextPlaceholder = "Enter text";
             this.txtIcerik.UseSystemPasswordChar = false;
             this.txtIcerik.WordWrap = true;
-        //    this.txtIcerik.TextChanged += new System.EventHandler(this.txtIcerik_TextChanged);
             // 
             // pbxGonder
             // 
@@ -197,7 +220,6 @@
             this.pbxGonder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxGonder.TabIndex = 1;
             this.pbxGonder.TabStop = false;
-            this.pbxGonder.Click += new System.EventHandler(this.pbxGonder_Click);
             // 
             // pnlTittle
             // 
@@ -210,13 +232,11 @@
             this.pnlTittle.Controls.Add(this.lblAd);
             this.pnlTittle.Controls.Add(this.pbxProfil);
             this.pnlTittle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTittle.Location = new System.Drawing.Point(212, 0);
+            this.pnlTittle.Location = new System.Drawing.Point(0, 0);
             this.pnlTittle.Name = "pnlTittle";
             this.pnlTittle.ShowBorders = true;
-            this.pnlTittle.Size = new System.Drawing.Size(1015, 80);
-            this.pnlTittle.TabIndex = 5;
-            this.pnlTittle.Visible = false;
-         //   this.pnlTittle.Click += new System.EventHandler(this.pnlTittle_Click);
+            this.pnlTittle.Size = new System.Drawing.Size(1010, 80);
+            this.pnlTittle.TabIndex = 11;
             // 
             // lblAd
             // 
@@ -227,7 +247,6 @@
             this.lblAd.Size = new System.Drawing.Size(67, 16);
             this.lblAd.TabIndex = 3;
             this.lblAd.Text = "Ad Soyad";
-        //    this.lblAd.Click += new System.EventHandler(this.lblAd_Click);
             // 
             // pbxProfil
             // 
@@ -237,14 +256,13 @@
             this.pbxProfil.BorderRadius = 31;
             this.pbxProfil.Image = ((System.Drawing.Image)(resources.GetObject("pbxProfil.Image")));
             this.pbxProfil.IsCircle = true;
-            this.pbxProfil.Location = new System.Drawing.Point(17, 7);
+            this.pbxProfil.Location = new System.Drawing.Point(15, 7);
             this.pbxProfil.Name = "pbxProfil";
             this.pbxProfil.Size = new System.Drawing.Size(62, 62);
             this.pbxProfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxProfil.TabIndex = 2;
             this.pbxProfil.TabStop = false;
             this.pbxProfil.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-        //    this.pbxProfil.Click += new System.EventHandler(this.pbxProfil_Click);
             // 
             // pnlİcerik
             // 
@@ -256,54 +274,11 @@
             this.pnlİcerik.BorderColor = System.Drawing.Color.Transparent;
             this.pnlİcerik.BorderRadius = 25;
             this.pnlİcerik.BorderThickness = 1;
-            this.pnlİcerik.Controls.Add(this.uC_Gonderilen_Mesaj1);
-            this.pnlİcerik.Controls.Add(this.uC_Gelen_Mesaj1);
-            this.pnlİcerik.Location = new System.Drawing.Point(216, 75);
+            this.pnlİcerik.Location = new System.Drawing.Point(1, 86);
             this.pnlİcerik.Name = "pnlİcerik";
             this.pnlİcerik.ShowBorders = true;
-            this.pnlİcerik.Size = new System.Drawing.Size(1008, 529);
-            this.pnlİcerik.TabIndex = 6;
-            this.pnlİcerik.Visible = false;
-       //     this.pnlİcerik.Click += new System.EventHandler(this.pnlİcerik_Click);
-            // 
-            // uC_Gonderilen_Mesaj1
-            // 
-            this.uC_Gonderilen_Mesaj1.Location = new System.Drawing.Point(445, 13);
-            this.uC_Gonderilen_Mesaj1.Name = "uC_Gonderilen_Mesaj1";
-            this.uC_Gonderilen_Mesaj1.Size = new System.Drawing.Size(528, 37);
-            this.uC_Gonderilen_Mesaj1.TabIndex = 2;
-            this.uC_Gonderilen_Mesaj1.Title = null;
-       //     this.uC_Gonderilen_Mesaj1.Load += new System.EventHandler(this.uC_Gonderilen_Mesaj1_Load);
-            // 
-            // uC_Gelen_Mesaj1
-            // 
-            this.uC_Gelen_Mesaj1.Icon = null;
-            this.uC_Gelen_Mesaj1.Location = new System.Drawing.Point(29, 56);
-            this.uC_Gelen_Mesaj1.Name = "uC_Gelen_Mesaj1";
-            this.uC_Gelen_Mesaj1.Size = new System.Drawing.Size(592, 35);
-            this.uC_Gelen_Mesaj1.TabIndex = 1;
-            this.uC_Gelen_Mesaj1.Title = null;
-         //   this.uC_Gelen_Mesaj1.Load += new System.EventHandler(this.uC_Gelen_Mesaj1_Load);
-            // 
-            // pnlKisiListesi
-            // 
-            this.pnlKisiListesi.BackgroundColor = System.Drawing.Color.LightGray;
-            this.pnlKisiListesi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlKisiListesi.BackgroundImage")));
-            this.pnlKisiListesi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlKisiListesi.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlKisiListesi.BorderRadius = 30;
-            this.pnlKisiListesi.BorderThickness = 1;
-            this.pnlKisiListesi.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlKisiListesi.Location = new System.Drawing.Point(0, 0);
-            this.pnlKisiListesi.Name = "pnlKisiListesi";
-            this.pnlKisiListesi.ShowBorders = true;
-            this.pnlKisiListesi.Size = new System.Drawing.Size(212, 699);
-            this.pnlKisiListesi.TabIndex = 4;
-       //     this.pnlKisiListesi.Click += new System.EventHandler(this.pnlKisiListesi_Click);
-            // 
-            // timer1
-            // 
-       //     this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.pnlİcerik.Size = new System.Drawing.Size(1008, 517);
+            this.pnlİcerik.TabIndex = 12;
             // 
             // Chat
             // 
@@ -316,31 +291,30 @@
             this.Text = "Chat";
             this.Load += new System.EventHandler(this.Chat_Load);
             this.pnlChat.ResumeLayout(false);
-            this.pnlChat.PerformLayout();
+            this.pnlBilgi.ResumeLayout(false);
+            this.pnlBilgi.PerformLayout();
             this.pnlMesaj.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGonder)).EndInit();
             this.pnlTittle.ResumeLayout(false);
             this.pnlTittle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).EndInit();
-            this.pnlİcerik.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        public Bunifu.UI.WinForms.BunifuPanel pnlİcerik;
+        public Bunifu.UI.WinForms.BunifuShadowPanel pnlChat;
+        public Bunifu.UI.WinForms.BunifuPanel pnlKisiListesi;
+        public System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Panel pnlBilgi;
+        public Bunifu.UI.WinForms.BunifuPanel pnlMesaj;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        public Bunifu.UI.WinForms.BunifuTextBox txtIcerik;
+        public System.Windows.Forms.PictureBox pbxGonder;
         public Bunifu.UI.WinForms.BunifuPanel pnlTittle;
         public System.Windows.Forms.Label lblAd;
         public Bunifu.UI.WinForms.BunifuPictureBox pbxProfil;
-        public Bunifu.UI.WinForms.BunifuShadowPanel pnlChat;
-        public System.Windows.Forms.PictureBox pbxGonder;
-        public Bunifu.UI.WinForms.BunifuTextBox txtIcerik;
-        public Bunifu.UI.WinForms.BunifuPanel pnlMesaj;
-        public Bunifu.UI.WinForms.BunifuPanel pnlKisiListesi;
-        public UC_Gonderilen_Mesaj uC_Gonderilen_Mesaj1;
-        public UC_Gelen_Mesaj uC_Gelen_Mesaj1;
-        public System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public Bunifu.UI.WinForms.BunifuPanel pnlİcerik;
     }
 }

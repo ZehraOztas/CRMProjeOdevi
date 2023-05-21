@@ -46,11 +46,11 @@ namespace NewCRM
                         foreach (DataRow row in dt.Rows)
                         {
                             userControls[i] = new UC_Kisiler();
-                         //   MemoryStream stream = new MemoryStream((byte[])row["foto"]);
-                         //   userControls[i].Icon = new Bitmap(stream);
-                            userControls[i].Title = row["ad"].ToString()+" "+ row["soyad"];
+                            //   MemoryStream stream = new MemoryStream((byte[])row["foto"]);
+                            //   userControls[i].Icon = new Bitmap(stream);
+                            userControls[i].Title = row["ad"].ToString() + " " + row["soyad"];
 
-                            if (userControls[i].Title == Personel_Bilgileri.ad+" "+Personel_Bilgileri.sad)
+                            if (userControls[i].Title == Personel_Bilgileri.ad + " " + Personel_Bilgileri.sad)
                             {
                                 pnlKisiListesi.Controls.Remove(userControls[i]);
                             }
@@ -59,22 +59,22 @@ namespace NewCRM
                                 pnlKisiListesi.Controls.Add(userControls[i]);
                                 userControls[i].Dock = DockStyle.Top;
                             }
-                //         userControls[i].Click += new System.EventHandler(this.uC_Kisiler1_Click);
+                            userControls[i].Click += new System.EventHandler(this.uC_Kisiler1_Click);
                         }
                     }
                 }
             }
         }
-  /*       public void Yerlestir(Image resim, string isim, int id)
-         {
-            Chat chat = new Chat();
-            chat.pbxProfil.Image = resim;
-            chat.lblAd.Text = isim;
-            chat.uC_Kisiler1.Tag = id;
-            TIL.Add(chat);
-            chat.Dock = DockStyle.Top;
-            pnlKisiListesi.Controls.Add(chat);
-         }*/
+        /*       public void Yerlestir(Image resim, string isim, int id)
+               {
+                  Chat chat = new Chat();
+                  chat.pbxProfil.Image = resim;
+                  chat.lblAd.Text = isim;
+                  chat.uC_Kisiler1.Tag = id;
+                  TIL.Add(chat);
+                  chat.Dock = DockStyle.Top;
+                  pnlKisiListesi.Controls.Add(chat);
+               }*/
         private void Chat_Load(object sender, EventArgs e)
         {
             pnlİcerik.Visible = false;
@@ -87,7 +87,7 @@ namespace NewCRM
             UserItem();
             Timer timer = new Timer();
             timer.Interval = 10 * 1000;
-      //      timer.Tick += new EventHandler(timer1_Tick);
+            timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
 
             /*  pnlKisiListesi.Controls.Clear();
@@ -121,7 +121,7 @@ namespace NewCRM
             pnlChat.Controls.Clear();
 
             SqlCommand cmd = new SqlCommand("INSERT INTO ChatTablosu(gonderen_tc,alici_tc,gonderilen_tarih, gonderilen_yer, icerik)VALUES(@g_tc, @atc, @gdate, @gyer, @icerik)", baglan);
-            cmd.Parameters.AddWithValue("@g_tc",Personel_Bilgileri.tc);
+            cmd.Parameters.AddWithValue("@g_tc", Personel_Bilgileri.tc);
             cmd.Parameters.AddWithValue("@atc", lblAd.Text);
             cmd.Parameters.AddWithValue("@gdate", suankizaman);
             cmd.Parameters.AddWithValue("@gyer", "Chat Uygulaması");
@@ -138,9 +138,9 @@ namespace NewCRM
         {
             baglan.Open();
             SqlCommand kmt = new SqlCommand("SELECT * From ChatTablosu WHERE alici_tc=@a OR gonderen_tc=@g", baglan);
-            kmt.Parameters.AddWithValue("@a",Personel_Bilgileri.tc);
+            kmt.Parameters.AddWithValue("@a", Personel_Bilgileri.tc);
             kmt.Parameters.AddWithValue("@g", Personel_Bilgileri.tc);
-            SqlDataAdapter da = new SqlDataAdapter(kmt);            
+            SqlDataAdapter da = new SqlDataAdapter(kmt);
             DataTable table = new DataTable();
             da.Fill(table);
 
@@ -184,18 +184,25 @@ namespace NewCRM
 
         private void uC_Kisiler1_Load(object sender, EventArgs e)
         {
-           /* if (pnlİcerik.Visible == false && pnlTittle.Visible == false && pnlMesaj.Visible == false)
-            {
-                pnlİcerik.Visible = true;
-                pnlTittle.Visible = true;
-                pnlMesaj.Visible = true;
-            }
+            /* if (pnlİcerik.Visible == false && pnlTittle.Visible == false && pnlMesaj.Visible == false)
+             {
+                 pnlİcerik.Visible = true;
+                 pnlTittle.Visible = true;
+                 pnlMesaj.Visible = true;
+             }
 
-            UC_Kisiler control = (UC_Kisiler)sender;
-            lblAd.Text = control.Title;
-          //  pbxProfil.Image = control.Icon;
-            MessageChat();*/
+             UC_Kisiler control = (UC_Kisiler)sender;
+             lblAd.Text = control.Title;
+           //  pbxProfil.Image = control.Icon;
+             MessageChat();*/
         }
 
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //   MessageChat();
+        }
+
+      
     }
 }

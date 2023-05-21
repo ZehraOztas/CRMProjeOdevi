@@ -57,6 +57,7 @@
             this.lblAdSoyad.Size = new System.Drawing.Size(41, 15);
             this.lblAdSoyad.TabIndex = 3;
             this.lblAdSoyad.Text = "label1";
+            this.lblAdSoyad.Click += new System.EventHandler(this.lblAdSoyad_Click);
             // 
             // pbxKisiFoto
             // 
@@ -73,6 +74,7 @@
             this.pbxKisiFoto.TabIndex = 2;
             this.pbxKisiFoto.TabStop = false;
             this.pbxKisiFoto.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.pbxKisiFoto.Click += new System.EventHandler(this.pbxKisiFoto_Click);
             // 
             // UC_Kisiler
             // 
@@ -81,7 +83,7 @@
             this.Controls.Add(this.pnlKisiler);
             this.Name = "UC_Kisiler";
             this.Size = new System.Drawing.Size(210, 77);
-            this.Click += new System.EventHandler(this.UC_Kisiler_Click);
+            this.Click += new System.EventHandler(this.UC_Kisiler_Click_1);
             this.pnlKisiler.ResumeLayout(false);
             this.pnlKisiler.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxKisiFoto)).EndInit();

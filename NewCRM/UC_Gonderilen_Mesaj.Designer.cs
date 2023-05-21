@@ -53,19 +53,16 @@
             this.bunifuUserControl1.Location = new System.Drawing.Point(0, 0);
             this.bunifuUserControl1.Name = "bunifuUserControl1";
             this.bunifuUserControl1.ShowBorders = true;
-            this.bunifuUserControl1.Size = new System.Drawing.Size(327, 35);
+            this.bunifuUserControl1.Size = new System.Drawing.Size(303, 47);
             this.bunifuUserControl1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
             this.bunifuUserControl1.TabIndex = 0;
             // 
             // lblMetin
             // 
-            this.lblMetin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMetin.AutoSize = true;
             this.lblMetin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
             this.lblMetin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMetin.Location = new System.Drawing.Point(9, 11);
+            this.lblMetin.Location = new System.Drawing.Point(12, 16);
             this.lblMetin.Name = "lblMetin";
             this.lblMetin.Size = new System.Drawing.Size(44, 16);
             this.lblMetin.TabIndex = 1;
@@ -78,7 +75,7 @@
             this.Controls.Add(this.lblMetin);
             this.Controls.Add(this.bunifuUserControl1);
             this.Name = "UC_Gonderilen_Mesaj";
-            this.Size = new System.Drawing.Size(327, 35);
+            this.Size = new System.Drawing.Size(303, 47);
             this.Load += new System.EventHandler(this.UC_Gonderilen_Mesaj_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

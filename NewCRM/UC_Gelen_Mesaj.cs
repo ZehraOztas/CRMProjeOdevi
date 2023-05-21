@@ -22,7 +22,8 @@ namespace NewCRM
         public string Title
         {
             get { return title; }
-            set { title = value; lblMesaj.Text = value; }
+            set { title = value; //lblMesaj.Text = value;
+                                 }
         }
 
         private Image icon;
@@ -36,8 +37,8 @@ namespace NewCRM
         {
             UC_Gelen_Mesaj user = new UC_Gelen_Mesaj();
             user.BringToFront();
-            lblMesaj.Height = Uilist.GetTextHeight(lblMesaj) + 10;
-            user.Height = lblMesaj.Top + lblMesaj.Height;
+         //   lblMesaj.Height = Uilist.GetTextHeight(lblMesaj) + 10;
+       //     user.Height = lblMesaj.Top + lblMesaj.Height;
             this.Height = user.Bottom + 10;
         }
 

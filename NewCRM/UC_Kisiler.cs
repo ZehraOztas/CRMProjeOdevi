@@ -30,25 +30,48 @@ namespace NewCRM
             set { icon = value; pbxKisiFoto.Image = value; }
         }
 
-        private void pnlKisiler_Click(object sender, EventArgs e)
+        
+        private void FormGetir()
         {
-            Chat chat = new Chat();
-            chat.pnlMesaj.Visible = true;
-            chat.pnlİcerik.Visible = true;
-            chat.pnlTittle.Visible = true;
+            ChatIcerik f = (ChatIcerik)Application.OpenForms["ChatIcerik"];
+            Chat form = (Chat)Application.OpenForms["Chat"];
+            form.pnlBilgi.Controls.Clear();
+            form.pnlBilgi.Controls.Add(f);
+           
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            
         }
 
-        private void pnlKisiler_Paint(object sender, PaintEventArgs e)
+
+        private void pnlKisiler_Click(object sender, EventArgs e)
+        {
+            FormGetir();
+}
+        private  void pnlKisiler_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void UC_Kisiler_Click(object sender, EventArgs e)
         {
-            Chat chat = new Chat();
-            chat.pnlMesaj.Visible = true;
-            chat.pnlİcerik.Visible = true;
-            chat.pnlTittle.Visible = true;
+             
+        }
+
+        private void lblAdSoyad_Click(object sender, EventArgs e)
+        {
+            FormGetir();
+        }
+
+        private void pbxKisiFoto_Click(object sender, EventArgs e)
+        {
+            FormGetir();
+        }
+
+        private void UC_Kisiler_Click_1(object sender, EventArgs e)
+        {
+            FormGetir();
+            MessageBox.Show("Sayfa açıldı");
         }
     }
 }

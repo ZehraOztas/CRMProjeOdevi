@@ -458,3 +458,4 @@ C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\bin\Debug\Bunifu.U
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CoreCompileInputs.cache
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.csproj.CopyComplete
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.NotlarForm.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.ChatIcerik.resources
