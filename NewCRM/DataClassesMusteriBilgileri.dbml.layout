@@ -2,37 +2,30 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesMusteriBilgileri">
   <DataContextMoniker Name="/DataClassesMusteriBilgileriDataContext" />
   <nestedChildShapes>
-    <classShape Id="5f59b955-ba8c-4d50-8749-8609ab78f91e" absoluteBounds="1.125, 2.25, 2, 3.3093082682291666">
+    <classShape Id="5f59b955-ba8c-4d50-8749-8609ab78f91e" absoluteBounds="2.625, 4, 2, 3.3093082682291666">
       <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/Musteri" />
       <nestedChildShapes>
-        <elementListCompartment Id="1260f8cc-3ef2-479d-bb70-9eccd31e0b44" absoluteBounds="1.1400000000000001, 2.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="1260f8cc-3ef2-479d-bb70-9eccd31e0b44" absoluteBounds="2.64, 4.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="e2787ba2-6ed3-4641-969a-8534e07abae7" absoluteBounds="7.375, 1.625, 2, 4.4631168619791666">
-      <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/PersonelTablosu" />
+    <classShape Id="c68f259e-4ee7-4bb6-bf39-5c5087208ae0" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/Notlar" />
       <nestedChildShapes>
-        <elementListCompartment Id="69401aef-f926-4dc2-a64b-5cb4f479fca8" absoluteBounds="7.39, 2.085, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="06f597f0-ea4e-4e8a-aacd-450ca7f63184" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="1b1951d9-1502-4964-8870-3c8afd81ad48" absoluteBounds="4.5, 1.5, 2, 1.7708968098958331">
-      <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/NotlarTablosu" />
-      <nestedChildShapes>
-        <elementListCompartment Id="daf961cd-cd11-4eec-b31d-be19ec9f0437" absoluteBounds="4.515, 1.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(3.125 : 2.76044840494792); (3.57875 : 2.76044840494792); (3.57875 : 2.89586498996864); (4.3502625 : 2.89586498996864); (4.3502625 : 2.91666682483205); (4.5 : 2.91666682483205)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Caller">
-      <AssociationMoniker Name="/DataClassesMusteriBilgileriDataContext/Musteri/Musteri_NotlarTablosu" />
+    <associationConnector edgePoints="[(3.625 : 4); (3.625 : 1.38544840494792); (2.5 : 1.38544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataClassesMusteriBilgileriDataContext/Musteri/Musteri_Notlar" />
       <nodes>
         <classShapeMoniker Id="5f59b955-ba8c-4d50-8749-8609ab78f91e" />
-        <classShapeMoniker Id="1b1951d9-1502-4964-8870-3c8afd81ad48" />
+        <classShapeMoniker Id="c68f259e-4ee7-4bb6-bf39-5c5087208ae0" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(7.375 : 2.58045709317306); (7 : 2.58045709317306); (7 : 2.44424212087602); (6.5 : 2.44424212087602)]" fixedFrom="Caller" fixedTo="Caller">
-      <AssociationMoniker Name="/DataClassesMusteriBilgileriDataContext/PersonelTablosu/PersonelTablosu_NotlarTablosu" />
-      <nodes>
-        <classShapeMoniker Id="e2787ba2-6ed3-4641-969a-8534e07abae7" />
-        <classShapeMoniker Id="1b1951d9-1502-4964-8870-3c8afd81ad48" />
-      </nodes>
-    </associationConnector>
+    <classShape Id="f8f93ec7-2e8e-42be-8c3c-dee3edc30eda" absoluteBounds="6.125, 1, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/PersonelTablosu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="475b2b49-f711-4780-8c9d-c86eab24a177" absoluteBounds="6.14, 1.46, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

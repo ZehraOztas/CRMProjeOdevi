@@ -88,7 +88,6 @@
             this.pnlBack.Size = new System.Drawing.Size(1227, 80);
             this.pnlBack.TabIndex = 0;
             this.pnlBack.Click += new System.EventHandler(this.pnlBack_Click);
-//            this.pnlBack.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBack_Paint);
             // 
             // lblid
             // 
@@ -98,7 +97,6 @@
             this.lblid.Size = new System.Drawing.Size(35, 13);
             this.lblid.TabIndex = 37;
             this.lblid.Text = "label1";
-            this.lblid.Visible = false;
             // 
             // rbtnSec
             // 

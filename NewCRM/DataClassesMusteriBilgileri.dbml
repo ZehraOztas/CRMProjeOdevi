@@ -15,7 +15,17 @@
       <Column Name="proje_adi" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
       <Column Name="projeyi_yoneten" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="foto" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
-      <Association Name="Musteri_NotlarTablosu" Member="NotlarTablosu" ThisKey="m_id" OtherKey="musteri_id" Type="NotlarTablosu" />
+      <Association Name="Musteri_Notlar" Member="Notlar" ThisKey="m_id" OtherKey="musteri_id" Type="Notlar" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Notlar" Member="Notlar">
+    <Type Name="Notlar">
+      <Column Name="n_id" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ekleyen_tc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="icerik" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="musteri_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="eklenen_tarih" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Musteri_Notlar" Member="Musteri" ThisKey="musteri_id" OtherKey="m_id" Type="Musteri" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.PersonelTablosu" Member="PersonelTablosu">
@@ -39,18 +49,6 @@
       <Column Name="cv" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="posta_kodu" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="foto" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
-      <Association Name="PersonelTablosu_NotlarTablosu" Member="NotlarTablosu" ThisKey="p_id" OtherKey="ekleyen_tc" Type="NotlarTablosu" />
-    </Type>
-  </Table>
-  <Table Name="dbo.NotlarTablosu" Member="NotlarTablosu">
-    <Type Name="NotlarTablosu">
-      <Column Name="n_id" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="ekleyen_tc" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="icerik" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="musteri_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="eklenen_tarih" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="Musteri_NotlarTablosu" Member="Musteri" ThisKey="musteri_id" OtherKey="m_id" Type="Musteri" IsForeignKey="true" />
-      <Association Name="PersonelTablosu_NotlarTablosu" Member="PersonelTablosu" ThisKey="ekleyen_tc" OtherKey="p_id" Type="PersonelTablosu" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

@@ -116,6 +116,12 @@
     <Compile Include="MusteriBilgiDuzenleme.Designer.cs">
       <DependentUpon>MusteriBilgiDuzenleme.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotlarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotlarForm.Designer.cs">
+      <DependentUpon>NotlarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Personel_Bilgileri.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -189,6 +195,9 @@
     <Compile Include="Uilist.cs" />
     <EmbeddedResource Include="Ana_Sayfa.resx">
       <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotlarForm.resx">
+      <DependentUpon>NotlarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Takvim.resx">

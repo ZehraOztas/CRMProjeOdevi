@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,14 +11,16 @@ using System.Windows.Forms;
 
 namespace NewCRM
 {
+
     public partial class UC_MusteriBilgileri : UserControl
     {
         public UC_MusteriBilgileri()
         {
             InitializeComponent();
         }
-        
-        private void backcolor()
+
+    
+            private void backcolor()
         {
             if (rbtnSec.Checked == false)
             {

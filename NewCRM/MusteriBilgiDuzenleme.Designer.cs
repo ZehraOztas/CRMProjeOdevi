@@ -71,7 +71,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblPrjAdi = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
-            this.lblAdSoyad = new System.Windows.Forms.Label();
             this.pnlNotlar = new System.Windows.Forms.Panel();
             this.btnNotEkle = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuLabel19 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -451,7 +450,6 @@
             this.bunifuShadowPanel7.Controls.Add(this.label6);
             this.bunifuShadowPanel7.Controls.Add(this.lblPrjAdi);
             this.bunifuShadowPanel7.Controls.Add(this.lblTel);
-            this.bunifuShadowPanel7.Controls.Add(this.lblAdSoyad);
             this.bunifuShadowPanel7.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel7.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel7.Location = new System.Drawing.Point(64, 543);
@@ -481,7 +479,7 @@
             // 
             this.lblPrjAdi.AutoSize = true;
             this.lblPrjAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPrjAdi.Location = new System.Drawing.Point(193, 18);
+            this.lblPrjAdi.Location = new System.Drawing.Point(-1, 14);
             this.lblPrjAdi.Name = "lblPrjAdi";
             this.lblPrjAdi.Size = new System.Drawing.Size(71, 16);
             this.lblPrjAdi.TabIndex = 23;
@@ -496,16 +494,6 @@
             this.lblTel.Size = new System.Drawing.Size(45, 16);
             this.lblTel.TabIndex = 18;
             this.lblTel.Text = "İçerik";
-            // 
-            // lblAdSoyad
-            // 
-            this.lblAdSoyad.AutoSize = true;
-            this.lblAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAdSoyad.Location = new System.Drawing.Point(3, 18);
-            this.lblAdSoyad.Name = "lblAdSoyad";
-            this.lblAdSoyad.Size = new System.Drawing.Size(141, 16);
-            this.lblAdSoyad.TabIndex = 17;
-            this.lblAdSoyad.Text = "Personel Ad Soyad";
             // 
             // pnlNotlar
             // 
@@ -588,11 +576,11 @@
             this.btnNotEkle.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnNotEkle.OnIdleState.IconLeftImage = null;
             this.btnNotEkle.OnIdleState.IconRightImage = null;
-            this.btnNotEkle.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(151)))), ((int)(((byte)(249)))));
+            this.btnNotEkle.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
             this.btnNotEkle.OnPressedState.BorderRadius = 20;
             this.btnNotEkle.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnNotEkle.OnPressedState.BorderThickness = 1;
-            this.btnNotEkle.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(151)))), ((int)(((byte)(249)))));
+            this.btnNotEkle.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(193)))), ((int)(((byte)(224)))));
             this.btnNotEkle.OnPressedState.ForeColor = System.Drawing.SystemColors.Window;
             this.btnNotEkle.OnPressedState.IconLeftImage = null;
             this.btnNotEkle.OnPressedState.IconRightImage = null;
@@ -1421,7 +1409,6 @@
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label lblPrjAdi;
         public System.Windows.Forms.Label lblTel;
-        public System.Windows.Forms.Label lblAdSoyad;
         public System.Windows.Forms.Panel pnlNotlar;
         public Bunifu.UI.WinForms.BunifuButton.BunifuButton btnNotEkle;
         public Bunifu.UI.WinForms.BunifuLabel bunifuLabel19;

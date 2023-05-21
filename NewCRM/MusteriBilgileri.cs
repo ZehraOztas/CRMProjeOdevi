@@ -84,7 +84,7 @@ namespace NewCRM
                 SqlDataReader oku = command.ExecuteReader();
                 while (oku.Read())
                 {
-                    UC_MusteriBilgileri uc = new UC_MusteriBilgileri(); // kontrol nesnesi oluşturulur
+                    UC_MusteriBilgileri uc = new UC_MusteriBilgileri();
                     uc.lblid.Text = oku.GetInt32(oku.GetOrdinal("m_id")).ToString();
                     uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
                     uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
@@ -213,7 +213,7 @@ namespace NewCRM
         }
 
 
-        private void btnEkle_Click(object sender, EventArgs e)
+        private void btnEkle_Click(object sender, EventArgs e)//Yeni bir kayıt için formu açar
         {
             Personel_Bilgileri.m_id = null;
             MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
@@ -226,7 +226,7 @@ namespace NewCRM
             asd.formGetir(f);
         }
 
-        private void btnDuzenle_Click(object sender, EventArgs e)
+        private void btnDuzenle_Click(object sender, EventArgs e)//Kayıt güncelleme işlemi yapmakiçin yeni bir form açar.
         {
             if (Personel_Bilgileri.m_id == null)
             {
@@ -244,7 +244,7 @@ namespace NewCRM
             }
         }
 
-        private void btnSil_Click(object sender, EventArgs e)
+        private void btnSil_Click(object sender, EventArgs e)//Silme işlemi gerçekleştirilir.
         {
             if (Personel_Bilgileri.m_id == null)
             {

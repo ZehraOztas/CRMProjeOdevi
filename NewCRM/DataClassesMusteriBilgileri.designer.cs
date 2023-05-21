@@ -76,19 +76,19 @@ namespace NewCRM
 			}
 		}
 		
+		public System.Data.Linq.Table<Notlar> Notlar
+		{
+			get
+			{
+				return this.GetTable<Notlar>();
+			}
+		}
+		
 		public System.Data.Linq.Table<PersonelTablosu> PersonelTablosu
 		{
 			get
 			{
 				return this.GetTable<PersonelTablosu>();
-			}
-		}
-		
-		public System.Data.Linq.Table<NotlarTablosu> NotlarTablosu
-		{
-			get
-			{
-				return this.GetTable<NotlarTablosu>();
 			}
 		}
 	}
@@ -439,6 +439,105 @@ namespace NewCRM
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Notlar")]
+	public partial class Notlar
+	{
+		
+		private string _n_id;
+		
+		private System.Nullable<int> _ekleyen_tc;
+		
+		private string _icerik;
+		
+		private System.Nullable<int> _musteri_id;
+		
+		private System.Nullable<System.DateTime> _eklenen_tarih;
+		
+		public Notlar()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_n_id", DbType="NChar(10)")]
+		public string n_id
+		{
+			get
+			{
+				return this._n_id;
+			}
+			set
+			{
+				if ((this._n_id != value))
+				{
+					this._n_id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ekleyen_tc", DbType="Int")]
+		public System.Nullable<int> ekleyen_tc
+		{
+			get
+			{
+				return this._ekleyen_tc;
+			}
+			set
+			{
+				if ((this._ekleyen_tc != value))
+				{
+					this._ekleyen_tc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_icerik", DbType="NVarChar(MAX)")]
+		public string icerik
+		{
+			get
+			{
+				return this._icerik;
+			}
+			set
+			{
+				if ((this._icerik != value))
+				{
+					this._icerik = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_musteri_id", DbType="Int")]
+		public System.Nullable<int> musteri_id
+		{
+			get
+			{
+				return this._musteri_id;
+			}
+			set
+			{
+				if ((this._musteri_id != value))
+				{
+					this._musteri_id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_eklenen_tarih", DbType="DateTime")]
+		public System.Nullable<System.DateTime> eklenen_tarih
+		{
+			get
+			{
+				return this._eklenen_tarih;
+			}
+			set
+			{
+				if ((this._eklenen_tarih != value))
+				{
+					this._eklenen_tarih = value;
+				}
 			}
 		}
 	}
@@ -936,104 +1035,4 @@ namespace NewCRM
 			}
 		}
 	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NotlarTablosu")]
-	public partial class NotlarTablosu
-	{
-		
-		private string _n_id;
-		
-		private System.Nullable<int> _ekleyen_tc;
-		
-		private string _icerik;
-		
-		private System.Nullable<int> _musteri_id;
-		
-		private System.Nullable<System.DateTime> _eklenen_tarih;
-		
-		public NotlarTablosu()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_n_id", DbType="NChar(10)")]
-		public string n_id
-		{
-			get
-			{
-				return this._n_id;
-			}
-			set
-			{
-				if ((this._n_id != value))
-				{
-					this._n_id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ekleyen_tc", DbType="Int")]
-		public System.Nullable<int> ekleyen_tc
-		{
-			get
-			{
-				return this._ekleyen_tc;
-			}
-			set
-			{
-				if ((this._ekleyen_tc != value))
-				{
-					this._ekleyen_tc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_icerik", DbType="NVarChar(MAX)")]
-		public string icerik
-		{
-			get
-			{
-				return this._icerik;
-			}
-			set
-			{
-				if ((this._icerik != value))
-				{
-					this._icerik = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_musteri_id", DbType="Int")]
-		public System.Nullable<int> musteri_id
-		{
-			get
-			{
-				return this._musteri_id;
-			}
-			set
-			{
-				if ((this._musteri_id != value))
-				{
-					this._musteri_id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_eklenen_tarih", DbType="DateTime")]
-		public System.Nullable<System.DateTime> eklenen_tarih
-		{
-			get
-			{
-				return this._eklenen_tarih;
-			}
-			set
-			{
-				if ((this._eklenen_tarih != value))
-				{
-					this._eklenen_tarih = value;
-				}
-			}
-		}
-	}
 }
-#pragma warning restore 1591
