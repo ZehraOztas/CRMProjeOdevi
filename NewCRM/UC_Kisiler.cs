@@ -33,12 +33,22 @@ namespace NewCRM
         private void pnlKisiler_Click(object sender, EventArgs e)
         {
             Chat chat = new Chat();
-            chat.degis = true;
+            chat.pnlMesaj.Visible = true;
+            chat.pnlİcerik.Visible = true;
+            chat.pnlTittle.Visible = true;
         }
 
         private void pnlKisiler_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void UC_Kisiler_Click(object sender, EventArgs e)
+        {
+            Chat chat = new Chat();
+            chat.pnlMesaj.Visible = true;
+            chat.pnlİcerik.Visible = true;
+            chat.pnlTittle.Visible = true;
         }
     }
 }

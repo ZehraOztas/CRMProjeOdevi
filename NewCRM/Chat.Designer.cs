@@ -81,7 +81,7 @@
             this.pnlChat.Size = new System.Drawing.Size(1227, 699);
             this.pnlChat.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlChat.TabIndex = 0;
-            this.pnlChat.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.pnlChat_ControlAdded);
+        //    this.pnlChat.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.pnlChat_ControlAdded);
             // 
             // pnlMesaj
             // 
@@ -101,7 +101,7 @@
             this.pnlMesaj.Size = new System.Drawing.Size(1015, 90);
             this.pnlMesaj.TabIndex = 7;
             this.pnlMesaj.Visible = false;
-            this.pnlMesaj.Click += new System.EventHandler(this.pnlMesaj_Click);
+           // this.pnlMesaj.Click += new System.EventHandler(this.pnlMesaj_Click);
             // 
             // pictureBox1
             // 
@@ -186,7 +186,7 @@
             this.txtIcerik.TextPlaceholder = "Enter text";
             this.txtIcerik.UseSystemPasswordChar = false;
             this.txtIcerik.WordWrap = true;
-            this.txtIcerik.TextChanged += new System.EventHandler(this.txtIcerik_TextChanged);
+        //    this.txtIcerik.TextChanged += new System.EventHandler(this.txtIcerik_TextChanged);
             // 
             // pbxGonder
             // 
@@ -216,7 +216,7 @@
             this.pnlTittle.Size = new System.Drawing.Size(1015, 80);
             this.pnlTittle.TabIndex = 5;
             this.pnlTittle.Visible = false;
-            this.pnlTittle.Click += new System.EventHandler(this.pnlTittle_Click);
+         //   this.pnlTittle.Click += new System.EventHandler(this.pnlTittle_Click);
             // 
             // lblAd
             // 
@@ -227,7 +227,7 @@
             this.lblAd.Size = new System.Drawing.Size(67, 16);
             this.lblAd.TabIndex = 3;
             this.lblAd.Text = "Ad Soyad";
-            this.lblAd.Click += new System.EventHandler(this.lblAd_Click);
+        //    this.lblAd.Click += new System.EventHandler(this.lblAd_Click);
             // 
             // pbxProfil
             // 
@@ -244,7 +244,7 @@
             this.pbxProfil.TabIndex = 2;
             this.pbxProfil.TabStop = false;
             this.pbxProfil.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.pbxProfil.Click += new System.EventHandler(this.pbxProfil_Click);
+        //    this.pbxProfil.Click += new System.EventHandler(this.pbxProfil_Click);
             // 
             // pnlİcerik
             // 
@@ -264,7 +264,7 @@
             this.pnlİcerik.Size = new System.Drawing.Size(1008, 529);
             this.pnlİcerik.TabIndex = 6;
             this.pnlİcerik.Visible = false;
-            this.pnlİcerik.Click += new System.EventHandler(this.pnlİcerik_Click);
+       //     this.pnlİcerik.Click += new System.EventHandler(this.pnlİcerik_Click);
             // 
             // uC_Gonderilen_Mesaj1
             // 
@@ -273,7 +273,7 @@
             this.uC_Gonderilen_Mesaj1.Size = new System.Drawing.Size(528, 37);
             this.uC_Gonderilen_Mesaj1.TabIndex = 2;
             this.uC_Gonderilen_Mesaj1.Title = null;
-            this.uC_Gonderilen_Mesaj1.Load += new System.EventHandler(this.uC_Gonderilen_Mesaj1_Load);
+       //     this.uC_Gonderilen_Mesaj1.Load += new System.EventHandler(this.uC_Gonderilen_Mesaj1_Load);
             // 
             // uC_Gelen_Mesaj1
             // 
@@ -283,7 +283,7 @@
             this.uC_Gelen_Mesaj1.Size = new System.Drawing.Size(592, 35);
             this.uC_Gelen_Mesaj1.TabIndex = 1;
             this.uC_Gelen_Mesaj1.Title = null;
-            this.uC_Gelen_Mesaj1.Load += new System.EventHandler(this.uC_Gelen_Mesaj1_Load);
+         //   this.uC_Gelen_Mesaj1.Load += new System.EventHandler(this.uC_Gelen_Mesaj1_Load);
             // 
             // pnlKisiListesi
             // 
@@ -299,11 +299,11 @@
             this.pnlKisiListesi.ShowBorders = true;
             this.pnlKisiListesi.Size = new System.Drawing.Size(212, 699);
             this.pnlKisiListesi.TabIndex = 4;
-            this.pnlKisiListesi.Click += new System.EventHandler(this.pnlKisiListesi_Click);
+       //     this.pnlKisiListesi.Click += new System.EventHandler(this.pnlKisiListesi_Click);
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+       //     this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Chat
             // 

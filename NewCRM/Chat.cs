@@ -59,7 +59,7 @@ namespace NewCRM
                                 pnlKisiListesi.Controls.Add(userControls[i]);
                                 userControls[i].Dock = DockStyle.Top;
                             }
-                         userControls[i].Click += new System.EventHandler(this.uC_Kisiler1_Click);
+                //         userControls[i].Click += new System.EventHandler(this.uC_Kisiler1_Click);
                         }
                     }
                 }
@@ -87,7 +87,7 @@ namespace NewCRM
             UserItem();
             Timer timer = new Timer();
             timer.Interval = 10 * 1000;
-            timer.Tick += new EventHandler(timer1_Tick);
+      //      timer.Tick += new EventHandler(timer1_Tick);
             timer.Start();
 
             /*  pnlKisiListesi.Controls.Clear();
@@ -197,74 +197,5 @@ namespace NewCRM
             MessageChat();*/
         }
 
-        private void uC_Kisiler1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-         //   MessageChat();
-        }
-
-        private void uC_Kisiler1_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlKisiListesi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlChat_ControlAdded(object sender, ControlEventArgs e)
-        {
-
-        }
-
-        private void pnlMesaj_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbxDosya_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtIcerik_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlİcerik_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAd_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlTittle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbxProfil_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uC_Gonderilen_Mesaj1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void uC_Gelen_Mesaj1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -81,6 +81,7 @@
             this.Controls.Add(this.pnlKisiler);
             this.Name = "UC_Kisiler";
             this.Size = new System.Drawing.Size(210, 77);
+            this.Click += new System.EventHandler(this.UC_Kisiler_Click);
             this.pnlKisiler.ResumeLayout(false);
             this.pnlKisiler.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxKisiFoto)).EndInit();

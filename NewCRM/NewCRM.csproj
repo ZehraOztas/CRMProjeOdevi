@@ -105,6 +105,12 @@
     <Compile Include="Chat.Designer.cs">
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChatIcerik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatIcerik.Designer.cs">
+      <DependentUpon>ChatIcerik.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataClassesMusteriBilgileri.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -195,6 +201,9 @@
     <Compile Include="Uilist.cs" />
     <EmbeddedResource Include="Ana_Sayfa.resx">
       <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatIcerik.resx">
+      <DependentUpon>ChatIcerik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NotlarForm.resx">
       <DependentUpon>NotlarForm.cs</DependentUpon>
