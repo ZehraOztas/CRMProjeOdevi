@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CRM1" Class="DataClassesMusteriBilgileriDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=ZEHRA\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True" SettingsObjectName="NewCRM.Properties.Settings" SettingsPropertyName="CRM1ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Notlar" Member="Notlar">
+    <Type Name="Notlar">
+      <Column Name="n_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ekleyen_tc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="icerik" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="musteri_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="eklenen_tarih" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="proje_adi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Musteri_Notlar" Member="Musteri" ThisKey="musteri_id" OtherKey="m_id" Type="Musteri" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Musteri" Member="Musteri">
     <Type Name="Musteri">
       <Column Name="m_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -16,16 +27,6 @@
       <Column Name="projeyi_yoneten" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="foto" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="Musteri_Notlar" Member="Notlar" ThisKey="m_id" OtherKey="musteri_id" Type="Notlar" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Notlar" Member="Notlar">
-    <Type Name="Notlar">
-      <Column Name="n_id" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="ekleyen_tc" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="icerik" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="musteri_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="eklenen_tarih" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="Musteri_Notlar" Member="Musteri" ThisKey="musteri_id" OtherKey="m_id" Type="Musteri" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.PersonelTablosu" Member="PersonelTablosu">

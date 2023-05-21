@@ -107,11 +107,6 @@ namespace NewCRM
             Personel_Bilgileri.m_id = null;
         }
 
-        private void bunifuShadowPanel1_ControlAdded(object sender, ControlEventArgs e)
-        {
-
-        }
-
         private void MusteriBilgileri_Load(object sender, EventArgs e)
         {
             listele();

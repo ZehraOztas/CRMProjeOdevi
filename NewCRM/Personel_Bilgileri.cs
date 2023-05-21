@@ -27,5 +27,6 @@ namespace NewCRM
         public static string sifre;
         public static string foto;
         public static string m_id;
+        public static string nid;
     }
 }

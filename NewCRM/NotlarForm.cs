@@ -19,11 +19,8 @@ namespace NewCRM
         {
             InitializeComponent();
         }
-        DataClassesMusteriBilgileriDataContext dc = new DataClassesMusteriBilgileriDataContext();
-        SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
-
-        public string tip = "";
+        public string tip;
         private void list()//Seçtiğimiz kişinin id numarasını alarak o kişi ile yaptığımız Projeleri combobox'ın içerisine ekliyor.
         {
             using (baglan)
@@ -46,54 +43,57 @@ namespace NewCRM
             baglan.Close();
 
         }
+
+        DataClassesMusteriBilgileriDataContext dc = new DataClassesMusteriBilgileriDataContext();
+        SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
         private void Notlar_Load(object sender, EventArgs e)//Form güncelleme işlemi için açılırsa yapılacak işlemler
         {
-            lblnid.Text = Personel_Bilgileri.m_id;
+            lblnid.Text = Personel_Bilgileri.nid;
             list();
 
-            if (tip == "Guncelle")
+            SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+
+            if (btnKaydet.Text == "Güncelle")
             {
-                SqlCommand guncelle = new SqlCommand("SELECT n.n_id,n.eklenen_tarih, n.icerik, m.proje_adi FROM Notlar n JOIN Musteri m ON n.musteri_id = m.m_id WHERE n.n_id=@nid", baglan);
-                guncelle.Parameters.AddWithValue("@nid", lblnid.Text);
+                SqlCommand guncelle = new SqlCommand("SELECT n_id,eklenen_tarih, icerik, proje_adi FROM Notlar WHERE n_id=@nid", baglanti);
+                guncelle.Parameters.AddWithValue("@nid",Personel_Bilgileri.nid);
+                baglanti.Open();
                 SqlDataReader oku = guncelle.ExecuteReader();
-                baglan.Open();
+
                 if (oku.Read())
                 {
                     txticerik.Text = oku.GetString(oku.GetOrdinal("icerik"));
                     cbxListe.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
                     dtpTarih.Value = oku.GetDateTime(oku.GetOrdinal("eklenen_tarih"));
-                    lblnid.Text = oku.GetString(oku.GetOrdinal("n_id"));
-
+                    lblnid.Text = oku.GetInt32(oku.GetOrdinal("n_id")).ToString() ;
                 }
                 oku.Close();
-                baglan.Close();
-            }
-            else
-            {
-                lblnid.Text = "Yeni kayıt";
-            }
+                baglanti.Close();
+            }       
+            
         }
 
         private void pbxSil_Click(object sender, EventArgs e)//Silme işlemi yapıyor ve ardından farklı form açıyor.
         {
+            SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
             DialogResult cevap = MessageBox.Show("Bu notu silmek istiyor musunuz?", "Çıkış Yap", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (cevap == DialogResult.OK)
             {
                 SqlCommand sil = new SqlCommand("DELETE FROM Notlar WHERE n_id=@id", baglan);
-                sil.Parameters.AddWithValue("@id", lblnid.Text);
+                sil.Parameters.AddWithValue("@id", Convert.ToInt32(Personel_Bilgileri.nid).ToString());
                 baglan.Open();
                 sil.ExecuteNonQuery();
                 baglan.Close();
 
                 MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
                 f.deger = "Guncelle";
-                NotlarForm mbl = (NotlarForm)Application.OpenForms["Notlar"];
+                f.btnMusteriBilgileriDegisikleri.Text = "Güncelle";
+                NotlarForm mbl = (NotlarForm)Application.OpenForms["NotlarForm"];
                 mbl.Close();
                 Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
                 asd.formGetir(f);
             }
         }
-
         private void pbxCikis_Click(object sender, EventArgs e)//Sayfayı kapatıp farklı sekme açıyor
         {
             MusteriBilgiDuzenleme f = new MusteriBilgiDuzenleme();
@@ -108,10 +108,11 @@ namespace NewCRM
         private void btnKaydet_Click(object sender, EventArgs e)//Yapmak istenilen işlem türünü gerçekleştiriyor.
         {
             DateTime now = DateTime.Now;
-          
+            SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+
             if (tip == "Yeni Kayıt")
             {
-                SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+                
                 SqlCommand ekle = new SqlCommand("INSERT INTO Notlar (ekleyen_tc,icerik,musteri_id,eklenen_tarih,proje_adi)VALUES(@ekleyen_tc,@icerik,@musteri_id,@eklenen_tarih,@proje_adi)", baglanti);
                 baglanti.Open();
                 ekle.Parameters.AddWithValue("@ekleyen_tc", Personel_Bilgileri.tc);
@@ -119,20 +120,20 @@ namespace NewCRM
                 ekle.Parameters.AddWithValue("@musteri_id", Personel_Bilgileri.m_id);
                 ekle.Parameters.AddWithValue("@eklenen_tarih", now);
                 ekle.Parameters.AddWithValue("@proje_adi", cbxListe.Text);
-               
+
                 ekle.ExecuteNonQuery();
                 baglanti.Close();
                 MessageBox.Show("Kaydedildi");
             }
             else if (tip == "Güncelle")
             {
-                SqlCommand guncelle = new SqlCommand("UPDATE MUSTERI SET icerik=@icerik,eklenen_tarih=@eklenen_tarih WHERE n_id=@id", baglan);
-                guncelle.Parameters.AddWithValue("@id",lblnid.Text);
+                SqlCommand guncelle = new SqlCommand("UPDATE Notlar SET icerik=@icerik,eklenen_tarih=@eklenen_tarih WHERE n_id=@id", baglanti);
+                guncelle.Parameters.AddWithValue("@id", lblnid.Text);
                 guncelle.Parameters.AddWithValue("@icerik", txticerik.Text);
                 guncelle.Parameters.AddWithValue("@eklenen_tarih", now);
-                baglan.Open();
+                baglanti.Open();
                 guncelle.ExecuteNonQuery();
-                baglan.Close();
+                baglanti.Close();
                 MessageBox.Show("Kayıt güncellendi");
             }
         }

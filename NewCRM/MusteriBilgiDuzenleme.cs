@@ -24,14 +24,34 @@ namespace NewCRM
         DataClassesMusteriBilgileriDataContext dc = new DataClassesMusteriBilgileriDataContext();
         SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
         public String deger = "";
-        /*  private void NotGetir(string ad, string prjAd, string icerik, DateTime tarih)
-          {
-              UC_Notlar notlar = new UC_Notlar();            
-              notlar.lblPrjAdi.Text = prjAd;
-              notlar.lblNot.Text = icerik;
-              notlar.dtpTarih.Value = tarih;
-          }*/
-        private void listele() //Başlagıçta seçtiğimiz kişinin verilerini çekiyoruz.
+
+        public void NotGetir()
+        {
+            foreach (var deg in dc.Notlar)//Burada da o kişiye ait notları
+            {
+                SqlCommand komut = new SqlCommand("SELECT n_id,icerik,eklenen_tarih,proje_adi FROM Notlar WHERE musteri_id=@id ORDER BY eklenen_tarih desc", baglan);
+                komut.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
+                baglan.Open();
+                SqlDataReader oku = komut.ExecuteReader();
+
+                while (oku.Read())
+                {
+                    UC_Notlar uc = new UC_Notlar();
+
+                    uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
+                    uc.lblNot.Text = oku.GetString(oku.GetOrdinal("icerik"));
+                    uc.dtpTarih.Value = oku.GetDateTime(oku.GetOrdinal("eklenen_tarih"));
+                    uc.lblnid.Text = oku.GetInt32(oku.GetOrdinal("n_id")).ToString();
+
+                    uc.Dock = DockStyle.Top;
+                    pnlNotlar.Controls.Add(uc);
+                }
+
+                oku.Close();
+                baglan.Close();
+            }
+        }
+        private void Listele() //Başlagıçta seçtiğimiz kişinin verilerini çekiyoruz.
         {
             Resimleme resim = new Resimleme();
             pnlNotlar.Controls.Clear();
@@ -72,31 +92,6 @@ namespace NewCRM
                     oku.Close();
                     baglan.Close();
                 }
-
-                foreach (var deg1 in dc.Notlar)//Burada da o kişiye ait notları
-                {
-                    SqlCommand komut = new SqlCommand("SELECT n_id,icerik,eklenen_tarih,proje_adi FROM Notlar WHERE musteri_id=@id ORDER BY eklenen_tarih desc", baglan);
-                    komut.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
-                    baglan.Open();
-                    SqlDataReader okumayap = komut.ExecuteReader();
-
-                    while (okumayap.Read())
-                    {
-                        UC_Notlar uc = new UC_Notlar();
-
-                        uc.lblPrjAdi.Text = okumayap.GetString(okumayap.GetOrdinal("proje_adi"));
-                        uc.lblNot.Text = okumayap.GetString(okumayap.GetOrdinal("icerik"));
-                        uc.dtpTarih.Value = okumayap.GetDateTime(okumayap.GetOrdinal("eklenen_tarih"));
-                        int n_id = okumayap.GetInt32(okumayap.GetOrdinal("n_id"));
-                        uc.lblnid.Text = n_id.ToString();
-
-                        uc.Dock = DockStyle.Top;
-                        pnlNotlar.Controls.Add(uc);
-                    }
-
-                    okumayap.Close();
-                    baglan.Close();
-                }
             }
         }
         private void MusteriBilgiDuzenleme_Load(object sender, EventArgs e)
@@ -104,7 +99,8 @@ namespace NewCRM
             //Eğer m_id değeri varsa textboxşara o müşterinin verileri yazılır. Eğer yoksa textboxlar boş gelir ve içerisine veriler girerek yeni müşteri kaydı oluştururuz.
             if (Personel_Bilgileri.m_id != null)
             {
-                listele();
+                Listele();
+                NotGetir();
             }
         }
 
@@ -140,7 +136,7 @@ namespace NewCRM
                     kaydet.ExecuteNonQuery();
                     baglan.Close();
                     MessageBox.Show("İşleminiz gerçekleştirildi.");
-                    listele();
+                    Listele();
                 }
             }
 
@@ -169,7 +165,7 @@ namespace NewCRM
                     kaydet.ExecuteNonQuery();
                     baglan.Close();
                     MessageBox.Show("İşleminiz gerçekleştirildi.");
-                    listele();
+                    Listele();
                 }
 
             }

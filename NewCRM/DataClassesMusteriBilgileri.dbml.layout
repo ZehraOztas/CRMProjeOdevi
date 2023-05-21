@@ -2,29 +2,29 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClassesMusteriBilgileri">
   <DataContextMoniker Name="/DataClassesMusteriBilgileriDataContext" />
   <nestedChildShapes>
-    <classShape Id="5f59b955-ba8c-4d50-8749-8609ab78f91e" absoluteBounds="2.625, 4, 2, 3.3093082682291666">
-      <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/Musteri" />
-      <nestedChildShapes>
-        <elementListCompartment Id="1260f8cc-3ef2-479d-bb70-9eccd31e0b44" absoluteBounds="2.64, 4.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="c68f259e-4ee7-4bb6-bf39-5c5087208ae0" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+    <classShape Id="b45c57ac-4fc7-4db0-b2b9-c7ef094c2083" absoluteBounds="0.875, 1, 2, 1.9631982421875">
       <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/Notlar" />
       <nestedChildShapes>
-        <elementListCompartment Id="06f597f0-ea4e-4e8a-aacd-450ca7f63184" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="95c662ca-ee02-4c8a-bc66-74839d50fac7" absoluteBounds="0.89000000000000012, 1.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(3.625 : 4); (3.625 : 1.38544840494792); (2.5 : 1.38544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <classShape Id="64dadc72-ab3d-48e5-8116-d8e383f329cf" absoluteBounds="2.625, 4, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/Musteri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07709037-a183-4dfb-913f-55ded110d51c" absoluteBounds="2.64, 4.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.7500005 : 4); (3.7500005 : 1.98159912109375); (2.875 : 1.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DataClassesMusteriBilgileriDataContext/Musteri/Musteri_Notlar" />
       <nodes>
-        <classShapeMoniker Id="5f59b955-ba8c-4d50-8749-8609ab78f91e" />
-        <classShapeMoniker Id="c68f259e-4ee7-4bb6-bf39-5c5087208ae0" />
+        <classShapeMoniker Id="64dadc72-ab3d-48e5-8116-d8e383f329cf" />
+        <classShapeMoniker Id="b45c57ac-4fc7-4db0-b2b9-c7ef094c2083" />
       </nodes>
     </associationConnector>
-    <classShape Id="f8f93ec7-2e8e-42be-8c3c-dee3edc30eda" absoluteBounds="6.125, 1, 2, 4.4631168619791666">
+    <classShape Id="a29af409-be8c-4232-bbd1-4660508828ea" absoluteBounds="5.75, 1.75, 2, 4.4631168619791666">
       <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/PersonelTablosu" />
       <nestedChildShapes>
-        <elementListCompartment Id="475b2b49-f711-4780-8c9d-c86eab24a177" absoluteBounds="6.14, 1.46, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="ff2ca642-3dd3-4672-a904-b4d03b2fab19" absoluteBounds="5.765, 2.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
