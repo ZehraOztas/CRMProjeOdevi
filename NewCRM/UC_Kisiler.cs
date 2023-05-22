@@ -23,31 +23,29 @@ namespace NewCRM
             set { title = value; lblAdSoyad.Text = value; }
         }
 
-      /*  private Image icon;
-        public Image Icon
-        {
-            get { return icon; }
-            set { icon = value; pbxKisiFoto.Image = value; }
-        }*/
+        /*  private Image icon;
+          public Image Icon
+          {
+              get { return icon; }
+              set { icon = value; pbxKisiFoto.Image = value; }
+          }*/
 
-        
+
         private void FormGetir()
         {
+            Chat_Icerik f = new Chat_Icerik();
+            Chat chat = (Chat)Application.OpenForms["Chat"];
+            chat.pnlBilgi.Controls.Clear();
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            chat.pnlBilgi.Controls.Add(f); // panel içinde açılmasını sağlıyor.
+            f.Show();
         }
 
 
         private void pnlKisiler_Click(object sender, EventArgs e)
         {
-            Chat chat = new Chat();
-            chat.pnlBilgi.Visible = true;
-            chat.pnlTittle.Visible = true;
-            chat.pnlİcerik.Visible = true;
-            chat.pnlMesaj.Visible = true;
-            MessageBox.Show("Açıldı");
-            title = lblAdSoyad.Text;
-          //  icon = pbxKisiFoto.Image;
-            chat.lblAd.Text = title;
-            //chat.pbxProfil.Image = icon;
+           FormGetir();
         }
         private  void pnlKisiler_Paint(object sender, PaintEventArgs e)
         {
@@ -72,7 +70,6 @@ namespace NewCRM
         private void UC_Kisiler_Click_1(object sender, EventArgs e)
         {
             FormGetir();
-            MessageBox.Show("Sayfa açıldı");
         }
     }
 }

@@ -460,3 +460,4 @@ C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.c
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.NotlarForm.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.OutGoing.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.Incomming.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.Chat_Icerik.resources

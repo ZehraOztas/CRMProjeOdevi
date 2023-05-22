@@ -45,8 +45,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buc.AnimationSpeed = 200;
             this.buc.BackColor = System.Drawing.Color.Transparent;
-            this.buc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.buc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.buc.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(151)))), ((int)(((byte)(249)))));
+            this.buc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(151)))), ((int)(((byte)(249)))));
             this.buc.BorderRadius = 30;
             this.buc.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
             this.buc.BorderThickness = 1;
@@ -64,7 +64,7 @@
             // 
             // lblmesaj
             // 
-            this.lblmesaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.lblmesaj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(151)))), ((int)(((byte)(249)))));
             this.lblmesaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblmesaj.Location = new System.Drawing.Point(67, 16);
             this.lblmesaj.Name = "lblmesaj";
