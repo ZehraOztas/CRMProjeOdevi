@@ -28,5 +28,7 @@ namespace NewCRM
         public static string foto;
         public static string m_id;
         public static string nid;
+        public static string chatid;
+        public static string chatkisiId;
     }
 }

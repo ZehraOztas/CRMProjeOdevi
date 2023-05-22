@@ -27,44 +27,44 @@ namespace NewCRM
 
         List<Chat> TIL = new List<Chat>();
 
-        private void UserItem()
-        {
-            pnlKisiListesi.Controls.Clear();
-            SqlCommand command = new SqlCommand("SELECT ad, soyad, foto FROM Musteri WHERE projeyi_yoneten=@y UNION ALL SELECT ad, soyad, foto FROM PersonelTablosu Where tc!= @tc", baglan);
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
-            command.Parameters.AddWithValue("@tc", Personel_Bilgileri.tc);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            if (dt != null)
-            {
-                if (dt.Rows.Count > 0)
-                {
-                    UC_Kisiler[] userControls = new UC_Kisiler[dt.Rows.Count];
-                    for (int i = 0; i < 1; i++)
-                    {
-                        foreach (DataRow row in dt.Rows)
-                        {
-                            userControls[i] = new UC_Kisiler();
-                            //   MemoryStream stream = new MemoryStream((byte[])row["foto"]);
-                            //   userControls[i].Icon = new Bitmap(stream);
-                            userControls[i].Title = row["ad"].ToString() + " " + row["soyad"];
+        /* private void UserItem()
+           {
+               pnlKisiListesi.Controls.Clear();
+               SqlCommand command = new SqlCommand("SELECT ad, soyad, foto FROM Musteri WHERE projeyi_yoneten=@y UNION ALL SELECT ad, soyad, foto FROM PersonelTablosu Where tc!= @tc", baglan);
+               SqlDataAdapter adapter = new SqlDataAdapter(command);
+               command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
+               command.Parameters.AddWithValue("@tc", Personel_Bilgileri.tc);
+               DataTable dt = new DataTable();
+               adapter.Fill(dt);
+               if (dt != null)
+               {
+                   if (dt.Rows.Count > 0)
+                   {
+                       UC_Kisiler[] userControls = new UC_Kisiler[dt.Rows.Count];
+                       for (int i = 0; i < 1; i++)
+                       {
+                           foreach (DataRow row in dt.Rows)
+                           {
+                               userControls[i] = new UC_Kisiler();
+                               //   MemoryStream stream = new MemoryStream((byte[])row["foto"]);
+                               //   userControls[i].Icon = new Bitmap(stream);
+                               userControls[i].Title = row["ad"].ToString() + " " + row["soyad"];
 
-                            if (userControls[i].Title == Personel_Bilgileri.ad + " " + Personel_Bilgileri.sad)
-                            {
-                                pnlKisiListesi.Controls.Remove(userControls[i]);
-                            }
-                            else
-                            {
-                                pnlKisiListesi.Controls.Add(userControls[i]);
-                                userControls[i].Dock = DockStyle.Top;
-                            }
-                            userControls[i].Click += new System.EventHandler(this.uC_Kisiler1_Click);
-                        }
-                    }
-                }
-            }
-        }
+                               if (userControls[i].Title == Personel_Bilgileri.ad + " " + Personel_Bilgileri.sad)
+                               {
+                                   pnlKisiListesi.Controls.Remove(userControls[i]);
+                               }
+                               else
+                               {
+                                   pnlKisiListesi.Controls.Add(userControls[i]);
+                                   userControls[i].Dock = DockStyle.Top;
+                               }
+                               userControls[i].Click += new System.EventHandler(this);
+                           }
+                       }
+                   }
+               }
+           }*/
         /*       public void Yerlestir(Image resim, string isim, int id)
                {
                   Chat chat = new Chat();
@@ -77,24 +77,38 @@ namespace NewCRM
                }*/
         private void Chat_Load(object sender, EventArgs e)
         {
-            pnlİcerik.Visible = false;
-            pnlTittle.Visible = false;
-            pnlMesaj.Visible = false;
-            /* foreach (var deg in dcMb.Musteri)
-             {
-                         Yerlestir(Resimleme.ResimGetirme(deg.foto.ToArray()), deg.ad + " " + deg.soyad, deg.m_id);
-             }*/
-            UserItem();
+            /* UserItem();
             Timer timer = new Timer();
             timer.Interval = 10 * 1000;
             timer.Tick += new EventHandler(timer1_Tick);
-            timer.Start();
+            timer.Start();*/
 
-            /*  pnlKisiListesi.Controls.Clear();
+            pnlBilgi.Visible = false;
+
             foreach (var deg in dcMb.Musteri)
             {
-                SqlCommand command = new SqlCommand("SELECT ad, soyad, foto FROM Musteri WHERE projeyi_yoneten=@y UNION ALL SELECT ad, soyad, foto FROM PersonelTablosu Where tc!= @tc", baglan);
+                SqlCommand command = new SqlCommand("SELECT m_id,ad, soyad, foto FROM Musteri WHERE projeyi_yoneten=@y ", baglan);
                 command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
+                baglan.Open();
+                SqlDataReader oku = command.ExecuteReader();
+
+                while (oku.Read())
+                {
+                    UC_Kisiler uc = new UC_Kisiler();
+                    uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
+                    uc.lblid.Text = oku.GetInt32(oku.GetOrdinal("m_id")).ToString();
+                    uc.lbltip.Text = "Müşteri";
+                    uc.Dock = DockStyle.Top;
+                    pnlKisiListesi.Controls.Add(uc);
+                }
+
+                oku.Close();
+                baglan.Close();
+            }
+
+            foreach (var deg in dcMb.PersonelTablosu)
+            {
+                SqlCommand command = new SqlCommand("SELECT ad, soyad, foto ,tc FROM PersonelTablosu", baglan);
                 command.Parameters.AddWithValue("@tc", Personel_Bilgileri.tc);
                 baglan.Open();
                 SqlDataReader oku = command.ExecuteReader();
@@ -103,16 +117,93 @@ namespace NewCRM
                 {
                     UC_Kisiler uc = new UC_Kisiler();
                     uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
-
-                   
-                    }
+                    uc.lblid.Text = oku.GetString(oku.GetOrdinal("tc"));
+                    uc.lbltip.Text = "Çalışan";
                     uc.Dock = DockStyle.Top;
                     pnlKisiListesi.Controls.Add(uc);
                 }
 
                 oku.Close();
                 baglan.Close();
-            }*/
+            }
+
+        }
+
+          
+    /*    public void MessageChat()
+        {
+           baglan.Open();
+            SqlCommand kmt = new SqlCommand("SELECT * From ChatTablosu WHERE alici_tc=@a OR gonderen_tc=@g", baglan);
+            kmt.Parameters.AddWithValue("@a", Personel_Bilgileri.tc);
+            kmt.Parameters.AddWithValue("@g", Personel_Bilgileri.tc);
+            SqlDataAdapter da = new SqlDataAdapter(kmt);
+            DataTable table = new DataTable();
+            da.Fill(table);
+
+            if (table != null)
+            {
+                if (table.Rows.Count > 0)
+                {
+                    OutGoing[] gonderilenMesaj = new OutGoing[table.Rows.Count];
+                    Incomming[] gelenMesaj = new Incomming[table.Rows.Count];
+                    for (int i = 0; i < 1; i++)
+                    {
+                        foreach (DataRow row in table.Rows)
+                        {
+                            if (Personel_Bilgileri.tc == row["gonderen_tc"].ToString() && lblAd.Text == row["alici_tc"].ToString())
+
+                            {
+                                gonderilenMesaj[i] = new OutGoing();
+                                gonderilenMesaj[i].Dock = DockStyle.Top;
+                                gonderilenMesaj[i].BringToFront();
+                                gonderilenMesaj[i].Tittle = row["icerik"].ToString();
+
+                                pnlİcerik.Controls.Add(gonderilenMesaj[i]);
+                                pnlİcerik.ScrollControlIntoView(gonderilenMesaj[i]);
+                            }
+                            else if (lblAd.Text == row["gonderen_tc"].ToString() && Personel_Bilgileri.tc == row["alici_tc"].ToString())
+                            {
+                                gelenMesaj[i] = new Incomming();
+                                gelenMesaj[i].Dock = DockStyle.Bottom;
+                                gelenMesaj[i].BringToFront();
+                                gelenMesaj[i].Tittle = row["icerik"].ToString();
+                                gelenMesaj[i].Icon = pbxProfil.Image;
+
+                                pnlİcerik.Controls.Add(gelenMesaj[i]);
+                                pnlİcerik.ScrollControlIntoView(gelenMesaj[i]);
+                            }
+
+                        }
+                    }
+                }
+            }
+            baglan.Close();
+        }*/
+
+        
+
+        private void uC_Kisiler1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //   MessageChat();
+        }
+
+
+
+        private void uC_Kisiler1_MouseClick(object sender, MouseEventArgs e)
+        {
+           /* if (pnlBilgi.Visible == false)
+            {
+                pnlBilgi.Visible = true;
+            }
+
+            UC_Kisiler control = (UC_Kisiler)sender;
+            lblAd.Text = control.Title;
+            pbxProfil.Image = control.Icon;
+            MessageChat();*/
         }
 
         private void pbxGonder_Click(object sender, EventArgs e)
@@ -130,79 +221,8 @@ namespace NewCRM
             cmd.ExecuteNonQuery();
             baglan.Close();
 
-            MessageChat();
+          //  MessageChat();
             txtIcerik.Clear();
         }
-
-        public void MessageChat()
-        {
-            baglan.Open();
-            SqlCommand kmt = new SqlCommand("SELECT * From ChatTablosu WHERE alici_tc=@a OR gonderen_tc=@g", baglan);
-            kmt.Parameters.AddWithValue("@a", Personel_Bilgileri.tc);
-            kmt.Parameters.AddWithValue("@g", Personel_Bilgileri.tc);
-            SqlDataAdapter da = new SqlDataAdapter(kmt);
-            DataTable table = new DataTable();
-            da.Fill(table);
-
-            if (table != null)
-            {
-                if (table.Rows.Count > 0)
-                {
-                    UC_Gonderilen_Mesaj[] gonderilenMesaj = new UC_Gonderilen_Mesaj[table.Rows.Count];
-                    UC_Gelen_Mesaj[] gelenMesaj = new UC_Gelen_Mesaj[table.Rows.Count];
-                    for (int i = 0; i < 1; i++)
-                    {
-                        foreach (DataRow row in table.Rows)
-                        {
-                            if (Personel_Bilgileri.tc == row["gonderen_tc"].ToString() && lblAd.Text == row["alici_tc"].ToString())
-
-                            {
-                                gonderilenMesaj[i] = new UC_Gonderilen_Mesaj();
-                                gonderilenMesaj[i].Dock = DockStyle.Bottom;
-                                gonderilenMesaj[i].BringToFront();
-                                gonderilenMesaj[i].Title = row["icerik"].ToString();
-
-                                pnlChat.Controls.Add(gonderilenMesaj[i]);
-                                pnlChat.ScrollControlIntoView(gonderilenMesaj[i]);
-                            }
-                            else if (lblAd.Text == row["gonderen_tc"].ToString() && Personel_Bilgileri.tc == row["alici_tc"].ToString())
-                            {
-                                gelenMesaj[i] = new UC_Gelen_Mesaj();
-                                gelenMesaj[i].Dock = DockStyle.Bottom;
-                                gelenMesaj[i].BringToFront();
-                                gelenMesaj[i].Title = row["icerik"].ToString();
-                                gelenMesaj[i].Icon = pbxProfil.Image;
-                                pnlChat.Controls.Add(gelenMesaj[i]);
-                                pnlChat.ScrollControlIntoView(gelenMesaj[i]);
-                            }
-
-                        }
-                    }
-                }
-            }
-        }
-
-        private void uC_Kisiler1_Load(object sender, EventArgs e)
-        {
-            /* if (pnlİcerik.Visible == false && pnlTittle.Visible == false && pnlMesaj.Visible == false)
-             {
-                 pnlİcerik.Visible = true;
-                 pnlTittle.Visible = true;
-                 pnlMesaj.Visible = true;
-             }
-
-             UC_Kisiler control = (UC_Kisiler)sender;
-             lblAd.Text = control.Title;
-           //  pbxProfil.Image = control.Icon;
-             MessageChat();*/
-        }
-
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            //   MessageChat();
-        }
-
-      
     }
 }

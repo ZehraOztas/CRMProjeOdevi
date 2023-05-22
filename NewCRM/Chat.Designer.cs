@@ -37,7 +37,6 @@
             this.pnlChat = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlKisiListesi = new Bunifu.UI.WinForms.BunifuPanel();
             this.pnlBilgi = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlMesaj = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtIcerik = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -46,6 +45,9 @@
             this.lblAd = new System.Windows.Forms.Label();
             this.pbxProfil = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pnlİcerik = new Bunifu.UI.WinForms.BunifuPanel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.outGoing1 = new NewCRM.OutGoing();
+            this.ıncomming1 = new NewCRM.Incomming();
             this.pnlChat.SuspendLayout();
             this.pnlBilgi.SuspendLayout();
             this.pnlMesaj.SuspendLayout();
@@ -53,6 +55,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbxGonder)).BeginInit();
             this.pnlTittle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).BeginInit();
+            this.pnlİcerik.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlChat
@@ -105,10 +108,6 @@
             this.pnlBilgi.Size = new System.Drawing.Size(1010, 699);
             this.pnlBilgi.TabIndex = 5;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // pnlMesaj
             // 
             this.pnlMesaj.BackgroundColor = System.Drawing.Color.Transparent;
@@ -129,8 +128,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(902, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(891, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -220,6 +220,7 @@
             this.pbxGonder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxGonder.TabIndex = 1;
             this.pbxGonder.TabStop = false;
+            this.pbxGonder.Click += new System.EventHandler(this.pbxGonder_Click);
             // 
             // pnlTittle
             // 
@@ -274,11 +275,38 @@
             this.pnlİcerik.BorderColor = System.Drawing.Color.Transparent;
             this.pnlİcerik.BorderRadius = 25;
             this.pnlİcerik.BorderThickness = 1;
+            this.pnlİcerik.Controls.Add(this.outGoing1);
+            this.pnlİcerik.Controls.Add(this.ıncomming1);
             this.pnlİcerik.Location = new System.Drawing.Point(1, 86);
             this.pnlİcerik.Name = "pnlİcerik";
             this.pnlİcerik.ShowBorders = true;
             this.pnlİcerik.Size = new System.Drawing.Size(1008, 517);
             this.pnlİcerik.TabIndex = 12;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // outGoing1
+            // 
+            this.outGoing1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.outGoing1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.outGoing1.Location = new System.Drawing.Point(0, 58);
+            this.outGoing1.Name = "outGoing1";
+            this.outGoing1.Size = new System.Drawing.Size(1008, 49);
+            this.outGoing1.TabIndex = 1;
+            this.outGoing1.Tittle = "Zehraaaa";
+            // 
+            // ıncomming1
+            // 
+            this.ıncomming1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ıncomming1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ıncomming1.Icon = null;
+            this.ıncomming1.Location = new System.Drawing.Point(0, 0);
+            this.ıncomming1.Name = "ıncomming1";
+            this.ıncomming1.Size = new System.Drawing.Size(1008, 58);
+            this.ıncomming1.TabIndex = 0;
+            this.ıncomming1.Tittle = "Zehraaaa";
             // 
             // Chat
             // 
@@ -299,6 +327,7 @@
             this.pnlTittle.ResumeLayout(false);
             this.pnlTittle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).EndInit();
+            this.pnlİcerik.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -316,5 +345,7 @@
         public System.Windows.Forms.Label lblAd;
         public Bunifu.UI.WinForms.BunifuPictureBox pbxProfil;
         public Bunifu.UI.WinForms.BunifuPanel pnlİcerik;
+        private Incomming ıncomming1;
+        private OutGoing outGoing1;
     }
 }

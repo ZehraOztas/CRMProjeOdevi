@@ -110,6 +110,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClassesMusteriBilgileri.dbml</DependentUpon>
     </Compile>
+    <Compile Include="OutGoing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OutGoing.Designer.cs">
+      <DependentUpon>OutGoing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Incomming.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Incomming.Designer.cs">
+      <DependentUpon>Incomming.cs</DependentUpon>
+    </Compile>
     <Compile Include="MusteriBilgiDuzenleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +207,12 @@
     <Compile Include="Uilist.cs" />
     <EmbeddedResource Include="Ana_Sayfa.resx">
       <DependentUpon>Ana_Sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutGoing.resx">
+      <DependentUpon>OutGoing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incomming.resx">
+      <DependentUpon>Incomming.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NotlarForm.resx">
       <DependentUpon>NotlarForm.cs</DependentUpon>

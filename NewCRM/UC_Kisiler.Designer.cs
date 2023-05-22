@@ -32,12 +32,16 @@
             this.pnlKisiler = new System.Windows.Forms.Panel();
             this.lblAdSoyad = new System.Windows.Forms.Label();
             this.pbxKisiFoto = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lblid = new System.Windows.Forms.Label();
+            this.lbltip = new System.Windows.Forms.Label();
             this.pnlKisiler.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxKisiFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlKisiler
             // 
+            this.pnlKisiler.Controls.Add(this.lbltip);
+            this.pnlKisiler.Controls.Add(this.lblid);
             this.pnlKisiler.Controls.Add(this.lblAdSoyad);
             this.pnlKisiler.Controls.Add(this.pbxKisiFoto);
             this.pnlKisiler.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -76,6 +80,28 @@
             this.pbxKisiFoto.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             this.pbxKisiFoto.Click += new System.EventHandler(this.pbxKisiFoto_Click);
             // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblid.Location = new System.Drawing.Point(79, 51);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(17, 15);
+            this.lblid.TabIndex = 4;
+            this.lblid.Text = "id";
+            this.lblid.Visible = false;
+            // 
+            // lbltip
+            // 
+            this.lbltip.AutoSize = true;
+            this.lbltip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbltip.Location = new System.Drawing.Point(79, 7);
+            this.lbltip.Name = "lbltip";
+            this.lbltip.Size = new System.Drawing.Size(20, 15);
+            this.lbltip.TabIndex = 5;
+            this.lbltip.Text = "tip";
+            this.lbltip.Visible = false;
+            // 
             // UC_Kisiler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,5 +122,7 @@
         private System.Windows.Forms.Panel pnlKisiler;
         public System.Windows.Forms.Label lblAdSoyad;
         public Bunifu.UI.WinForms.BunifuPictureBox pbxKisiFoto;
+        public System.Windows.Forms.Label lbltip;
+        public System.Windows.Forms.Label lblid;
     }
 }
