@@ -93,6 +93,7 @@ namespace NewCRM
 
         private void Chat_Icerik_Load(object sender, EventArgs e)
         {
+            SqlCommand icerik = new SqlCommand("SELECT ");
             MessageChat();
         }
     }

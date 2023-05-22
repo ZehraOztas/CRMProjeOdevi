@@ -23,12 +23,12 @@ namespace NewCRM
             set { title = value; lblAdSoyad.Text = value; }
         }
 
-        /*  private Image icon;
+         private Image icon;
           public Image Icon
           {
               get { return icon; }
               set { icon = value; pbxKisiFoto.Image = value; }
-          }*/
+          }
 
 
         private void FormGetir()
@@ -38,7 +38,9 @@ namespace NewCRM
             chat.pnlBilgi.Controls.Clear();
             f.TopLevel = false;
             f.Dock = DockStyle.Fill;
-            chat.pnlBilgi.Controls.Add(f); // panel içinde açılmasını sağlıyor.
+            chat.pnlBilgi.Controls.Add(f);
+            f.lblAd.Text = lblAdSoyad.Text;
+            f.pbxProfil.Image = icon;
             f.Show();
         }
 
