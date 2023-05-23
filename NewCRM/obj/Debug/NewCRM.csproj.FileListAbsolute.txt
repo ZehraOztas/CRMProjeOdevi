@@ -427,8 +427,6 @@ C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.U
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_Notlar.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.Chat.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.MusteriBilgiDuzenleme.resources
-C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_Gelen_Mesaj.resources
-C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_Gonderilen_Mesaj.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_Kisiler.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_MusteriBilgileri.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.Login.resources

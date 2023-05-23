@@ -196,6 +196,7 @@
             // pbxProfil
             // 
             this.pbxProfil.AllowFocused = false;
+            this.pbxProfil.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pbxProfil.AutoSizeHeight = true;
             this.pbxProfil.BorderRadius = 32;
             this.pbxProfil.Image = ((System.Drawing.Image)(resources.GetObject("pbxProfil.Image")));
@@ -235,6 +236,7 @@
             this.outGoing1.Size = new System.Drawing.Size(1008, 49);
             this.outGoing1.TabIndex = 1;
             this.outGoing1.Tittle = "Zehraaaa";
+            this.outGoing1.Visible = false;
             // 
             // ıncomming1
             // 
@@ -246,6 +248,7 @@
             this.ıncomming1.Size = new System.Drawing.Size(1008, 58);
             this.ıncomming1.TabIndex = 0;
             this.ıncomming1.Tittle = "Zehraaaa";
+            this.ıncomming1.Visible = false;
             // 
             // Chat_Icerik
             // 

@@ -180,18 +180,6 @@
     <Compile Include="UC_Days.Designer.cs">
       <DependentUpon>UC_Days.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_Gelen_Mesaj.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_Gelen_Mesaj.Designer.cs">
-      <DependentUpon>UC_Gelen_Mesaj.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC_Gonderilen_Mesaj.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_Gonderilen_Mesaj.Designer.cs">
-      <DependentUpon>UC_Gonderilen_Mesaj.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_Kisiler.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,12 +235,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriBilgiDuzenleme.resx">
       <DependentUpon>MusteriBilgiDuzenleme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_Gelen_Mesaj.resx">
-      <DependentUpon>UC_Gelen_Mesaj.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_Gonderilen_Mesaj.resx">
-      <DependentUpon>UC_Gonderilen_Mesaj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Kisiler.resx">
       <DependentUpon>UC_Kisiler.cs</DependentUpon>

@@ -68,6 +68,7 @@ namespace NewCRM
                     }
                 }
             }
+
             baglan.Close();
         }
 
@@ -84,11 +85,8 @@ namespace NewCRM
             baglan.Open();
             cmd.ExecuteNonQuery();
             baglan.Close();
-
-            //  MessageChat();
             txtIcerik.Clear();
-
-          //  MessageChat();
+            MessageChat();
         }
 
         private void Chat_Icerik_Load(object sender, EventArgs e)

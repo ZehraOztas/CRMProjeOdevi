@@ -41,6 +41,7 @@ namespace NewCRM
             chat.pnlBilgi.Controls.Add(f);
             f.lblAd.Text = lblAdSoyad.Text;
             f.pbxProfil.Image = icon;
+            Personel_Bilgileri.chatid = "";
             f.Show();
         }
 
