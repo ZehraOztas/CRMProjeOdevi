@@ -40,15 +40,12 @@
             this.pnlTittle = new Bunifu.UI.WinForms.BunifuPanel();
             this.lblAd = new System.Windows.Forms.Label();
             this.pbxProfil = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.pnlİcerik = new Bunifu.UI.WinForms.BunifuPanel();
-            this.outGoing1 = new NewCRM.OutGoing();
-            this.ıncomming1 = new NewCRM.Incomming();
+            this.pnlİcerik = new System.Windows.Forms.Panel();
             this.pnlMesaj.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGonder)).BeginInit();
             this.pnlTittle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).BeginInit();
-            this.pnlİcerik.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMesaj
@@ -211,53 +208,20 @@
             // 
             // pnlİcerik
             // 
-            this.pnlİcerik.AutoScroll = true;
-            this.pnlİcerik.AutoSize = true;
-            this.pnlİcerik.BackgroundColor = System.Drawing.Color.Transparent;
-            this.pnlİcerik.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlİcerik.BackgroundImage")));
-            this.pnlİcerik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlİcerik.BorderColor = System.Drawing.Color.Transparent;
-            this.pnlİcerik.BorderRadius = 25;
-            this.pnlİcerik.BorderThickness = 1;
-            this.pnlİcerik.Controls.Add(this.outGoing1);
-            this.pnlİcerik.Controls.Add(this.ıncomming1);
-            this.pnlİcerik.Location = new System.Drawing.Point(-6, 86);
+            this.pnlİcerik.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlİcerik.Location = new System.Drawing.Point(0, 80);
             this.pnlİcerik.Name = "pnlİcerik";
-            this.pnlİcerik.ShowBorders = true;
-            this.pnlİcerik.Size = new System.Drawing.Size(1008, 517);
-            this.pnlİcerik.TabIndex = 15;
-            // 
-            // outGoing1
-            // 
-            this.outGoing1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.outGoing1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.outGoing1.Location = new System.Drawing.Point(0, 58);
-            this.outGoing1.Name = "outGoing1";
-            this.outGoing1.Size = new System.Drawing.Size(1008, 49);
-            this.outGoing1.TabIndex = 1;
-            this.outGoing1.Tittle = "Zehraaaa";
-            this.outGoing1.Visible = false;
-            // 
-            // ıncomming1
-            // 
-            this.ıncomming1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ıncomming1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ıncomming1.Icon = null;
-            this.ıncomming1.Location = new System.Drawing.Point(0, 0);
-            this.ıncomming1.Name = "ıncomming1";
-            this.ıncomming1.Size = new System.Drawing.Size(1008, 58);
-            this.ıncomming1.TabIndex = 0;
-            this.ıncomming1.Tittle = "Zehraaaa";
-            this.ıncomming1.Visible = false;
+            this.pnlİcerik.Size = new System.Drawing.Size(994, 490);
+            this.pnlİcerik.TabIndex = 4;
             // 
             // Chat_Icerik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 660);
+            this.Controls.Add(this.pnlİcerik);
             this.Controls.Add(this.pnlMesaj);
             this.Controls.Add(this.pnlTittle);
-            this.Controls.Add(this.pnlİcerik);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Chat_Icerik";
             this.Text = "Chat_Icerik";
@@ -268,9 +232,7 @@
             this.pnlTittle.ResumeLayout(false);
             this.pnlTittle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).EndInit();
-            this.pnlİcerik.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -283,8 +245,6 @@
         public Bunifu.UI.WinForms.BunifuPanel pnlTittle;
         public System.Windows.Forms.Label lblAd;
         public Bunifu.UI.WinForms.BunifuPictureBox pbxProfil;
-        public Bunifu.UI.WinForms.BunifuPanel pnlİcerik;
-        private OutGoing outGoing1;
-        private Incomming ıncomming1;
+        private System.Windows.Forms.Panel pnlİcerik;
     }
 }
