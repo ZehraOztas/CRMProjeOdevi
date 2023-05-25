@@ -41,8 +41,19 @@ namespace NewCRM
                     {
                         foreach (DataRow row in table.Rows)
                         {
-                            if (Personel_Bilgileri.tc == row["gonderen_tc"].ToString() && lblAd.Text == row["alici_tc"].ToString())
+                            if (Personel_Bilgileri.tc == row["alici_tc"].ToString() && Personel_Bilgileri.m_id == row["gonderen_tc"].ToString())
+                            {
+                                gelenMesaj[i] = new Incomming();
+                                gelenMesaj[i].Dock = DockStyle.Top;
+                                gelenMesaj[i].BringToFront();
+                                gelenMesaj[i].Tittle = row["icerik"].ToString();
+                                gelenMesaj[i].Icon = pbxProfil.Image;
 
+                                pnlİcerik.Controls.Add(gelenMesaj[i]);
+                                pnlİcerik.ScrollControlIntoView(gelenMesaj[i]);
+                            }
+
+                            else if (Personel_Bilgileri.tc == row["gonderen_tc"].ToString() && Personel_Bilgileri.m_id == row["alici_tc"].ToString())
                             {
                                 gonderilenMesaj[i] = new OutGoing();
                                 gonderilenMesaj[i].Dock = DockStyle.Top;
@@ -50,18 +61,7 @@ namespace NewCRM
                                 gonderilenMesaj[i].Tittle = row["icerik"].ToString();
 
                                 pnlİcerik.Controls.Add(gonderilenMesaj[i]);
-                                pnlİcerik.ScrollControlIntoView(gonderilenMesaj[i]);
-                            }
-                            else if (lblAd.Text == row["gonderen_tc"].ToString() && Personel_Bilgileri.tc == row["alici_tc"].ToString())
-                            {
-                                gelenMesaj[i] = new Incomming();
-                                gelenMesaj[i].Dock = DockStyle.Bottom;
-                                gelenMesaj[i].BringToFront();
-                                gelenMesaj[i].Tittle = row["icerik"].ToString();
-                                gelenMesaj[i].Icon = pbxProfil.Image;
-
-                                pnlİcerik.Controls.Add(gelenMesaj[i]);
-                                pnlİcerik.ScrollControlIntoView(gelenMesaj[i]);
+                                pnlİcerik.ScrollControlIntoView(gonderilenMesaj[i]);//Kaydırma çubuğunu ayarlar.
                             }
 
                         }
@@ -78,7 +78,7 @@ namespace NewCRM
 
             SqlCommand cmd = new SqlCommand("INSERT INTO ChatTablosu(gonderen_tc,alici_tc,gonderilen_tarih, gonderilen_yer, icerik)VALUES(@g_tc, @atc, @gdate, @gyer, @icerik)", baglan);
             cmd.Parameters.AddWithValue("@g_tc", Personel_Bilgileri.tc);
-            cmd.Parameters.AddWithValue("@atc", lblAd.Text);
+            cmd.Parameters.AddWithValue("@atc", Personel_Bilgileri.m_id);
             cmd.Parameters.AddWithValue("@gdate", suankizaman);
             cmd.Parameters.AddWithValue("@gyer", "Chat Uygulaması");
             cmd.Parameters.AddWithValue("@icerik", txtIcerik.Text);
@@ -91,8 +91,17 @@ namespace NewCRM
 
         private void Chat_Icerik_Load(object sender, EventArgs e)
         {
-            SqlCommand icerik = new SqlCommand("SELECT ");
+            Timer timer = new Timer();
+            timer.Interval = (10 * 10000);
+            timer.Tick += new EventHandler(timer1_Tick);
+            timer.Start();
             MessageChat();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            MessageChat();
+        }
+
     }
 }

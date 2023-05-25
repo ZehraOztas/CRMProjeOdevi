@@ -54,13 +54,13 @@ namespace NewCRM
             baglan.Close();
 
         }
-    
+
 
         private void MusteriKisi()
         {
-        SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+            SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
-        SqlCommand command = new SqlCommand("SELECT m_id, ad, soyad, foto FROM Musteri WHERE projeyi_yoneten = @y", baglan);
+            SqlCommand command = new SqlCommand("SELECT m_id, ad, soyad, foto FROM Musteri WHERE projeyi_yoneten = @y", baglan);
             command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
             baglan.Open();
             SqlDataReader oku = command.ExecuteReader();
@@ -72,7 +72,7 @@ namespace NewCRM
                 uc.lblid.Text = oku.GetInt32(oku.GetOrdinal("m_id")).ToString();
                 uc.lbltip.Text = "Müşteri";
                 uc.Dock = DockStyle.Top;
-                if (uc.lblAdSoyad.Text == Personel_Bilgileri.ad+" "+Personel_Bilgileri.sad)
+                if (uc.lblAdSoyad.Text == Personel_Bilgileri.ad + " " + Personel_Bilgileri.sad)
                 {
                     pnlKisiListesi.Controls.Remove(uc);
                 }

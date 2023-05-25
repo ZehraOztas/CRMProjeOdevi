@@ -23,12 +23,12 @@ namespace NewCRM
             set { title = value; lblAdSoyad.Text = value; }
         }
 
-         private Image icon;
-          public Image Icon
-          {
-              get { return icon; }
-              set { icon = value; pbxKisiFoto.Image = value; }
-          }
+        private Image icon;
+        public Image Icon
+        {
+            get { return icon; }
+            set { icon = value; pbxKisiFoto.Image = value; }
+        }
 
 
         private void FormGetir()
@@ -41,23 +41,13 @@ namespace NewCRM
             chat.pnlBilgi.Controls.Add(f);
             f.lblAd.Text = lblAdSoyad.Text;
             f.pbxProfil.Image = icon;
+            Personel_Bilgileri.m_id = lblid.Text;
             Personel_Bilgileri.chatid = "";
             f.Show();
         }
-
-
         private void pnlKisiler_Click(object sender, EventArgs e)
         {
-           FormGetir();
-        }
-        private  void pnlKisiler_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void UC_Kisiler_Click(object sender, EventArgs e)
-        {
-             
+            FormGetir();
         }
 
         private void lblAdSoyad_Click(object sender, EventArgs e)
