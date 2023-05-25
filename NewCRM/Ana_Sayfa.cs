@@ -30,7 +30,7 @@ namespace NewCRM
             DialogResult cevap = MessageBox.Show("Oturumuzu sonlandırmak istiyor musunuz?", "Çıkış Yap", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (cevap == DialogResult.OK)
             {
-                this.Hide();
+                this.Close();
                 Login frm = new Login();
                 frm.ShowDialog();
             }

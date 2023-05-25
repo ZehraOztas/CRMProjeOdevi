@@ -18,16 +18,17 @@ namespace NewCRM
             InitializeComponent();
         }
 
-        SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+        
         DataClassesMusteriBilgileriDataContext dcMb = new DataClassesMusteriBilgileriDataContext();
 
         public void MessageChat()
         {
+            SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
             baglan.Open();
             SqlCommand kmt = new SqlCommand("SELECT * From ChatTablosu WHERE alici_tc=@a OR gonderen_tc=@g", baglan);
             kmt.Parameters.AddWithValue("@a", Personel_Bilgileri.tc);
             kmt.Parameters.AddWithValue("@g", Personel_Bilgileri.tc);
-            SqlDataAdapter da = new SqlDataAdapter(kmt);
+           SqlDataAdapter da = new SqlDataAdapter(kmt);
             DataTable table = new DataTable();
             da.Fill(table);
 
@@ -44,7 +45,7 @@ namespace NewCRM
                             if (Personel_Bilgileri.tc == row["alici_tc"].ToString() && Personel_Bilgileri.m_id == row["gonderen_tc"].ToString())
                             {
                                 gelenMesaj[i] = new Incomming();
-                                gelenMesaj[i].Dock = DockStyle.Top;
+                                gelenMesaj[i].Dock = DockStyle.Bottom;
                                 gelenMesaj[i].BringToFront();
                                 gelenMesaj[i].Tittle = row["icerik"].ToString();
                                 gelenMesaj[i].Icon = pbxProfil.Image;
@@ -52,11 +53,10 @@ namespace NewCRM
                                 pnlİcerik.Controls.Add(gelenMesaj[i]);
                                 pnlİcerik.ScrollControlIntoView(gelenMesaj[i]);
                             }
-
                             else if (Personel_Bilgileri.tc == row["gonderen_tc"].ToString() && Personel_Bilgileri.m_id == row["alici_tc"].ToString())
                             {
                                 gonderilenMesaj[i] = new OutGoing();
-                                gonderilenMesaj[i].Dock = DockStyle.Top;
+                                gonderilenMesaj[i].Dock = DockStyle.Bottom;
                                 gonderilenMesaj[i].BringToFront();
                                 gonderilenMesaj[i].Tittle = row["icerik"].ToString();
 
@@ -75,7 +75,8 @@ namespace NewCRM
         private void pbxGonder_Click(object sender, EventArgs e)
         {
             DateTime suankizaman = DateTime.Now;
-
+            SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+           
             SqlCommand cmd = new SqlCommand("INSERT INTO ChatTablosu(gonderen_tc,alici_tc,gonderilen_tarih, gonderilen_yer, icerik)VALUES(@g_tc, @atc, @gdate, @gyer, @icerik)", baglan);
             cmd.Parameters.AddWithValue("@g_tc", Personel_Bilgileri.tc);
             cmd.Parameters.AddWithValue("@atc", Personel_Bilgileri.m_id);
