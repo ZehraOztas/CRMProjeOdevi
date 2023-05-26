@@ -24,7 +24,6 @@ namespace NewCRM
 
         DataClassesMusteriBilgileriDataContext dcMb = new DataClassesMusteriBilgileriDataContext();
         public bool deger = false;
-        //   List<Chat> TIL = new List<Chat>();
 
         private void PersonelKisi() // Personel tablosundaki kişeri alıp pnlKisiListesi adlı panele ekler.
         {

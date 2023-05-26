@@ -208,6 +208,7 @@
             // 
             // pnlİcerik
             // 
+            this.pnlİcerik.AutoScroll = true;
             this.pnlİcerik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlİcerik.Location = new System.Drawing.Point(0, 80);
             this.pnlİcerik.Name = "pnlİcerik";

@@ -16,9 +16,17 @@ namespace NewCRM
         {
             InitializeComponent();
         }
+        public static string static_day;
         public void days(int numday)
         {
             lblDays.Text = numday+"";
+        }
+
+        private void UC_Days_Click(object sender, EventArgs e)
+        {
+            static_day = lblDays.Text;
+            EventForm eventForm = new EventForm();
+            eventForm.Show();
         }
     }
 }

@@ -53,6 +53,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
       <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\..\BUNIFU TOOLS (1)\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>..\..\BUNIFU TOOLS (1)\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
@@ -115,6 +118,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClassesMusteriBilgileri.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
     </Compile>
     <Compile Include="OutGoing.cs">
       <SubType>UserControl</SubType>
@@ -204,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Chat_Icerik.resx">
       <DependentUpon>Chat_Icerik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OutGoing.resx">
       <DependentUpon>OutGoing.cs</DependentUpon>

@@ -180,9 +180,9 @@
             // 
             // daycontainer
             // 
-            this.daycontainer.Location = new System.Drawing.Point(12, 105);
+            this.daycontainer.Location = new System.Drawing.Point(12, 122);
             this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(1203, 791);
+            this.daycontainer.Size = new System.Drawing.Size(1203, 774);
             this.daycontainer.TabIndex = 0;
             // 
             // Takvim

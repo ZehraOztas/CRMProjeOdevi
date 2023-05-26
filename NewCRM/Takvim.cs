@@ -19,6 +19,8 @@ namespace NewCRM
         {
             InitializeComponent();
         }
+
+        public static int static_month, static_year;
         private void displaDays()
         {
             DateTime now = DateTime.Now;
@@ -27,6 +29,8 @@ namespace NewCRM
 
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lblDate.Text = monthname+" "+year;
+            static_month = month;
+            static_year = year;
             //Ayın ilk gününü alma
             DateTime startofthemonth = new DateTime(year, month, 1);
             //Ayın gün sayısını alma
@@ -60,6 +64,8 @@ namespace NewCRM
             daycontainer.Controls.Clear();
             //önceki aya gitmek için ayı azaltalım
             month--;
+            static_month = month;
+            static_year = year;
 
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lblDate.Text = monthname + " " + year;
@@ -96,6 +102,8 @@ namespace NewCRM
             daycontainer.Controls.Clear();
             //sonraki aya gitmek için ayı artırın
             month++;
+            static_month = month;
+            static_year = year;
 
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             lblDate.Text = monthname + " " + year;
