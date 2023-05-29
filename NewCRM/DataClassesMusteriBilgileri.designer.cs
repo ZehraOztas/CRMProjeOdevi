@@ -91,6 +91,14 @@ namespace NewCRM
 				return this.GetTable<PersonelTablosu>();
 			}
 		}
+		
+		public System.Data.Linq.Table<TakvimTablosu> TakvimTablosu
+		{
+			get
+			{
+				return this.GetTable<TakvimTablosu>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Notlar")]
@@ -1050,6 +1058,123 @@ namespace NewCRM
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TakvimTablosu")]
+	public partial class TakvimTablosu
+	{
+		
+		private int _id;
+		
+		private System.Nullable<System.DateTime> _tarih;
+		
+		private string _proje_adi;
+		
+		private string _musteri_adi;
+		
+		private string _icerik;
+		
+		private string _kaydeden;
+		
+		public TakvimTablosu()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		public int id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this._id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tarih", DbType="Date")]
+		public System.Nullable<System.DateTime> tarih
+		{
+			get
+			{
+				return this._tarih;
+			}
+			set
+			{
+				if ((this._tarih != value))
+				{
+					this._tarih = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_proje_adi", DbType="NVarChar(MAX)")]
+		public string proje_adi
+		{
+			get
+			{
+				return this._proje_adi;
+			}
+			set
+			{
+				if ((this._proje_adi != value))
+				{
+					this._proje_adi = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_musteri_adi", DbType="NVarChar(MAX)")]
+		public string musteri_adi
+		{
+			get
+			{
+				return this._musteri_adi;
+			}
+			set
+			{
+				if ((this._musteri_adi != value))
+				{
+					this._musteri_adi = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_icerik", DbType="NVarChar(MAX)")]
+		public string icerik
+		{
+			get
+			{
+				return this._icerik;
+			}
+			set
+			{
+				if ((this._icerik != value))
+				{
+					this._icerik = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_kaydeden", DbType="NVarChar(11)")]
+		public string kaydeden
+		{
+			get
+			{
+				return this._kaydeden;
+			}
+			set
+			{
+				if ((this._kaydeden != value))
+				{
+					this._kaydeden = value;
+				}
 			}
 		}
 	}

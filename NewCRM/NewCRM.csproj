@@ -59,6 +59,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>..\..\BUNIFU TOOLS (1)\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
       <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
     </Reference>
@@ -76,6 +79,9 @@
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
       <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
@@ -207,6 +213,12 @@
     <Compile Include="UC_Notlar.Designer.cs">
       <DependentUpon>UC_Notlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_TakvimBilgi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_TakvimBilgi.Designer.cs">
+      <DependentUpon>UC_TakvimBilgi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Uilist.cs" />
     <EmbeddedResource Include="Ana_Sayfa.resx">
       <DependentUpon>Ana_Sayfa.cs</DependentUpon>
@@ -238,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Notlar.resx">
       <DependentUpon>UC_Notlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_TakvimBilgi.resx">
+      <DependentUpon>UC_TakvimBilgi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataClassesMusteriBilgileri.dbml.layout">
       <DependentUpon>DataClassesMusteriBilgileri.dbml</DependentUpon>

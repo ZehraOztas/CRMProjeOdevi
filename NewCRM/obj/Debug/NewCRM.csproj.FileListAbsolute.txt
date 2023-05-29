@@ -461,3 +461,6 @@ C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.I
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.Chat_Icerik.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.EventForm.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_TakvimBilgi.resources

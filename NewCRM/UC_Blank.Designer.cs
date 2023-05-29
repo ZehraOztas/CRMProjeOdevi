@@ -34,11 +34,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 57);
+            this.label1.Location = new System.Drawing.Point(3, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Temporaty Text";
+            this.label1.Text = "Temporaty";
             this.label1.Visible = false;
             // 
             // UC_Blank
@@ -47,7 +47,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Name = "UC_Blank";
-            this.Size = new System.Drawing.Size(165, 126);
+            this.Size = new System.Drawing.Size(56, 58);
             this.ResumeLayout(false);
             this.PerformLayout();
 

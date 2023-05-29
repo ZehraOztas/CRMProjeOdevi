@@ -19,8 +19,8 @@ namespace NewCRM
         {
             InitializeComponent();
         }
-
-        public static int static_month, static_year;
+        
+        public static int static_month, static_year, static_day;
         private void displaDays()
         {
             DateTime now = DateTime.Now;
@@ -49,6 +49,7 @@ namespace NewCRM
                 UC_Days ucdays = new UC_Days();
                 ucdays.days(i);
                 daycontainer.Controls.Add(ucdays);
+                //ucdays.displayEvent();
             }
 
         }
@@ -73,6 +74,7 @@ namespace NewCRM
             DateTime startofthemonth = new DateTime(year, month, 1);
             //Ayın gün sayısını alma
             int days = DateTime.DaysInMonth(year, month);
+
             //startofthemonth int'te çevirme
             int daysofteweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d"))+1;
 

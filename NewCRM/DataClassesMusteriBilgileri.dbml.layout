@@ -21,10 +21,16 @@
         <classShapeMoniker Id="b45c57ac-4fc7-4db0-b2b9-c7ef094c2083" />
       </nodes>
     </associationConnector>
-    <classShape Id="a29af409-be8c-4232-bbd1-4660508828ea" absoluteBounds="5.75, 1.75, 2, 4.4631168619791666">
+    <classShape Id="a29af409-be8c-4232-bbd1-4660508828ea" absoluteBounds="5, 0.5, 2, 4.4631168619791666">
       <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/PersonelTablosu" />
       <nestedChildShapes>
-        <elementListCompartment Id="ff2ca642-3dd3-4672-a904-b4d03b2fab19" absoluteBounds="5.765, 2.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="ff2ca642-3dd3-4672-a904-b4d03b2fab19" absoluteBounds="5.015, 0.96, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11c5d42c-2119-4c6c-b597-544cc51abd58" absoluteBounds="5.25, 5.25, 2, 1.9631982421875">
+      <DataClassMoniker Name="/DataClassesMusteriBilgileriDataContext/TakvimTablosu" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a306e54-3567-4db7-aa52-5767e155f7a4" absoluteBounds="5.2650000000000006, 5.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
