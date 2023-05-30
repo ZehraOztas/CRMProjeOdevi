@@ -53,6 +53,9 @@ namespace NewCRM
 
         private void lblDays_Click(object sender, EventArgs e)
         {
+            Personel_Bilgileri.ay = Takvim.static_month;
+            Personel_Bilgileri.yil = Takvim.static_year;
+            Personel_Bilgileri.gun = Convert.ToInt32(lblDays.Text);
             Baslangic();
         }
     }

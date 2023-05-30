@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -87,6 +88,33 @@ namespace NewCRM
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            EventForm f = new EventForm();
+            this.Close();
+            f.deger = "Yeni Kayıt";
+            Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
+            asd.formGetir(f);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (Personel_Bilgileri.takvimId == null)
+            {
+                MessageBox.Show("İlk önce değiştirmek istediğiniz kaydı seçiniz.");
+            }
+            else
+            {
+                SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+                SqlCommand sil = new SqlCommand("DELETE FROM TakvimTablosu WHERE id=@id",baglan);
+                sil.Parameters.AddWithValue("@id",Personel_Bilgileri.takvimId);
+                baglan.Open();
+                sil.ExecuteNonQuery();
+                baglan.Close();
+                MessageBox.Show("silindi");
+            }
+        }
+
         private void btnprevious_Click(object sender, EventArgs e)
         {
             //lear container
@@ -125,6 +153,20 @@ namespace NewCRM
         private void Takvim_Load(object sender, EventArgs e)
         {
             displaDays();
+            Personel_Bilgileri.takvimId = null;
+
+            DateTime dt = DateTime.Now;
+
+            Personel_Bilgileri.ay = dt.Month ;
+            Personel_Bilgileri.yil = dt.Year;
+            Personel_Bilgileri.gun = dt.Day;
+
+            TakvimListe f = new TakvimListe();
+            pnlBilgi.Controls.Clear();
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            pnlBilgi.Controls.Add(f);
+            f.Show();
         }
 
         private void lblDate_Click(object sender, EventArgs e)

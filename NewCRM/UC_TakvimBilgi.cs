@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,15 +32,26 @@ namespace NewCRM
             }
         }
 
-        private void pnlBack_Click(object sender, EventArgs e)
-        {
-            backcolor();
-        }
-
         private void rbtnSec_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
+        private void btnDuzenle_Click(object sender, EventArgs e)
+        {
+            Personel_Bilgileri.takvimId = lblid.Text.ToString();
+            EventForm f = new EventForm();
+            f.deger = "Güncelle";
+            f.btnKaydet.Text = "Güncelle";
+            Takvim mbl = (Takvim)Application.OpenForms["Takvim"];
+            mbl.Close();
+            Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
+            asd.formGetir(f);
+        }
+
+        private void pnlBack_Click(object sender, EventArgs e)
+        {
+            backcolor();
+        }
     }
 }

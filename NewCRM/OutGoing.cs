@@ -17,7 +17,7 @@ namespace NewCRM
             InitializeComponent();
         }
 
-        private string _title;
+       // private string _title;
         public string Tittle 
         { 
             get{ return lbltext.Text; }
