@@ -42,10 +42,7 @@
             this.lblDays.Size = new System.Drawing.Size(27, 20);
             this.lblDays.TabIndex = 0;
             this.lblDays.Text = "00";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.lblDays.Click += new System.EventHandler(this.lblDays_Click);
             // 
             // UC_Days
             // 

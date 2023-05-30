@@ -37,9 +37,9 @@
             this.pbxEp = new System.Windows.Forms.PictureBox();
             this.pbxAd = new System.Windows.Forms.PictureBox();
             this.lblPrjAdi = new System.Windows.Forms.Label();
-            this.lblPozisyon = new System.Windows.Forms.Label();
-            this.lblCalistigiYer = new System.Windows.Forms.Label();
-            this.lblEp = new System.Windows.Forms.Label();
+            this.lblNot = new System.Windows.Forms.Label();
+            this.lblBitis = new System.Windows.Forms.Label();
+            this.lblbasla = new System.Windows.Forms.Label();
             this.lblAdSoyad = new System.Windows.Forms.Label();
             this.pnlBack = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnDuzenle)).BeginInit();
@@ -69,6 +69,7 @@
             this.btnDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnDuzenle.TabIndex = 35;
             this.btnDuzenle.TabStop = false;
+            this.btnDuzenle.Click += new System.EventHandler(this.btnDuzenle_Click);
             // 
             // pbxPrjAd
             // 
@@ -123,49 +124,49 @@
             // lblPrjAdi
             // 
             this.lblPrjAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPrjAdi.Location = new System.Drawing.Point(181, 21);
+            this.lblPrjAdi.Location = new System.Drawing.Point(172, 21);
             this.lblPrjAdi.Name = "lblPrjAdi";
-            this.lblPrjAdi.Size = new System.Drawing.Size(69, 42);
+            this.lblPrjAdi.Size = new System.Drawing.Size(83, 42);
             this.lblPrjAdi.TabIndex = 25;
             this.lblPrjAdi.Text = "Proje Adı";
             this.lblPrjAdi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblPozisyon
+            // lblNot
             // 
-            this.lblPozisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPozisyon.Location = new System.Drawing.Point(534, 21);
-            this.lblPozisyon.Name = "lblPozisyon";
-            this.lblPozisyon.Size = new System.Drawing.Size(186, 42);
-            this.lblPozisyon.TabIndex = 23;
-            this.lblPozisyon.Text = "Not";
-            this.lblPozisyon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblNot.Location = new System.Drawing.Point(534, 21);
+            this.lblNot.Name = "lblNot";
+            this.lblNot.Size = new System.Drawing.Size(186, 42);
+            this.lblNot.TabIndex = 23;
+            this.lblNot.Text = "Not";
+            this.lblNot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCalistigiYer
+            // lblBitis
             // 
-            this.lblCalistigiYer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCalistigiYer.Location = new System.Drawing.Point(416, 21);
-            this.lblCalistigiYer.Name = "lblCalistigiYer";
-            this.lblCalistigiYer.Size = new System.Drawing.Size(67, 38);
-            this.lblCalistigiYer.TabIndex = 22;
-            this.lblCalistigiYer.Text = "Bitiş Saat";
-            this.lblCalistigiYer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblBitis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBitis.Location = new System.Drawing.Point(416, 21);
+            this.lblBitis.Name = "lblBitis";
+            this.lblBitis.Size = new System.Drawing.Size(68, 38);
+            this.lblBitis.TabIndex = 22;
+            this.lblBitis.Text = "Bitiş Saat";
+            this.lblBitis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblEp
+            // lblbasla
             // 
-            this.lblEp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblEp.Location = new System.Drawing.Point(307, 21);
-            this.lblEp.Name = "lblEp";
-            this.lblEp.Size = new System.Drawing.Size(57, 42);
-            this.lblEp.TabIndex = 21;
-            this.lblEp.Text = "Başlangıç Saat";
-            this.lblEp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblbasla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblbasla.Location = new System.Drawing.Point(307, 21);
+            this.lblbasla.Name = "lblbasla";
+            this.lblbasla.Size = new System.Drawing.Size(60, 42);
+            this.lblbasla.TabIndex = 21;
+            this.lblbasla.Text = "Başlangıç Saat";
+            this.lblbasla.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAdSoyad
             // 
             this.lblAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblAdSoyad.Location = new System.Drawing.Point(44, 21);
             this.lblAdSoyad.Name = "lblAdSoyad";
-            this.lblAdSoyad.Size = new System.Drawing.Size(69, 42);
+            this.lblAdSoyad.Size = new System.Drawing.Size(77, 42);
             this.lblAdSoyad.TabIndex = 19;
             this.lblAdSoyad.Text = "Müşteri Ad";
             this.lblAdSoyad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -181,15 +182,16 @@
             this.pnlBack.Controls.Add(this.pbxEp);
             this.pnlBack.Controls.Add(this.pbxAd);
             this.pnlBack.Controls.Add(this.lblPrjAdi);
-            this.pnlBack.Controls.Add(this.lblPozisyon);
-            this.pnlBack.Controls.Add(this.lblCalistigiYer);
-            this.pnlBack.Controls.Add(this.lblEp);
+            this.pnlBack.Controls.Add(this.lblNot);
+            this.pnlBack.Controls.Add(this.lblBitis);
+            this.pnlBack.Controls.Add(this.lblbasla);
             this.pnlBack.Controls.Add(this.lblAdSoyad);
             this.pnlBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBack.Location = new System.Drawing.Point(0, 0);
             this.pnlBack.Name = "pnlBack";
             this.pnlBack.Size = new System.Drawing.Size(757, 87);
             this.pnlBack.TabIndex = 1;
+            this.pnlBack.Click += new System.EventHandler(this.pnlBack_Click);
             // 
             // UC_TakvimBilgi
             // 
@@ -220,9 +222,9 @@
         public System.Windows.Forms.PictureBox pbxEp;
         public System.Windows.Forms.PictureBox pbxAd;
         public System.Windows.Forms.Label lblPrjAdi;
-        public System.Windows.Forms.Label lblPozisyon;
-        public System.Windows.Forms.Label lblCalistigiYer;
-        public System.Windows.Forms.Label lblEp;
+        public System.Windows.Forms.Label lblNot;
+        public System.Windows.Forms.Label lblBitis;
+        public System.Windows.Forms.Label lblbasla;
         public System.Windows.Forms.Label lblAdSoyad;
         public System.Windows.Forms.Panel pnlBack;
     }

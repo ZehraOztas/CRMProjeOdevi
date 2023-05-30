@@ -17,5 +17,14 @@ namespace NewCRM
             InitializeComponent();
         }
 
+        private void pnlBack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDuzenle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

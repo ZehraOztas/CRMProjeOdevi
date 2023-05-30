@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.pnlBack = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.pnlBilgi = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.btnprevious = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
@@ -42,10 +43,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pnlTop = new System.Windows.Forms.Panel();
+            this.pnlBilgi = new System.Windows.Forms.Panel();
             this.pnlBack.SuspendLayout();
             this.pnlLeft.SuspendLayout();
+            this.pnlTop.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBack
@@ -55,9 +57,8 @@
             this.pnlBack.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.pnlBack.BorderRadius = 15;
             this.pnlBack.BorderThickness = 1;
-            this.pnlBack.Controls.Add(this.button2);
-            this.pnlBack.Controls.Add(this.button1);
             this.pnlBack.Controls.Add(this.pnlBilgi);
+            this.pnlBack.Controls.Add(this.pnlTop);
             this.pnlBack.Controls.Add(this.pnlLeft);
             this.pnlBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBack.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
@@ -71,16 +72,29 @@
             this.pnlBack.ShadowDepth = 5;
             this.pnlBack.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlBack.ShadowTopLeftVisible = false;
-            this.pnlBack.Size = new System.Drawing.Size(1227, 953);
+            this.pnlBack.Size = new System.Drawing.Size(1227, 714);
             this.pnlBack.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlBack.TabIndex = 0;
             // 
-            // pnlBilgi
+            // button2
             // 
-            this.pnlBilgi.Location = new System.Drawing.Point(470, 69);
-            this.pnlBilgi.Name = "pnlBilgi";
-            this.pnlBilgi.Size = new System.Drawing.Size(757, 884);
-            this.pnlBilgi.TabIndex = 11;
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(635, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(52, 51);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(693, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(52, 51);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // pnlLeft
             // 
@@ -98,7 +112,7 @@
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlLeft.Name = "pnlLeft";
-            this.pnlLeft.Size = new System.Drawing.Size(470, 953);
+            this.pnlLeft.Size = new System.Drawing.Size(470, 714);
             this.pnlLeft.TabIndex = 10;
             // 
             // btnprevious
@@ -109,6 +123,7 @@
             this.btnprevious.TabIndex = 10;
             this.btnprevious.Text = "Önceki";
             this.btnprevious.UseVisualStyleBackColor = true;
+            this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
             // 
             // lblDate
             // 
@@ -128,6 +143,7 @@
             this.btnnext.TabIndex = 12;
             this.btnnext.Text = "Sonraki";
             this.btnnext.UseVisualStyleBackColor = true;
+            this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
             // 
             // label7
             // 
@@ -201,34 +217,34 @@
             // 
             // daycontainer
             // 
-            this.daycontainer.Location = new System.Drawing.Point(19, 87);
+            this.daycontainer.Location = new System.Drawing.Point(12, 87);
             this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(446, 387);
+            this.daycontainer.Size = new System.Drawing.Size(453, 387);
             this.daycontainer.TabIndex = 11;
             // 
-            // button1
+            // pnlTop
             // 
-            this.button1.Location = new System.Drawing.Point(1163, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 51);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pnlTop.Controls.Add(this.button1);
+            this.pnlTop.Controls.Add(this.button2);
+            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTop.Location = new System.Drawing.Point(470, 0);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.Size = new System.Drawing.Size(757, 63);
+            this.pnlTop.TabIndex = 14;
             // 
-            // button2
+            // pnlBilgi
             // 
-            this.button2.Location = new System.Drawing.Point(1105, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(52, 51);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.pnlBilgi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBilgi.Location = new System.Drawing.Point(470, 63);
+            this.pnlBilgi.Name = "pnlBilgi";
+            this.pnlBilgi.Size = new System.Drawing.Size(757, 651);
+            this.pnlBilgi.TabIndex = 15;
             // 
             // Takvim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 953);
+            this.ClientSize = new System.Drawing.Size(1227, 714);
             this.Controls.Add(this.pnlBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Takvim";
@@ -238,6 +254,7 @@
             this.pnlBack.ResumeLayout(false);
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();
+            this.pnlTop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -260,5 +277,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.Panel pnlBilgi;
+        private System.Windows.Forms.Panel pnlTop;
     }
 }

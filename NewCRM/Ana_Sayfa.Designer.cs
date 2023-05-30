@@ -531,7 +531,7 @@
             this.btnForum.BackColor1 = System.Drawing.Color.Transparent;
             this.btnForum.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnForum.BackgroundImage")));
             this.btnForum.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnForum.ButtonText = "Forum";
+            this.btnForum.ButtonText = "Takvim";
             this.btnForum.ButtonTextMarginLeft = 0;
             this.btnForum.ColorContrastOnClick = 45;
             this.btnForum.ColorContrastOnHover = 45;
@@ -605,6 +605,7 @@
             this.btnForum.TextMarginLeft = 0;
             this.btnForum.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnForum.UseDefaultRadiusAndThickness = true;
+            this.btnForum.Click += new System.EventHandler(this.btnForum_Click_1);
             // 
             // pnlGecis
             // 

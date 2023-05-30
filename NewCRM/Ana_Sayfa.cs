@@ -136,6 +136,12 @@ namespace NewCRM
             Takvim f = new Takvim();
             formGetir(f);
         }
+
+        private void btnForum_Click_1(object sender, EventArgs e)
+        {
+            Takvim f = new Takvim();
+            formGetir(f);
+        }
     }
 
 }
