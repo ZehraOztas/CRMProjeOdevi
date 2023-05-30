@@ -19,8 +19,7 @@ namespace NewCRM
             InitializeComponent();
         }
 
-    
-            private void backcolor()
+        private void backcolor()
         {
             if (rbtnSec.Checked == false)
             {
@@ -34,7 +33,6 @@ namespace NewCRM
                 pnlBack.BackColor = Color.WhiteSmoke;
             }
         }
-       
 
         private void lblPrjAdi_Click(object sender, EventArgs e)
         {
@@ -90,7 +88,6 @@ namespace NewCRM
             mbl.Close();
             Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
             asd.formGetir(f);
-
         }
 
         private void rbtnSec_Click(object sender, EventArgs e)
@@ -104,9 +101,9 @@ namespace NewCRM
 
         private void pbxAd_Click(object sender, EventArgs e)
         {
-          backcolor();
+            backcolor();
         }
-        
+
 
         private void lblAdSoyad_Click_1(object sender, EventArgs e)
         {

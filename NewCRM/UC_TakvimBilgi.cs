@@ -16,15 +16,30 @@ namespace NewCRM
         {
             InitializeComponent();
         }
+        private void backcolor()
+        {
+            if (rbtnSec.Checked == false)
+            {
+                rbtnSec.Checked = true;
+                pnlBack.BackColor = Color.AliceBlue;
+                Personel_Bilgileri.takvimId = lblid.Text;
+            }
+            else
+            {
+                rbtnSec.Checked = false;
+                pnlBack.BackColor = Color.WhiteSmoke;
+            }
+        }
 
         private void pnlBack_Click(object sender, EventArgs e)
         {
-
+            backcolor();
         }
 
-        private void btnDuzenle_Click(object sender, EventArgs e)
+        private void rbtnSec_CheckedChanged(object sender, EventArgs e)
         {
 
         }
+
     }
 }

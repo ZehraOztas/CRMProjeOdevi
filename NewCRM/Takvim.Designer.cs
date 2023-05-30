@@ -28,26 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Takvim));
             this.pnlBack = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pnlLeft = new System.Windows.Forms.Panel();
-            this.btnprevious = new System.Windows.Forms.Button();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.btnnext = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlTop = new System.Windows.Forms.Panel();
             this.pnlBilgi = new System.Windows.Forms.Panel();
+            this.pnlTop = new System.Windows.Forms.Panel();
+            this.pnlLeft = new System.Windows.Forms.Panel();
+            this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnnext = new System.Windows.Forms.Button();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.btnprevious = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlBack.SuspendLayout();
-            this.pnlLeft.SuspendLayout();
             this.pnlTop.SuspendLayout();
+            this.pnlLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBack
@@ -76,25 +79,24 @@
             this.pnlBack.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlBack.TabIndex = 0;
             // 
-            // button2
+            // pnlBilgi
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(635, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(52, 51);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.pnlBilgi.AutoSize = true;
+            this.pnlBilgi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBilgi.Location = new System.Drawing.Point(470, 51);
+            this.pnlBilgi.Name = "pnlBilgi";
+            this.pnlBilgi.Size = new System.Drawing.Size(757, 663);
+            this.pnlBilgi.TabIndex = 15;
             // 
-            // button1
+            // pnlTop
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(693, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 51);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pnlTop.Controls.Add(this.pictureBox2);
+            this.pnlTop.Controls.Add(this.pictureBox1);
+            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTop.Location = new System.Drawing.Point(470, 0);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.Size = new System.Drawing.Size(757, 51);
+            this.pnlTop.TabIndex = 14;
             // 
             // pnlLeft
             // 
@@ -115,29 +117,86 @@
             this.pnlLeft.Size = new System.Drawing.Size(470, 714);
             this.pnlLeft.TabIndex = 10;
             // 
-            // btnprevious
+            // daycontainer
             // 
-            this.btnprevious.Location = new System.Drawing.Point(309, 474);
-            this.btnprevious.Name = "btnprevious";
-            this.btnprevious.Size = new System.Drawing.Size(75, 23);
-            this.btnprevious.TabIndex = 10;
-            this.btnprevious.Text = "Önceki";
-            this.btnprevious.UseVisualStyleBackColor = true;
-            this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
+            this.daycontainer.Location = new System.Drawing.Point(12, 108);
+            this.daycontainer.Name = "daycontainer";
+            this.daycontainer.Size = new System.Drawing.Size(453, 387);
+            this.daycontainer.TabIndex = 11;
             // 
-            // lblDate
+            // label1
             // 
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDate.Location = new System.Drawing.Point(12, 15);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(443, 32);
-            this.lblDate.TabIndex = 20;
-            this.lblDate.Text = "MONTH YEAR";
-            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(87, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Pazartesi";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(159, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Salı";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(202, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Çarşamba";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(270, 80);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Perşembe";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(341, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Cuma";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(396, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Cumartesi";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(33, 80);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Pazar";
             // 
             // btnnext
             // 
-            this.btnnext.Location = new System.Drawing.Point(390, 474);
+            this.btnnext.Location = new System.Drawing.Point(390, 495);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(75, 23);
             this.btnnext.TabIndex = 12;
@@ -145,101 +204,45 @@
             this.btnnext.UseVisualStyleBackColor = true;
             this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
             // 
-            // label7
+            // lblDate
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(33, 59);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Pazar";
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDate.Location = new System.Drawing.Point(12, 36);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(443, 32);
+            this.lblDate.TabIndex = 20;
+            this.lblDate.Text = "MONTH YEAR";
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // btnprevious
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(396, 59);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 13);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Cumartesi";
+            this.btnprevious.Location = new System.Drawing.Point(309, 495);
+            this.btnprevious.Name = "btnprevious";
+            this.btnprevious.Size = new System.Drawing.Size(75, 23);
+            this.btnprevious.TabIndex = 10;
+            this.btnprevious.Text = "Önceki";
+            this.btnprevious.UseVisualStyleBackColor = true;
+            this.btnprevious.Click += new System.EventHandler(this.btnprevious_Click);
             // 
-            // label5
+            // pictureBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(341, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Cuma";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(673, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // label4
+            // pictureBox2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(270, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Perşembe";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(202, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Çarşamba";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(159, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Salı";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(87, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Pazartesi";
-            // 
-            // daycontainer
-            // 
-            this.daycontainer.Location = new System.Drawing.Point(12, 87);
-            this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(453, 387);
-            this.daycontainer.TabIndex = 11;
-            // 
-            // pnlTop
-            // 
-            this.pnlTop.Controls.Add(this.button1);
-            this.pnlTop.Controls.Add(this.button2);
-            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTop.Location = new System.Drawing.Point(470, 0);
-            this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(757, 63);
-            this.pnlTop.TabIndex = 14;
-            // 
-            // pnlBilgi
-            // 
-            this.pnlBilgi.AutoSize = true;
-            this.pnlBilgi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBilgi.Location = new System.Drawing.Point(470, 63);
-            this.pnlBilgi.Name = "pnlBilgi";
-            this.pnlBilgi.Size = new System.Drawing.Size(757, 651);
-            this.pnlBilgi.TabIndex = 15;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(712, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(33, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // Takvim
             // 
@@ -254,9 +257,11 @@
             this.Load += new System.EventHandler(this.Takvim_Load);
             this.pnlBack.ResumeLayout(false);
             this.pnlBack.PerformLayout();
+            this.pnlTop.ResumeLayout(false);
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();
-            this.pnlTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -264,6 +269,8 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuShadowPanel pnlBack;
+        public System.Windows.Forms.Panel pnlBilgi;
+        private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Button btnprevious;
         private System.Windows.Forms.Label lblDate;
@@ -276,9 +283,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel daycontainer;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        public System.Windows.Forms.Panel pnlBilgi;
-        private System.Windows.Forms.Panel pnlTop;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

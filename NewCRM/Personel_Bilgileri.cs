@@ -29,6 +29,12 @@ namespace NewCRM
         public static string m_id;
         public static string nid;
         public static string chatid;
-        public static string chatkisiId;
+      //  public static string chatkisiId;
+        public static string takvimId;
+
+        public static int yil;
+        public static int gun;
+        public static int ay;
+
     }
 }
