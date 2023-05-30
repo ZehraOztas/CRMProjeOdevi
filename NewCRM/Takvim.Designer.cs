@@ -32,8 +32,6 @@
             this.pnlBack = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlBilgi = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.btnprevious = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
@@ -46,11 +44,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnSil = new System.Windows.Forms.PictureBox();
+            this.btnEkle = new System.Windows.Forms.PictureBox();
             this.pnlBack.SuspendLayout();
             this.pnlTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEkle)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBack
@@ -90,35 +90,13 @@
             // 
             // pnlTop
             // 
-            this.pnlTop.Controls.Add(this.pictureBox2);
-            this.pnlTop.Controls.Add(this.pictureBox1);
+            this.pnlTop.Controls.Add(this.btnSil);
+            this.pnlTop.Controls.Add(this.btnEkle);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(470, 0);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(757, 51);
             this.pnlTop.TabIndex = 14;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(712, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(674, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pnlLeft
             // 
@@ -246,6 +224,26 @@
             this.daycontainer.Size = new System.Drawing.Size(453, 387);
             this.daycontainer.TabIndex = 11;
             // 
+            // btnSil
+            // 
+            this.btnSil.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.Image")));
+            this.btnSil.Location = new System.Drawing.Point(713, 10);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(41, 38);
+            this.btnSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnSil.TabIndex = 22;
+            this.btnSil.TabStop = false;
+            // 
+            // btnEkle
+            // 
+            this.btnEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnEkle.Image")));
+            this.btnEkle.Location = new System.Drawing.Point(673, 10);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(39, 38);
+            this.btnEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnEkle.TabIndex = 21;
+            this.btnEkle.TabStop = false;
+            // 
             // Takvim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,10 +258,10 @@
             this.pnlBack.ResumeLayout(false);
             this.pnlBack.PerformLayout();
             this.pnlTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEkle)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,7 +283,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel daycontainer;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox btnSil;
+        public System.Windows.Forms.PictureBox btnEkle;
     }
 }

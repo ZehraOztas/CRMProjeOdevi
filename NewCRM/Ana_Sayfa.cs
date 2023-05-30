@@ -54,7 +54,7 @@ namespace NewCRM
 
         }
 
-        private void btnPersonel_Click(object sender, EventArgs e)
+        private void btnProfil_Click(object sender, EventArgs e)
         {
             Personel f = new Personel();
             formGetir(f);
@@ -73,6 +73,11 @@ namespace NewCRM
         private void Ana_Sayfa_Load(object sender, EventArgs e)
         {
             lblAd.Text = Personel_Bilgileri.ad + " " + Personel_Bilgileri.sad;
+            if (Personel_Bilgileri.yetki == 1)
+            {
+                btnPersonelBilgileri.Visible = true;
+                
+            }
         }
 
         private void btnMusteri_Click(object sender, EventArgs e)
@@ -138,6 +143,12 @@ namespace NewCRM
         }
 
         private void btnForum_Click_1(object sender, EventArgs e)
+        {
+            Takvim f = new Takvim();
+            formGetir(f);
+        }
+
+        private void btnPersonelBilgileri_Click(object sender, EventArgs e)
         {
             Takvim f = new Takvim();
             formGetir(f);
