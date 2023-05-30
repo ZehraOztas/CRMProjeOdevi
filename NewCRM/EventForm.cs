@@ -20,8 +20,6 @@ namespace NewCRM
 
         private void EventForm_Load(object sender, EventArgs e)
         {
-            //Başlangıçta kişinin dahil olduğu Projeleri listeler.
-
             string dateString = Takvim.static_month + "/" + UC_Days.static_day + "/" + Takvim.static_year;
             DateTime date;
             if (DateTime.TryParse(dateString, out date))
@@ -30,6 +28,8 @@ namespace NewCRM
                 dtpTarih.Value = date;
             }
 
+
+            //Başlangıçta kişinin dahil olduğu Projeleri combobox'a ekler.
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
             SqlCommand listele = new SqlCommand("SELECT proje_adi FROM Musteri WHERE projeyi_yoneten=@y",baglan);
             listele.Parameters.AddWithValue("@y",Personel_Bilgileri.tc);
@@ -51,6 +51,7 @@ namespace NewCRM
 
         private void cbxProje_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Seçtiğimiz projeye göre projeyi yöneten kişiyi seçer.
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
             SqlCommand listele = new SqlCommand("SELECT ad,soyad FROM Musteri WHERE proje_adi = @p", baglan);
             listele.Parameters.AddWithValue("@p", cbxProje.Text);

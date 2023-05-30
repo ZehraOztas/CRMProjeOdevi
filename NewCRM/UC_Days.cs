@@ -34,8 +34,7 @@ namespace NewCRM
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
             Takvim takvim = new Takvim();
-            takvim.pnlBilgi.Visible = true;
-
+            
             SqlCommand command = new SqlCommand("SELECT id,proje_adi,musteri_adi,icerik, baslangic_saat, bitis_saat,icerik FROM TakvimTablosu WHERE kaydeden=@y AND tarih=@t ORDER BY baslangic_saat", baglan);
             command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
             command.Parameters.AddWithValue("@t", Takvim.static_year + "-" + Takvim.static_month + "-" + lblDays.Text);
@@ -52,10 +51,12 @@ namespace NewCRM
                 uc.lblbasla.Text = oku.GetString(oku.GetOrdinal("baslangic_saat"));
                 uc.lblBitis.Text = oku.GetString(oku.GetOrdinal("bitis_saat"));
 
-                uc.Dock = DockStyle.Top;
-               takvim.pnlBilgi.Controls.Add(uc);
+               uc.Dock = DockStyle.Top;
+                takvim.pnlBilgi.Update();
+                takvim.pnlBilgi.Controls.Add(uc);
             }
             oku.Close();
+            baglan.Close();
             MessageBox.Show("Sorun ne??");
         }
 

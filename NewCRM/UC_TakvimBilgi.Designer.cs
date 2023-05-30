@@ -63,7 +63,7 @@
             // btnDuzenle
             // 
             this.btnDuzenle.Image = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.Image")));
-            this.btnDuzenle.Location = new System.Drawing.Point(726, 25);
+            this.btnDuzenle.Location = new System.Drawing.Point(723, 25);
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.Size = new System.Drawing.Size(31, 34);
             this.btnDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -189,7 +189,7 @@
             this.pnlBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBack.Location = new System.Drawing.Point(0, 0);
             this.pnlBack.Name = "pnlBack";
-            this.pnlBack.Size = new System.Drawing.Size(757, 87);
+            this.pnlBack.Size = new System.Drawing.Size(755, 87);
             this.pnlBack.TabIndex = 1;
             this.pnlBack.Click += new System.EventHandler(this.pnlBack_Click);
             // 
@@ -199,7 +199,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlBack);
             this.Name = "UC_TakvimBilgi";
-            this.Size = new System.Drawing.Size(757, 87);
+            this.Size = new System.Drawing.Size(755, 87);
             ((System.ComponentModel.ISupportInitialize)(this.btnDuzenle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPrjAd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPozisyon)).EndInit();

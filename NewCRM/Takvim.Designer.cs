@@ -234,6 +234,7 @@
             // 
             // pnlBilgi
             // 
+            this.pnlBilgi.AutoSize = true;
             this.pnlBilgi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBilgi.Location = new System.Drawing.Point(470, 63);
             this.pnlBilgi.Name = "pnlBilgi";
@@ -252,6 +253,7 @@
             this.Text = "Takvim";
             this.Load += new System.EventHandler(this.Takvim_Load);
             this.pnlBack.ResumeLayout(false);
+            this.pnlBack.PerformLayout();
             this.pnlLeft.ResumeLayout(false);
             this.pnlLeft.PerformLayout();
             this.pnlTop.ResumeLayout(false);
