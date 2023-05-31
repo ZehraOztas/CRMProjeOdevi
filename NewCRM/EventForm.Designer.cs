@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventForm));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -38,16 +47,12 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventForm));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblid = new System.Windows.Forms.Label();
+            this.txtBitSaat = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBaslaSaat = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnKaydet = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtNot = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -59,11 +64,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dtpTarih = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.musteriBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txtBaslaSaat = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtBitSaat = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblid = new System.Windows.Forms.Label();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.musteriBindingSource)).BeginInit();
@@ -105,6 +105,183 @@
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(439, 538);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
+            // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Location = new System.Drawing.Point(45, 29);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(35, 13);
+            this.lblid.TabIndex = 23;
+            this.lblid.Text = "label7";
+            // 
+            // txtBitSaat
+            // 
+            this.txtBitSaat.AcceptsReturn = false;
+            this.txtBitSaat.AcceptsTab = false;
+            this.txtBitSaat.AnimationSpeed = 200;
+            this.txtBitSaat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBitSaat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBitSaat.BackColor = System.Drawing.Color.Transparent;
+            this.txtBitSaat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBitSaat.BackgroundImage")));
+            this.txtBitSaat.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtBitSaat.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtBitSaat.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtBitSaat.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBitSaat.BorderRadius = 18;
+            this.txtBitSaat.BorderThickness = 1;
+            this.txtBitSaat.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBitSaat.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBitSaat.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtBitSaat.DefaultText = "";
+            this.txtBitSaat.FillColor = System.Drawing.Color.White;
+            this.txtBitSaat.HideSelection = true;
+            this.txtBitSaat.IconLeft = null;
+            this.txtBitSaat.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBitSaat.IconPadding = 10;
+            this.txtBitSaat.IconRight = null;
+            this.txtBitSaat.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBitSaat.Lines = new string[0];
+            this.txtBitSaat.Location = new System.Drawing.Point(139, 399);
+            this.txtBitSaat.MaxLength = 32767;
+            this.txtBitSaat.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtBitSaat.Modified = false;
+            this.txtBitSaat.Multiline = false;
+            this.txtBitSaat.Name = "txtBitSaat";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBitSaat.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBitSaat.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBitSaat.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBitSaat.OnIdleState = stateProperties4;
+            this.txtBitSaat.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBitSaat.PasswordChar = '\0';
+            this.txtBitSaat.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBitSaat.PlaceholderText = "Enter text";
+            this.txtBitSaat.ReadOnly = false;
+            this.txtBitSaat.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBitSaat.SelectedText = "";
+            this.txtBitSaat.SelectionLength = 0;
+            this.txtBitSaat.SelectionStart = 0;
+            this.txtBitSaat.ShortcutsEnabled = true;
+            this.txtBitSaat.Size = new System.Drawing.Size(260, 37);
+            this.txtBitSaat.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtBitSaat.TabIndex = 22;
+            this.txtBitSaat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBitSaat.TextMarginBottom = 0;
+            this.txtBitSaat.TextMarginLeft = 3;
+            this.txtBitSaat.TextMarginTop = 0;
+            this.txtBitSaat.TextPlaceholder = "Enter text";
+            this.txtBitSaat.UseSystemPasswordChar = false;
+            this.txtBitSaat.WordWrap = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(24, 410);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 15);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Bitiş Saati:";
+            // 
+            // txtBaslaSaat
+            // 
+            this.txtBaslaSaat.AcceptsReturn = false;
+            this.txtBaslaSaat.AcceptsTab = false;
+            this.txtBaslaSaat.AnimationSpeed = 200;
+            this.txtBaslaSaat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtBaslaSaat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtBaslaSaat.BackColor = System.Drawing.Color.Transparent;
+            this.txtBaslaSaat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBaslaSaat.BackgroundImage")));
+            this.txtBaslaSaat.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtBaslaSaat.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtBaslaSaat.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtBaslaSaat.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtBaslaSaat.BorderRadius = 18;
+            this.txtBaslaSaat.BorderThickness = 1;
+            this.txtBaslaSaat.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtBaslaSaat.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBaslaSaat.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtBaslaSaat.DefaultText = "";
+            this.txtBaslaSaat.FillColor = System.Drawing.Color.White;
+            this.txtBaslaSaat.HideSelection = true;
+            this.txtBaslaSaat.IconLeft = null;
+            this.txtBaslaSaat.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBaslaSaat.IconPadding = 10;
+            this.txtBaslaSaat.IconRight = null;
+            this.txtBaslaSaat.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBaslaSaat.Lines = new string[0];
+            this.txtBaslaSaat.Location = new System.Drawing.Point(139, 353);
+            this.txtBaslaSaat.MaxLength = 32767;
+            this.txtBaslaSaat.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtBaslaSaat.Modified = false;
+            this.txtBaslaSaat.Multiline = false;
+            this.txtBaslaSaat.Name = "txtBaslaSaat";
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBaslaSaat.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtBaslaSaat.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBaslaSaat.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtBaslaSaat.OnIdleState = stateProperties8;
+            this.txtBaslaSaat.Padding = new System.Windows.Forms.Padding(3);
+            this.txtBaslaSaat.PasswordChar = '\0';
+            this.txtBaslaSaat.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtBaslaSaat.PlaceholderText = "Enter text";
+            this.txtBaslaSaat.ReadOnly = false;
+            this.txtBaslaSaat.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtBaslaSaat.SelectedText = "";
+            this.txtBaslaSaat.SelectionLength = 0;
+            this.txtBaslaSaat.SelectionStart = 0;
+            this.txtBaslaSaat.ShortcutsEnabled = true;
+            this.txtBaslaSaat.Size = new System.Drawing.Size(260, 37);
+            this.txtBaslaSaat.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtBaslaSaat.TabIndex = 20;
+            this.txtBaslaSaat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtBaslaSaat.TextMarginBottom = 0;
+            this.txtBaslaSaat.TextMarginLeft = 3;
+            this.txtBaslaSaat.TextMarginTop = 0;
+            this.txtBaslaSaat.TextPlaceholder = "Enter text";
+            this.txtBaslaSaat.UseSystemPasswordChar = false;
+            this.txtBaslaSaat.WordWrap = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(24, 364);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 15);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Başlangıç Saati:";
             // 
             // pictureBox1
             // 
@@ -188,7 +365,7 @@
             this.btnKaydet.OnIdleState.BorderThickness = 1;
             this.btnKaydet.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
             this.btnKaydet.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnKaydet.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton1.OnIdleState.IconLeftImage")));
+            this.btnKaydet.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnKaydet.OnIdleState.IconLeftImage")));
             this.btnKaydet.OnIdleState.IconRightImage = null;
             this.btnKaydet.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnKaydet.OnPressedState.BorderRadius = 1;
@@ -465,183 +642,6 @@
             // musteriBindingSource
             // 
             this.musteriBindingSource.DataMember = "Musteri";
-            // 
-            // txtBaslaSaat
-            // 
-            this.txtBaslaSaat.AcceptsReturn = false;
-            this.txtBaslaSaat.AcceptsTab = false;
-            this.txtBaslaSaat.AnimationSpeed = 200;
-            this.txtBaslaSaat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBaslaSaat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtBaslaSaat.BackColor = System.Drawing.Color.Transparent;
-            this.txtBaslaSaat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBaslaSaat.BackgroundImage")));
-            this.txtBaslaSaat.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtBaslaSaat.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtBaslaSaat.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtBaslaSaat.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtBaslaSaat.BorderRadius = 18;
-            this.txtBaslaSaat.BorderThickness = 1;
-            this.txtBaslaSaat.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBaslaSaat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBaslaSaat.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtBaslaSaat.DefaultText = "";
-            this.txtBaslaSaat.FillColor = System.Drawing.Color.White;
-            this.txtBaslaSaat.HideSelection = true;
-            this.txtBaslaSaat.IconLeft = null;
-            this.txtBaslaSaat.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBaslaSaat.IconPadding = 10;
-            this.txtBaslaSaat.IconRight = null;
-            this.txtBaslaSaat.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBaslaSaat.Lines = new string[0];
-            this.txtBaslaSaat.Location = new System.Drawing.Point(139, 353);
-            this.txtBaslaSaat.MaxLength = 32767;
-            this.txtBaslaSaat.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtBaslaSaat.Modified = false;
-            this.txtBaslaSaat.Multiline = false;
-            this.txtBaslaSaat.Name = "txtBaslaSaat";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBaslaSaat.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBaslaSaat.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBaslaSaat.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBaslaSaat.OnIdleState = stateProperties8;
-            this.txtBaslaSaat.Padding = new System.Windows.Forms.Padding(3);
-            this.txtBaslaSaat.PasswordChar = '\0';
-            this.txtBaslaSaat.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBaslaSaat.PlaceholderText = "Enter text";
-            this.txtBaslaSaat.ReadOnly = false;
-            this.txtBaslaSaat.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBaslaSaat.SelectedText = "";
-            this.txtBaslaSaat.SelectionLength = 0;
-            this.txtBaslaSaat.SelectionStart = 0;
-            this.txtBaslaSaat.ShortcutsEnabled = true;
-            this.txtBaslaSaat.Size = new System.Drawing.Size(260, 37);
-            this.txtBaslaSaat.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtBaslaSaat.TabIndex = 20;
-            this.txtBaslaSaat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBaslaSaat.TextMarginBottom = 0;
-            this.txtBaslaSaat.TextMarginLeft = 3;
-            this.txtBaslaSaat.TextMarginTop = 0;
-            this.txtBaslaSaat.TextPlaceholder = "Enter text";
-            this.txtBaslaSaat.UseSystemPasswordChar = false;
-            this.txtBaslaSaat.WordWrap = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(24, 364);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 15);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Başlangıç Saati:";
-            // 
-            // txtBitSaat
-            // 
-            this.txtBitSaat.AcceptsReturn = false;
-            this.txtBitSaat.AcceptsTab = false;
-            this.txtBitSaat.AnimationSpeed = 200;
-            this.txtBitSaat.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtBitSaat.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtBitSaat.BackColor = System.Drawing.Color.Transparent;
-            this.txtBitSaat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtBitSaat.BackgroundImage")));
-            this.txtBitSaat.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtBitSaat.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtBitSaat.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtBitSaat.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtBitSaat.BorderRadius = 18;
-            this.txtBitSaat.BorderThickness = 1;
-            this.txtBitSaat.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtBitSaat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBitSaat.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtBitSaat.DefaultText = "";
-            this.txtBitSaat.FillColor = System.Drawing.Color.White;
-            this.txtBitSaat.HideSelection = true;
-            this.txtBitSaat.IconLeft = null;
-            this.txtBitSaat.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBitSaat.IconPadding = 10;
-            this.txtBitSaat.IconRight = null;
-            this.txtBitSaat.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBitSaat.Lines = new string[0];
-            this.txtBitSaat.Location = new System.Drawing.Point(139, 399);
-            this.txtBitSaat.MaxLength = 32767;
-            this.txtBitSaat.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtBitSaat.Modified = false;
-            this.txtBitSaat.Multiline = false;
-            this.txtBitSaat.Name = "txtBitSaat";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBitSaat.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtBitSaat.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBitSaat.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtBitSaat.OnIdleState = stateProperties4;
-            this.txtBitSaat.Padding = new System.Windows.Forms.Padding(3);
-            this.txtBitSaat.PasswordChar = '\0';
-            this.txtBitSaat.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtBitSaat.PlaceholderText = "Enter text";
-            this.txtBitSaat.ReadOnly = false;
-            this.txtBitSaat.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtBitSaat.SelectedText = "";
-            this.txtBitSaat.SelectionLength = 0;
-            this.txtBitSaat.SelectionStart = 0;
-            this.txtBitSaat.ShortcutsEnabled = true;
-            this.txtBitSaat.Size = new System.Drawing.Size(260, 37);
-            this.txtBitSaat.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtBitSaat.TabIndex = 22;
-            this.txtBitSaat.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtBitSaat.TextMarginBottom = 0;
-            this.txtBitSaat.TextMarginLeft = 3;
-            this.txtBitSaat.TextMarginTop = 0;
-            this.txtBitSaat.TextPlaceholder = "Enter text";
-            this.txtBitSaat.UseSystemPasswordChar = false;
-            this.txtBitSaat.WordWrap = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(24, 410);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 15);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Bitiş Saati:";
-            // 
-            // lblid
-            // 
-            this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(45, 29);
-            this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(35, 13);
-            this.lblid.TabIndex = 23;
-            this.lblid.Text = "label7";
             // 
             // EventForm
             // 

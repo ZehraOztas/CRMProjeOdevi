@@ -39,19 +39,54 @@ namespace NewCRM
 
         private void btnDuzenle_Click(object sender, EventArgs e)
         {
-            Personel_Bilgileri.takvimId = lblid.Text.ToString();
-            EventForm f = new EventForm();
-            f.deger = "Güncelle";
-            f.btnKaydet.Text = "Güncelle";
-            Takvim mbl = (Takvim)Application.OpenForms["Takvim"];
-            mbl.Close();
-            Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
-            asd.formGetir(f);
+           
+        }
+
+        private void lblid_Click(object sender, EventArgs e)
+        {
+            backcolor();
+        }
+
+        private void rbtnSec_Click(object sender, EventArgs e)
+        {
+            backcolor();
+        }
+
+        private void pbxAd_Click(object sender, EventArgs e)
+        {
+            backcolor();
+        }
+
+        private void lblAdSoyad_Click(object sender, EventArgs e)
+        {
+            backcolor();
         }
 
         private void pnlBack_Click(object sender, EventArgs e)
         {
             backcolor();
+        }
+
+        private void btnDuzenle_Click_1(object sender, EventArgs e)
+        {
+            backcolor();
+
+            Personel_Bilgileri.takvimId = lblid.Text.ToString();
+
+            BackModel backmodel = new BackModel();
+            EventForm percikarcard = new EventForm();
+            percikarcard.deger = "Güncelle";
+            percikarcard.btnKaydet.Text = "Güncelle";
+
+            percikarcard.StartPosition = FormStartPosition.CenterScreen;
+            backmodel.FormBorderStyle = FormBorderStyle.None;
+            backmodel.Opacity = .50d;
+            backmodel.BackColor = Color.Black;
+            backmodel.ShowInTaskbar = false;
+            backmodel.Show();
+            percikarcard.Owner = backmodel;
+            percikarcard.ShowDialog();
+            backmodel.Dispose();
         }
     }
 }

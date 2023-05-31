@@ -465,3 +465,4 @@ C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\bin\Debug\Bunifu.U
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_TakvimBilgi.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.TakvimListe.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.BackModel.resources

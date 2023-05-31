@@ -115,6 +115,31 @@ namespace NewCRM
             }
         }
 
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            BackModel backmodel = new BackModel();
+            EventForm percikarcard = new EventForm();
+            percikarcard.StartPosition = FormStartPosition.CenterScreen;
+            backmodel.FormBorderStyle = FormBorderStyle.None;         
+            backmodel.Opacity = .50d;
+            backmodel.BackColor = Color.Black;
+            backmodel.ShowInTaskbar = false;
+            backmodel.Show();
+            percikarcard.Owner = backmodel;
+            percikarcard.ShowDialog();
+            backmodel.Dispose();
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+            SqlCommand sil = new SqlCommand("DELETE FROM TakvimTablosu WHERE id=@id", baglan);
+            sil.Parameters.AddWithValue("@id",Personel_Bilgileri.takvimId);
+            baglan.Open();
+            sil.ExecuteNonQuery();
+            baglan.Close();
+        }
+
         private void btnprevious_Click(object sender, EventArgs e)
         {
             //lear container

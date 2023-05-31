@@ -99,8 +99,6 @@ namespace NewCRM
                 Application.Exit();
             }
         }
-
-
         private void btnCikis_Click(object sender, EventArgs e)
         {
             cikisYap();

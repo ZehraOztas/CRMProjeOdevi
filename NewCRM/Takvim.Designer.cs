@@ -32,6 +32,8 @@
             this.pnlBack = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlBilgi = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
+            this.btnSil = new System.Windows.Forms.PictureBox();
+            this.btnEkle = new System.Windows.Forms.PictureBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.btnprevious = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
@@ -44,13 +46,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnSil = new System.Windows.Forms.PictureBox();
-            this.btnEkle = new System.Windows.Forms.PictureBox();
             this.pnlBack.SuspendLayout();
             this.pnlTop.SuspendLayout();
-            this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEkle)).BeginInit();
+            this.pnlLeft.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBack
@@ -97,6 +97,28 @@
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(757, 51);
             this.pnlTop.TabIndex = 14;
+            // 
+            // btnSil
+            // 
+            this.btnSil.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.Image")));
+            this.btnSil.Location = new System.Drawing.Point(713, 10);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(41, 38);
+            this.btnSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnSil.TabIndex = 22;
+            this.btnSil.TabStop = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            // 
+            // btnEkle
+            // 
+            this.btnEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnEkle.Image")));
+            this.btnEkle.Location = new System.Drawing.Point(673, 10);
+            this.btnEkle.Name = "btnEkle";
+            this.btnEkle.Size = new System.Drawing.Size(39, 38);
+            this.btnEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnEkle.TabIndex = 21;
+            this.btnEkle.TabStop = false;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // pnlLeft
             // 
@@ -224,26 +246,6 @@
             this.daycontainer.Size = new System.Drawing.Size(453, 387);
             this.daycontainer.TabIndex = 11;
             // 
-            // btnSil
-            // 
-            this.btnSil.Image = ((System.Drawing.Image)(resources.GetObject("btnSil.Image")));
-            this.btnSil.Location = new System.Drawing.Point(713, 10);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(41, 38);
-            this.btnSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnSil.TabIndex = 22;
-            this.btnSil.TabStop = false;
-            // 
-            // btnEkle
-            // 
-            this.btnEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnEkle.Image")));
-            this.btnEkle.Location = new System.Drawing.Point(673, 10);
-            this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(39, 38);
-            this.btnEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnEkle.TabIndex = 21;
-            this.btnEkle.TabStop = false;
-            // 
             // Takvim
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,10 +260,10 @@
             this.pnlBack.ResumeLayout(false);
             this.pnlBack.PerformLayout();
             this.pnlTop.ResumeLayout(false);
-            this.pnlLeft.ResumeLayout(false);
-            this.pnlLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEkle)).EndInit();
+            this.pnlLeft.ResumeLayout(false);
+            this.pnlLeft.PerformLayout();
             this.ResumeLayout(false);
 
         }
