@@ -19,7 +19,7 @@ namespace NewCRM
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+        
 
         private void SayfaAc()
         {
@@ -58,6 +58,7 @@ namespace NewCRM
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
+            SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
             SqlCommand guncelle = new SqlCommand("UPDATE PersonelTablosu SET tel1=@tel1, tel2=@tel2, ep1=@ep1 , ep2=@ep2, adres=@adres, il=@il, ilce=@ilce, posta_kodu=@pkod, foto=@foto WHERE tc=@tc",baglanti);
             baglanti.Open();
             guncelle.Parameters.AddWithValue("@tel1",txtTel1.Text);
@@ -68,7 +69,7 @@ namespace NewCRM
             guncelle.Parameters.AddWithValue("@il", cbxIl.Text);
             guncelle.Parameters.AddWithValue("@ilce", cbxIlce.Text);
             guncelle.Parameters.AddWithValue("@pkod", txtPosta.Text);
-            guncelle.Parameters.AddWithValue("@foto", lblYer.Text);
+         //   guncelle.Parameters.AddWithValue("@foto", lblYer.Text);
             guncelle.Parameters.AddWithValue("@tc", txtTc.Text);
             guncelle.ExecuteNonQuery();
             baglanti.Close();
@@ -105,7 +106,20 @@ namespace NewCRM
 
         private void Personel_Load(object sender, EventArgs e)
         {
-            SayfaAc();  
+            SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+            lblCizgi.Visible = false;
+            lblCizgi.Visible = false;
+            pnlMusteriListe.Visible = false;
+
+            SayfaAc();
+
+            if (Personel_Bilgileri.yetki == 1)
+            {
+                lblCizgi.Visible = true;
+                lblCizgi.Visible = true;
+                pnlMusteriListe.Visible = true;
+
+            }
         }
 
         private void btnFoto_Click(object sender, EventArgs e)
@@ -139,7 +153,7 @@ namespace NewCRM
 
                     // System.IO.File.Copy(currentFilePath, newFilePath, true);
 
-                    lblYer.Text = newFilePath;
+                   // lblYer.Text = newFilePath;
                 }
                 else
                 {

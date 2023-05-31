@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Personel));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -73,9 +72,9 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Personel));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.lblYer = new System.Windows.Forms.Label();
             this.btnVazgec = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnKaydet = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtPosta = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -117,6 +116,9 @@
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblCizgi = new System.Windows.Forms.Label();
+            this.lblMus = new System.Windows.Forms.Label();
+            this.pnlMusteriListe = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuShadowPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             this.bunifuShadowPanel3.SuspendLayout();
@@ -135,7 +137,9 @@
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel1.BorderRadius = 15;
             this.bunifuShadowPanel1.BorderThickness = 1;
-            this.bunifuShadowPanel1.Controls.Add(this.lblYer);
+            this.bunifuShadowPanel1.Controls.Add(this.pnlMusteriListe);
+            this.bunifuShadowPanel1.Controls.Add(this.lblCizgi);
+            this.bunifuShadowPanel1.Controls.Add(this.lblMus);
             this.bunifuShadowPanel1.Controls.Add(this.btnVazgec);
             this.bunifuShadowPanel1.Controls.Add(this.btnKaydet);
             this.bunifuShadowPanel1.Controls.Add(this.txtPosta);
@@ -172,18 +176,10 @@
             this.bunifuShadowPanel1.ShadowDepth = 5;
             this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(1199, 813);
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(1199, 1100);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
             this.bunifuShadowPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel1_ControlAdded_1);
-            // 
-            // lblYer
-            // 
-            this.lblYer.AutoSize = true;
-            this.lblYer.Location = new System.Drawing.Point(71, 773);
-            this.lblYer.Name = "lblYer";
-            this.lblYer.Size = new System.Drawing.Size(0, 13);
-            this.lblYer.TabIndex = 125;
             // 
             // btnVazgec
             // 
@@ -232,7 +228,7 @@
             this.btnVazgec.IdleIconLeftImage = null;
             this.btnVazgec.IdleIconRightImage = null;
             this.btnVazgec.IndicateFocus = false;
-            this.btnVazgec.Location = new System.Drawing.Point(64, 716);
+            this.btnVazgec.Location = new System.Drawing.Point(50, 1028);
             this.btnVazgec.Name = "btnVazgec";
             this.btnVazgec.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnVazgec.OnDisabledState.BorderRadius = 30;
@@ -322,7 +318,7 @@
             this.btnKaydet.IdleIconLeftImage = null;
             this.btnKaydet.IdleIconRightImage = null;
             this.btnKaydet.IndicateFocus = false;
-            this.btnKaydet.Location = new System.Drawing.Point(994, 716);
+            this.btnKaydet.Location = new System.Drawing.Point(980, 1028);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnKaydet.OnDisabledState.BorderRadius = 30;
@@ -1856,12 +1852,52 @@
             this.label1.TabIndex = 102;
             this.label1.Text = "İletişim Bilgileri";
             // 
+            // lblCizgi
+            // 
+            this.lblCizgi.AutoSize = true;
+            this.lblCizgi.Location = new System.Drawing.Point(61, 732);
+            this.lblCizgi.Name = "lblCizgi";
+            this.lblCizgi.Size = new System.Drawing.Size(1087, 13);
+            this.lblCizgi.TabIndex = 127;
+            this.lblCizgi.Text = resources.GetString("lblCizgi.Text");
+            // 
+            // lblMus
+            // 
+            this.lblMus.AutoSize = true;
+            this.lblMus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMus.Location = new System.Drawing.Point(60, 712);
+            this.lblMus.Name = "lblMus";
+            this.lblMus.Size = new System.Drawing.Size(261, 20);
+            this.lblMus.TabIndex = 126;
+            this.lblMus.Text = "Personelin İlgilendiği Müşteri Bilgileri";
+            // 
+            // pnlMusteriListe
+            // 
+            this.pnlMusteriListe.BackColor = System.Drawing.Color.Transparent;
+            this.pnlMusteriListe.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlMusteriListe.BorderRadius = 1;
+            this.pnlMusteriListe.BorderThickness = 1;
+            this.pnlMusteriListe.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.pnlMusteriListe.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.pnlMusteriListe.Location = new System.Drawing.Point(64, 748);
+            this.pnlMusteriListe.Name = "pnlMusteriListe";
+            this.pnlMusteriListe.PanelColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlMusteriListe.PanelColor2 = System.Drawing.Color.WhiteSmoke;
+            this.pnlMusteriListe.ShadowColor = System.Drawing.Color.DarkGray;
+            this.pnlMusteriListe.ShadowDept = 2;
+            this.pnlMusteriListe.ShadowDepth = 5;
+            this.pnlMusteriListe.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.pnlMusteriListe.ShadowTopLeftVisible = false;
+            this.pnlMusteriListe.Size = new System.Drawing.Size(1084, 274);
+            this.pnlMusteriListe.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.pnlMusteriListe.TabIndex = 128;
+            // 
             // Personel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1199, 813);
+            this.ClientSize = new System.Drawing.Size(1199, 1100);
             this.Controls.Add(this.bunifuShadowPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Personel";
@@ -1880,7 +1916,6 @@
         #endregion
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
-        private System.Windows.Forms.Label lblYer;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnVazgec;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnKaydet;
         private Bunifu.UI.WinForms.BunifuTextBox txtPosta;
@@ -1922,5 +1957,8 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dt;
+        private Bunifu.UI.WinForms.BunifuShadowPanel pnlMusteriListe;
+        private System.Windows.Forms.Label lblCizgi;
+        private System.Windows.Forms.Label lblMus;
     }
 }

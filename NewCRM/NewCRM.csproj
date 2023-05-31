@@ -161,6 +161,12 @@
     <Compile Include="NotlarForm.Designer.cs">
       <DependentUpon>NotlarForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="personelListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelListesi.Designer.cs">
+      <DependentUpon>personelListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Personel_Bilgileri.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NotlarForm.resx">
       <DependentUpon>NotlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelListesi.resx">
+      <DependentUpon>personelListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Takvim.resx">
