@@ -231,6 +231,12 @@
     <Compile Include="UC_Notlar.Designer.cs">
       <DependentUpon>UC_Notlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_PersonelinMusterisi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PersonelinMusterisi.Designer.cs">
+      <DependentUpon>UC_PersonelinMusterisi.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_TakvimBilgi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -277,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Notlar.resx">
       <DependentUpon>UC_Notlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PersonelinMusterisi.resx">
+      <DependentUpon>UC_PersonelinMusterisi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_TakvimBilgi.resx">
       <DependentUpon>UC_TakvimBilgi.cs</DependentUpon>

@@ -132,12 +132,20 @@ namespace NewCRM
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-            SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
-            SqlCommand sil = new SqlCommand("DELETE FROM TakvimTablosu WHERE id=@id", baglan);
-            sil.Parameters.AddWithValue("@id",Personel_Bilgileri.takvimId);
-            baglan.Open();
-            sil.ExecuteNonQuery();
-            baglan.Close();
+            if (Personel_Bilgileri.takvimId == null)
+            {
+                MessageBox.Show("Silmek istediğiniz kişiyi seçiniz.");
+            }
+            else
+            {
+                SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+                SqlCommand sil = new SqlCommand("DELETE FROM TakvimTablosu WHERE id=@id", baglan);
+                sil.Parameters.AddWithValue("@id", Personel_Bilgileri.takvimId);
+                baglan.Open();
+                sil.ExecuteNonQuery();
+                baglan.Close();
+                MessageBox.Show("Kayıt silindi.");
+            }
         }
 
         private void btnprevious_Click(object sender, EventArgs e)

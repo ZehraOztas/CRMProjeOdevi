@@ -69,7 +69,7 @@ namespace NewCRM
             guncelle.Parameters.AddWithValue("@il", cbxIl.Text);
             guncelle.Parameters.AddWithValue("@ilce", cbxIlce.Text);
             guncelle.Parameters.AddWithValue("@pkod", txtPosta.Text);
-         //   guncelle.Parameters.AddWithValue("@foto", lblYer.Text);
+            guncelle.Parameters.AddWithValue("@foto", lblYer.Text);
             guncelle.Parameters.AddWithValue("@tc", txtTc.Text);
             guncelle.ExecuteNonQuery();
             baglanti.Close();
@@ -106,19 +106,26 @@ namespace NewCRM
 
         private void Personel_Load(object sender, EventArgs e)
         {
-            SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
-            lblCizgi.Visible = false;
-            lblCizgi.Visible = false;
-            pnlMusteriListe.Visible = false;
-
             SayfaAc();
 
             if (Personel_Bilgileri.yetki == 1)
             {
                 lblCizgi.Visible = true;
-                lblCizgi.Visible = true;
+                lblMus.Visible = true;
                 pnlMusteriListe.Visible = true;
+                lblYer.Location = new Point(366, 1078);
 
+                
+            }
+
+            else
+            {
+                lblMus.Visible = false;
+                lblCizgi.Visible = false;
+                pnlMusteriListe.Visible = false;
+
+                btnKaydet.Location = new Point(958, 705);
+                btnVazgec.Location = new Point(28, 705);
             }
         }
 
@@ -153,7 +160,7 @@ namespace NewCRM
 
                     // System.IO.File.Copy(currentFilePath, newFilePath, true);
 
-                   // lblYer.Text = newFilePath;
+                    lblYer.Text = newFilePath;
                 }
                 else
                 {

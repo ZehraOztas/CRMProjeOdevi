@@ -41,7 +41,7 @@ namespace NewCRM
             Personel_Bilgileri.cinsiyet = "";
             Personel_Bilgileri.ep1 = "";
             Personel_Bilgileri.ep2 = "";
-            Personel_Bilgileri.dt = DateTime.MinValue;
+         //   Personel_Bilgileri.dt = DateTime.MinValue;
             Personel_Bilgileri.tel1 = "";
             Personel_Bilgileri.tel2 = "";
             Personel_Bilgileri.adres = "";

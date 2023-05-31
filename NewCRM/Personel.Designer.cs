@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Personel));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -72,9 +73,12 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties38 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties39 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties40 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Personel));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblYer = new System.Windows.Forms.Label();
+            this.pnlMusteriListe = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.lblCizgi = new System.Windows.Forms.Label();
+            this.lblMus = new System.Windows.Forms.Label();
             this.btnVazgec = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnKaydet = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtPosta = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -116,9 +120,6 @@
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblCizgi = new System.Windows.Forms.Label();
-            this.lblMus = new System.Windows.Forms.Label();
-            this.pnlMusteriListe = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuShadowPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             this.bunifuShadowPanel3.SuspendLayout();
@@ -137,6 +138,7 @@
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel1.BorderRadius = 15;
             this.bunifuShadowPanel1.BorderThickness = 1;
+            this.bunifuShadowPanel1.Controls.Add(this.lblYer);
             this.bunifuShadowPanel1.Controls.Add(this.pnlMusteriListe);
             this.bunifuShadowPanel1.Controls.Add(this.lblCizgi);
             this.bunifuShadowPanel1.Controls.Add(this.lblMus);
@@ -180,6 +182,54 @@
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
             this.bunifuShadowPanel1.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel1_ControlAdded_1);
+            // 
+            // lblYer
+            // 
+            this.lblYer.AutoSize = true;
+            this.lblYer.Location = new System.Drawing.Point(23, 758);
+            this.lblYer.Name = "lblYer";
+            this.lblYer.Size = new System.Drawing.Size(0, 13);
+            this.lblYer.TabIndex = 129;
+            // 
+            // pnlMusteriListe
+            // 
+            this.pnlMusteriListe.BackColor = System.Drawing.Color.Transparent;
+            this.pnlMusteriListe.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlMusteriListe.BorderRadius = 1;
+            this.pnlMusteriListe.BorderThickness = 1;
+            this.pnlMusteriListe.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.pnlMusteriListe.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.pnlMusteriListe.Location = new System.Drawing.Point(55, 748);
+            this.pnlMusteriListe.Name = "pnlMusteriListe";
+            this.pnlMusteriListe.PanelColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlMusteriListe.PanelColor2 = System.Drawing.Color.WhiteSmoke;
+            this.pnlMusteriListe.ShadowColor = System.Drawing.Color.DarkGray;
+            this.pnlMusteriListe.ShadowDept = 2;
+            this.pnlMusteriListe.ShadowDepth = 5;
+            this.pnlMusteriListe.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.pnlMusteriListe.ShadowTopLeftVisible = false;
+            this.pnlMusteriListe.Size = new System.Drawing.Size(1093, 274);
+            this.pnlMusteriListe.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.pnlMusteriListe.TabIndex = 128;
+            // 
+            // lblCizgi
+            // 
+            this.lblCizgi.AutoSize = true;
+            this.lblCizgi.Location = new System.Drawing.Point(61, 732);
+            this.lblCizgi.Name = "lblCizgi";
+            this.lblCizgi.Size = new System.Drawing.Size(1087, 13);
+            this.lblCizgi.TabIndex = 127;
+            this.lblCizgi.Text = resources.GetString("lblCizgi.Text");
+            // 
+            // lblMus
+            // 
+            this.lblMus.AutoSize = true;
+            this.lblMus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMus.Location = new System.Drawing.Point(60, 712);
+            this.lblMus.Name = "lblMus";
+            this.lblMus.Size = new System.Drawing.Size(261, 20);
+            this.lblMus.TabIndex = 126;
+            this.lblMus.Text = "Personelin İlgilendiği Müşteri Bilgileri";
             // 
             // btnVazgec
             // 
@@ -1852,46 +1902,6 @@
             this.label1.TabIndex = 102;
             this.label1.Text = "İletişim Bilgileri";
             // 
-            // lblCizgi
-            // 
-            this.lblCizgi.AutoSize = true;
-            this.lblCizgi.Location = new System.Drawing.Point(61, 732);
-            this.lblCizgi.Name = "lblCizgi";
-            this.lblCizgi.Size = new System.Drawing.Size(1087, 13);
-            this.lblCizgi.TabIndex = 127;
-            this.lblCizgi.Text = resources.GetString("lblCizgi.Text");
-            // 
-            // lblMus
-            // 
-            this.lblMus.AutoSize = true;
-            this.lblMus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMus.Location = new System.Drawing.Point(60, 712);
-            this.lblMus.Name = "lblMus";
-            this.lblMus.Size = new System.Drawing.Size(261, 20);
-            this.lblMus.TabIndex = 126;
-            this.lblMus.Text = "Personelin İlgilendiği Müşteri Bilgileri";
-            // 
-            // pnlMusteriListe
-            // 
-            this.pnlMusteriListe.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMusteriListe.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlMusteriListe.BorderRadius = 1;
-            this.pnlMusteriListe.BorderThickness = 1;
-            this.pnlMusteriListe.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.pnlMusteriListe.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.pnlMusteriListe.Location = new System.Drawing.Point(64, 748);
-            this.pnlMusteriListe.Name = "pnlMusteriListe";
-            this.pnlMusteriListe.PanelColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlMusteriListe.PanelColor2 = System.Drawing.Color.WhiteSmoke;
-            this.pnlMusteriListe.ShadowColor = System.Drawing.Color.DarkGray;
-            this.pnlMusteriListe.ShadowDept = 2;
-            this.pnlMusteriListe.ShadowDepth = 5;
-            this.pnlMusteriListe.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.pnlMusteriListe.ShadowTopLeftVisible = false;
-            this.pnlMusteriListe.Size = new System.Drawing.Size(1084, 274);
-            this.pnlMusteriListe.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.pnlMusteriListe.TabIndex = 128;
-            // 
             // Personel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1960,5 +1970,6 @@
         private Bunifu.UI.WinForms.BunifuShadowPanel pnlMusteriListe;
         private System.Windows.Forms.Label lblCizgi;
         private System.Windows.Forms.Label lblMus;
+        private System.Windows.Forms.Label lblYer;
     }
 }

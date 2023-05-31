@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.pnlBack = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.pnlTop = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlicerik = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.lblEp = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblAdSoyad = new System.Windows.Forms.Label();
+            this.pnlTop = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pnlBack.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -65,31 +65,9 @@
             this.pnlBack.ShadowDepth = 5;
             this.pnlBack.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlBack.ShadowTopLeftVisible = false;
-            this.pnlBack.Size = new System.Drawing.Size(1227, 699);
+            this.pnlBack.Size = new System.Drawing.Size(1093, 699);
             this.pnlBack.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlBack.TabIndex = 0;
-            // 
-            // pnlTop
-            // 
-            this.pnlTop.BackColor = System.Drawing.Color.Transparent;
-            this.pnlTop.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlTop.BorderRadius = 1;
-            this.pnlTop.BorderThickness = 1;
-            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTop.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.pnlTop.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.pnlTop.Location = new System.Drawing.Point(0, 0);
-            this.pnlTop.Name = "pnlTop";
-            this.pnlTop.PanelColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlTop.PanelColor2 = System.Drawing.Color.WhiteSmoke;
-            this.pnlTop.ShadowColor = System.Drawing.Color.DarkGray;
-            this.pnlTop.ShadowDept = 2;
-            this.pnlTop.ShadowDepth = 5;
-            this.pnlTop.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.pnlTop.ShadowTopLeftVisible = false;
-            this.pnlTop.Size = new System.Drawing.Size(1227, 76);
-            this.pnlTop.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.pnlTop.TabIndex = 0;
             // 
             // pnlicerik
             // 
@@ -109,7 +87,7 @@
             this.pnlicerik.ShadowDepth = 5;
             this.pnlicerik.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlicerik.ShadowTopLeftVisible = false;
-            this.pnlicerik.Size = new System.Drawing.Size(1227, 574);
+            this.pnlicerik.Size = new System.Drawing.Size(1093, 574);
             this.pnlicerik.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlicerik.TabIndex = 1;
             // 
@@ -139,7 +117,7 @@
             this.bunifuShadowPanel2.ShadowDepth = 2;
             this.bunifuShadowPanel2.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
             this.bunifuShadowPanel2.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel2.Size = new System.Drawing.Size(1227, 43);
+            this.bunifuShadowPanel2.Size = new System.Drawing.Size(1093, 43);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 5;
             // 
@@ -223,12 +201,34 @@
             this.lblAdSoyad.TabIndex = 17;
             this.lblAdSoyad.Text = "Ad Soyad";
             // 
+            // pnlTop
+            // 
+            this.pnlTop.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTop.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlTop.BorderRadius = 1;
+            this.pnlTop.BorderThickness = 1;
+            this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTop.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.pnlTop.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.pnlTop.Location = new System.Drawing.Point(0, 0);
+            this.pnlTop.Name = "pnlTop";
+            this.pnlTop.PanelColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlTop.PanelColor2 = System.Drawing.Color.WhiteSmoke;
+            this.pnlTop.ShadowColor = System.Drawing.Color.DarkGray;
+            this.pnlTop.ShadowDept = 2;
+            this.pnlTop.ShadowDepth = 5;
+            this.pnlTop.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.pnlTop.ShadowTopLeftVisible = false;
+            this.pnlTop.Size = new System.Drawing.Size(1093, 76);
+            this.pnlTop.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.pnlTop.TabIndex = 0;
+            // 
             // personelListesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1227, 699);
+            this.ClientSize = new System.Drawing.Size(1093, 699);
             this.Controls.Add(this.pnlBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "personelListesi";
