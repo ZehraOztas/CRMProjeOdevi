@@ -468,3 +468,6 @@ C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.T
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.BackModel.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.personelListesi.resources
 C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_PersonelinMusterisi.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.PersonelinMusterisi.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\obj\Debug\NewCRM.UC_PersonelListesi.resources
+C:\Users\oztas\OneDrive\Masaüstü\NewCRM - 18.05.2023\NewCRM\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll

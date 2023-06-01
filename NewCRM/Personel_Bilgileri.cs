@@ -36,5 +36,7 @@ namespace NewCRM
         public static int gun;
         public static int ay;
 
+        public static string calisanId;
+
     }
 }

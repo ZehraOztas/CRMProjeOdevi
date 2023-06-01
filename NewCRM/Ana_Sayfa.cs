@@ -57,6 +57,7 @@ namespace NewCRM
         private void btnProfil_Click(object sender, EventArgs e)
         {
             Personel f = new Personel();
+            f.lblc_p.Text = "Personel";
             formGetir(f);
         }
 
@@ -148,7 +149,7 @@ namespace NewCRM
 
         private void btnPersonelBilgileri_Click(object sender, EventArgs e)
         {
-            Takvim f = new Takvim();
+            personelListesi f = new personelListesi();
             formGetir(f);
         }
     }

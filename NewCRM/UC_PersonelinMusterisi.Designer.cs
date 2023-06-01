@@ -108,6 +108,7 @@
             this.btnDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnDuzenle.TabIndex = 35;
             this.btnDuzenle.TabStop = false;
+            this.btnDuzenle.Click += new System.EventHandler(this.btnDuzenle_Click);
             // 
             // pbxdurum
             // 

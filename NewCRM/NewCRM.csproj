@@ -74,6 +74,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
       <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>..\..\BUNIFU TOOLS (1)\BUNIFU TOOLS\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
       <HintPath>..\..\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
     </Reference>
@@ -161,6 +164,12 @@
     <Compile Include="NotlarForm.Designer.cs">
       <DependentUpon>NotlarForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonelinMusterisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelinMusterisi.Designer.cs">
+      <DependentUpon>PersonelinMusterisi.cs</DependentUpon>
+    </Compile>
     <Compile Include="personelListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +246,12 @@
     <Compile Include="UC_PersonelinMusterisi.Designer.cs">
       <DependentUpon>UC_PersonelinMusterisi.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_PersonelListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_PersonelListesi.Designer.cs">
+      <DependentUpon>UC_PersonelListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_TakvimBilgi.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -265,6 +280,9 @@
     <EmbeddedResource Include="NotlarForm.resx">
       <DependentUpon>NotlarForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PersonelinMusterisi.resx">
+      <DependentUpon>PersonelinMusterisi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="personelListesi.resx">
       <DependentUpon>personelListesi.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_PersonelinMusterisi.resx">
       <DependentUpon>UC_PersonelinMusterisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_PersonelListesi.resx">
+      <DependentUpon>UC_PersonelListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_TakvimBilgi.resx">
       <DependentUpon>UC_TakvimBilgi.cs</DependentUpon>

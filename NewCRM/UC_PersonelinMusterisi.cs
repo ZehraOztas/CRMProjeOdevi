@@ -16,5 +16,10 @@ namespace NewCRM
         {
             InitializeComponent();
         }
+
+        private void btnDuzenle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

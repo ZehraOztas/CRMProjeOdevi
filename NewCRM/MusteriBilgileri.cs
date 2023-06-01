@@ -75,35 +75,35 @@ namespace NewCRM
 
         private void listele() //Form açıldığı zaman yapılacak listeleme
         {
-            pnlMusteriBilgileri.Controls.Clear();
-            foreach (var deg in dcMb.Musteri)
-            {
-                SqlCommand command = new SqlCommand("SELECT m_id,ad,soyad,ep,tel,calistigi_yer, pozisyonu, son_tarih, durum, proje_adi FROM Musteri WHERE projeyi_yoneten=@y ORDER BY son_tarih desc", baglan);
-                command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
-                baglan.Open();
-                SqlDataReader oku = command.ExecuteReader();
-                while (oku.Read())
-                {
-                    UC_MusteriBilgileri uc = new UC_MusteriBilgileri();
-                    uc.lblid.Text = oku.GetInt32(oku.GetOrdinal("m_id")).ToString();
-                    uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
-                    uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
-                    uc.lblTel.Text = oku.GetString(oku.GetOrdinal("tel"));
-                    uc.lblCalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
-                    uc.lblPozisyon.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
-                    uc.dtpSontarih.Text = oku.GetDateTime(oku.GetOrdinal("son_tarih")).ToString();
-                    uc.lblDurum.Text = oku.GetString(oku.GetOrdinal("durum"));
-                    uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
+            SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
-                    uc.Dock = DockStyle.Top;
-                    uc.rbtnSec.Checked = false;
-                    uc.pnlBack.BackColor = Color.WhiteSmoke;
-                    pnlMusteriBilgileri.Controls.Add(uc);
-                }
-                oku.Close();
-                baglan.Close();
-                tekrariEngelle();
+            pnlMusteriBilgileri.Controls.Clear();
+
+            SqlCommand command = new SqlCommand("SELECT m_id,ad,soyad,ep,tel,calistigi_yer, pozisyonu, son_tarih, durum, proje_adi FROM Musteri WHERE projeyi_yoneten=@y ORDER BY son_tarih desc", baglan);
+            command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
+            baglan.Open();
+            SqlDataReader oku = command.ExecuteReader();
+            while (oku.Read())
+            {
+                UC_MusteriBilgileri uc = new UC_MusteriBilgileri();
+                uc.lblid.Text = oku.GetInt32(oku.GetOrdinal("m_id")).ToString();
+                uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
+                uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
+                uc.lblTel.Text = oku.GetString(oku.GetOrdinal("tel"));
+                uc.lblCalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
+                uc.lblPozisyon.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
+                uc.dtpSontarih.Text = oku.GetDateTime(oku.GetOrdinal("son_tarih")).ToString();
+                uc.lblDurum.Text = oku.GetString(oku.GetOrdinal("durum"));
+                uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
+
+                uc.Dock = DockStyle.Top;
+                uc.rbtnSec.Checked = false;
+                uc.pnlBack.BackColor = Color.WhiteSmoke;
+                pnlMusteriBilgileri.Controls.Add(uc);
             }
+            oku.Close();
+            baglan.Close();
+
             Personel_Bilgileri.m_id = null;
         }
 
