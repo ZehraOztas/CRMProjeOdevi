@@ -55,12 +55,13 @@
             this.pnlicerik.PanelColor2 = System.Drawing.Color.WhiteSmoke;
             this.pnlicerik.ShadowColor = System.Drawing.Color.DarkGray;
             this.pnlicerik.ShadowDept = 2;
-            this.pnlicerik.ShadowDepth = 5;
+            this.pnlicerik.ShadowDepth = 3;
             this.pnlicerik.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlicerik.ShadowTopLeftVisible = false;
             this.pnlicerik.Size = new System.Drawing.Size(1093, 239);
             this.pnlicerik.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlicerik.TabIndex = 7;
+            this.pnlicerik.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.pnlicerik_ControlAdded);
             // 
             // lblAdSoyad
             // 

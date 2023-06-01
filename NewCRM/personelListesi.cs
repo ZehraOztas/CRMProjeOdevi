@@ -24,13 +24,13 @@ namespace NewCRM
 
             pnlListe.Controls.Clear();
 
-            SqlCommand command = new SqlCommand("SELECT p_id,ad, soyad,pozisyonu,ise_giris_tarihi ,cinsiyet,dogum_tarihi,ep1,tel1, adres,il, ilce FROM PersonelTablosu ORDER BY ise_giris_tarihi asc", baglan);
+            SqlCommand command = new SqlCommand("SELECT tc,ad, soyad,pozisyonu,ise_giris_tarihi ,cinsiyet,dogum_tarihi,ep1,tel1, adres,il, ilce FROM PersonelTablosu ORDER BY ise_giris_tarihi asc", baglan);
             baglan.Open();
             SqlDataReader oku = command.ExecuteReader();
             while (oku.Read())
             {
                 UC_PersonelListesi uc = new UC_PersonelListesi();
-                uc.lblid.Text = oku.GetInt32(oku.GetOrdinal("p_id")).ToString();
+                uc.lblid.Text = oku.GetString(oku.GetOrdinal("tc")).ToString();
                 uc.lblAd.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
                 uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep1"));
                 uc.lblTel.Text = oku.GetString(oku.GetOrdinal("tel1"));

@@ -76,22 +76,23 @@
             this.pnlBack.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlBack.Location = new System.Drawing.Point(0, 0);
             this.pnlBack.Name = "pnlBack";
-            this.pnlBack.Size = new System.Drawing.Size(1093, 73);
+            this.pnlBack.Size = new System.Drawing.Size(1070, 73);
             this.pnlBack.TabIndex = 1;
             // 
             // lblid
             // 
             this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(15, 56);
+            this.lblid.Location = new System.Drawing.Point(21, 56);
             this.lblid.Name = "lblid";
             this.lblid.Size = new System.Drawing.Size(35, 13);
             this.lblid.TabIndex = 37;
             this.lblid.Text = "label1";
+            this.lblid.Visible = false;
             // 
             // rbtnSec
             // 
             this.rbtnSec.AutoSize = true;
-            this.rbtnSec.Location = new System.Drawing.Point(1039, 56);
+            this.rbtnSec.Location = new System.Drawing.Point(1028, 56);
             this.rbtnSec.Name = "rbtnSec";
             this.rbtnSec.Size = new System.Drawing.Size(14, 13);
             this.rbtnSec.TabIndex = 36;
@@ -102,7 +103,7 @@
             // btnDuzenle
             // 
             this.btnDuzenle.Image = ((System.Drawing.Image)(resources.GetObject("btnDuzenle.Image")));
-            this.btnDuzenle.Location = new System.Drawing.Point(1039, 15);
+            this.btnDuzenle.Location = new System.Drawing.Point(1028, 15);
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.Size = new System.Drawing.Size(41, 38);
             this.btnDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -113,7 +114,7 @@
             // pbxdurum
             // 
             this.pbxdurum.Image = ((System.Drawing.Image)(resources.GetObject("pbxdurum.Image")));
-            this.pbxdurum.Location = new System.Drawing.Point(863, 15);
+            this.pbxdurum.Location = new System.Drawing.Point(853, 15);
             this.pbxdurum.Name = "pbxdurum";
             this.pbxdurum.Size = new System.Drawing.Size(41, 38);
             this.pbxdurum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -123,7 +124,7 @@
             // pbxPrjAd
             // 
             this.pbxPrjAd.Image = ((System.Drawing.Image)(resources.GetObject("pbxPrjAd.Image")));
-            this.pbxPrjAd.Location = new System.Drawing.Point(685, 15);
+            this.pbxPrjAd.Location = new System.Drawing.Point(678, 15);
             this.pbxPrjAd.Name = "pbxPrjAd";
             this.pbxPrjAd.Size = new System.Drawing.Size(41, 38);
             this.pbxPrjAd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -133,7 +134,7 @@
             // pbxTarih
             // 
             this.pbxTarih.Image = ((System.Drawing.Image)(resources.GetObject("pbxTarih.Image")));
-            this.pbxTarih.Location = new System.Drawing.Point(467, 14);
+            this.pbxTarih.Location = new System.Drawing.Point(460, 14);
             this.pbxTarih.Name = "pbxTarih";
             this.pbxTarih.Size = new System.Drawing.Size(41, 38);
             this.pbxTarih.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -143,7 +144,7 @@
             // pbxPozisyon
             // 
             this.pbxPozisyon.Image = ((System.Drawing.Image)(resources.GetObject("pbxPozisyon.Image")));
-            this.pbxPozisyon.Location = new System.Drawing.Point(308, 15);
+            this.pbxPozisyon.Location = new System.Drawing.Point(301, 15);
             this.pbxPozisyon.Name = "pbxPozisyon";
             this.pbxPozisyon.Size = new System.Drawing.Size(41, 38);
             this.pbxPozisyon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -153,7 +154,7 @@
             // pbxCyer
             // 
             this.pbxCyer.Image = ((System.Drawing.Image)(resources.GetObject("pbxCyer.Image")));
-            this.pbxCyer.Location = new System.Drawing.Point(143, 15);
+            this.pbxCyer.Location = new System.Drawing.Point(142, 15);
             this.pbxCyer.Name = "pbxCyer";
             this.pbxCyer.Size = new System.Drawing.Size(41, 38);
             this.pbxCyer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -163,7 +164,7 @@
             // dtpSontarih
             // 
             this.dtpSontarih.Enabled = false;
-            this.dtpSontarih.Location = new System.Drawing.Point(511, 23);
+            this.dtpSontarih.Location = new System.Drawing.Point(504, 23);
             this.dtpSontarih.Name = "dtpSontarih";
             this.dtpSontarih.Size = new System.Drawing.Size(168, 20);
             this.dtpSontarih.TabIndex = 27;
@@ -171,7 +172,7 @@
             // pbxAd
             // 
             this.pbxAd.Image = ((System.Drawing.Image)(resources.GetObject("pbxAd.Image")));
-            this.pbxAd.Location = new System.Drawing.Point(3, 15);
+            this.pbxAd.Location = new System.Drawing.Point(9, 15);
             this.pbxAd.Name = "pbxAd";
             this.pbxAd.Size = new System.Drawing.Size(41, 38);
             this.pbxAd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -182,7 +183,7 @@
             // 
             this.lblPrjAdi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPrjAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPrjAdi.Location = new System.Drawing.Point(732, 15);
+            this.lblPrjAdi.Location = new System.Drawing.Point(725, 15);
             this.lblPrjAdi.Name = "lblPrjAdi";
             this.lblPrjAdi.Size = new System.Drawing.Size(118, 38);
             this.lblPrjAdi.TabIndex = 25;
@@ -193,7 +194,7 @@
             // 
             this.lblDurum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblDurum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDurum.Location = new System.Drawing.Point(907, 15);
+            this.lblDurum.Location = new System.Drawing.Point(897, 15);
             this.lblDurum.Name = "lblDurum";
             this.lblDurum.Size = new System.Drawing.Size(126, 38);
             this.lblDurum.TabIndex = 24;
@@ -204,7 +205,7 @@
             // 
             this.lblPozisyon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPozisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPozisyon.Location = new System.Drawing.Point(352, 15);
+            this.lblPozisyon.Location = new System.Drawing.Point(345, 15);
             this.lblPozisyon.Name = "lblPozisyon";
             this.lblPozisyon.Size = new System.Drawing.Size(109, 38);
             this.lblPozisyon.TabIndex = 23;
@@ -215,7 +216,7 @@
             // 
             this.lblCalistigiYer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblCalistigiYer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCalistigiYer.Location = new System.Drawing.Point(187, 15);
+            this.lblCalistigiYer.Location = new System.Drawing.Point(186, 15);
             this.lblCalistigiYer.Name = "lblCalistigiYer";
             this.lblCalistigiYer.Size = new System.Drawing.Size(101, 37);
             this.lblCalistigiYer.TabIndex = 22;
@@ -226,7 +227,7 @@
             // 
             this.lblAdSoyad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAdSoyad.Location = new System.Drawing.Point(47, 15);
+            this.lblAdSoyad.Location = new System.Drawing.Point(53, 15);
             this.lblAdSoyad.Name = "lblAdSoyad";
             this.lblAdSoyad.Size = new System.Drawing.Size(87, 38);
             this.lblAdSoyad.TabIndex = 19;
@@ -239,7 +240,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlBack);
             this.Name = "UC_PersonelinMusterisi";
-            this.Size = new System.Drawing.Size(1093, 73);
+            this.Size = new System.Drawing.Size(1070, 73);
             this.pnlBack.ResumeLayout(false);
             this.pnlBack.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDuzenle)).EndInit();

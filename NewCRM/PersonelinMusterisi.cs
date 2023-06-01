@@ -45,5 +45,10 @@ namespace NewCRM
             oku.Close();
             baglan.Close();
         }
+
+        private void pnlicerik_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
     }
 }

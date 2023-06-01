@@ -206,7 +206,7 @@
             this.pnlMusteriListe.PanelColor2 = System.Drawing.Color.WhiteSmoke;
             this.pnlMusteriListe.ShadowColor = System.Drawing.Color.DarkGray;
             this.pnlMusteriListe.ShadowDept = 2;
-            this.pnlMusteriListe.ShadowDepth = 5;
+            this.pnlMusteriListe.ShadowDepth = 0;
             this.pnlMusteriListe.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlMusteriListe.ShadowTopLeftVisible = false;
             this.pnlMusteriListe.Size = new System.Drawing.Size(1093, 274);
