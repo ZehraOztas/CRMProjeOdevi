@@ -151,9 +151,12 @@ namespace NewCRM
                 oku.Close();
                 baglanti.Close();
 
-                PersonelinMusterisi f = (PersonelinMusterisi)Application.OpenForms["PersonelinMusterisi"];
+                //Panele seçtiğimiz personelin müşterileri listelenir.
+                PersonelinMusterisi f = new PersonelinMusterisi();
+                f.TopLevel = false; // Üst düzey form olmadığını belirtmek için
                 f.Dock = DockStyle.Fill;
                 pnlMusteriListe.Controls.Add(f);
+
                 f.Show();
             }
 

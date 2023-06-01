@@ -22,13 +22,13 @@ namespace NewCRM
         {
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
-            SqlCommand command = new SqlCommand("SELECT m_id,ad,soyad, calistigi_yer, pozisyonu, ilk_tarih, durum, proje_adi FROM Musteri WHERE projeyi_yoneten=@y ORDER BY son_tarih desc", baglan);
+            SqlCommand command = new SqlCommand("SELECT m_id,ad,soyad, calistigi_yer, pozisyonu, ilk_tarih, durum, proje_adi FROM Musteri WHERE projeyi_yoneten=@y", baglan);
             command.Parameters.AddWithValue("@y", Personel_Bilgileri.calisanId);
             baglan.Open();
             SqlDataReader oku = command.ExecuteReader();
             while (oku.Read())
             {
-                UC_MusteriBilgileri uc = new UC_MusteriBilgileri();
+                UC_PersonelinMusterisi uc = new UC_PersonelinMusterisi();
                 uc.lblid.Text = oku.GetInt32(oku.GetOrdinal("m_id")).ToString();
                 uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
                 uc.lblCalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
