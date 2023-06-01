@@ -20,6 +20,7 @@ namespace NewCRM
 
         private void personelListesi_Load(object sender, EventArgs e)
         {
+            Personel_Bilgileri.calisanId = null;
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
             pnlListe.Controls.Clear();
@@ -49,6 +50,59 @@ namespace NewCRM
             baglan.Close();
 
             Personel_Bilgileri.m_id = null;
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            Personel_Bilgileri.calisanId = null;
+            Personel_Detay f = new Personel_Detay();
+            f.btnKaydet.Text = "Kaydet";
+            f.txtTc.Enabled = true;
+            this.Show();
+            Ana_Sayfa ans = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
+            ans.formGetir(f);
+            f.Show();
+
+        }
+
+        private void btnDuzenle_Click(object sender, EventArgs e)
+        {
+            if (Personel_Bilgileri.calisanId == null)
+            {
+                MessageBox.Show("İşlem yapmak istediğiniz kaydı seçiniz.");
+            }
+            else
+            {
+                Personel_Detay f = new Personel_Detay();
+                f.btnKaydet.Text = "Güncelle";
+                this.Show();
+                Ana_Sayfa ans = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
+                ans.formGetir(f);
+                f.Show();
+            }
+        }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            if (Personel_Bilgileri.calisanId == null)
+            {
+                MessageBox.Show("İşlem yapmak istediğiniz kaydı seçiniz.");
+            }
+            else
+            {
+                SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+                SqlCommand sil = new SqlCommand("DELETE FROM PersonelTablosu WHERE tc=@tc",baglan);
+                sil.Parameters.AddWithValue("@tc",Personel_Bilgileri.calisanId);
+                baglan.Open();
+                sil.ExecuteNonQuery();
+                baglan.Close();
+                MessageBox.Show("İşlem başarıyla gerçekleştirildi.");
+                this.Close();
+                personelListesi f = new personelListesi();
+                Ana_Sayfa ans = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
+                ans.formGetir(f);
+                f.Show();
+            }
         }
     }
 }

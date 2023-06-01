@@ -23,7 +23,7 @@ namespace NewCRM
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
             SqlCommand command = new SqlCommand("SELECT m_id,ad,soyad, calistigi_yer, pozisyonu, ilk_tarih, durum, proje_adi FROM Musteri WHERE projeyi_yoneten=@y", baglan);
-            command.Parameters.AddWithValue("@y", Personel_Bilgileri.calisanId);
+            command.Parameters.AddWithValue("@y", Convert.ToInt64(Personel_Bilgileri.calisanId));
             baglan.Open();
             SqlDataReader oku = command.ExecuteReader();
             while (oku.Read())

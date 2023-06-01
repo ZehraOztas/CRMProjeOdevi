@@ -57,7 +57,6 @@ namespace NewCRM
         private void btnProfil_Click(object sender, EventArgs e)
         {
             Personel f = new Personel();
-            f.lblc_p.Text = "Personel";
             formGetir(f);
         }
 

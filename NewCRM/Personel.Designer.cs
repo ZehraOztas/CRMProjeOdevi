@@ -76,9 +76,6 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlBack = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.lblYer = new System.Windows.Forms.Label();
-            this.pnlMusteriListe = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.lblCizgi = new System.Windows.Forms.Label();
-            this.lblMus = new System.Windows.Forms.Label();
             this.btnVazgec = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnKaydet = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtPosta = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -110,7 +107,6 @@
             this.txtAd = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtsad = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuShadowPanel3 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.lblc_p = new System.Windows.Forms.Label();
             this.btnFoto = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pbxProfil = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -140,9 +136,6 @@
             this.pnlBack.BorderRadius = 15;
             this.pnlBack.BorderThickness = 1;
             this.pnlBack.Controls.Add(this.lblYer);
-            this.pnlBack.Controls.Add(this.pnlMusteriListe);
-            this.pnlBack.Controls.Add(this.lblCizgi);
-            this.pnlBack.Controls.Add(this.lblMus);
             this.pnlBack.Controls.Add(this.btnVazgec);
             this.pnlBack.Controls.Add(this.btnKaydet);
             this.pnlBack.Controls.Add(this.txtPosta);
@@ -179,7 +172,7 @@
             this.pnlBack.ShadowDepth = 5;
             this.pnlBack.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlBack.ShadowTopLeftVisible = false;
-            this.pnlBack.Size = new System.Drawing.Size(1199, 1100);
+            this.pnlBack.Size = new System.Drawing.Size(1199, 791);
             this.pnlBack.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlBack.TabIndex = 0;
             this.pnlBack.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel1_ControlAdded_1);
@@ -187,50 +180,10 @@
             // lblYer
             // 
             this.lblYer.AutoSize = true;
-            this.lblYer.Location = new System.Drawing.Point(23, 758);
+            this.lblYer.Location = new System.Drawing.Point(97, 760);
             this.lblYer.Name = "lblYer";
             this.lblYer.Size = new System.Drawing.Size(0, 13);
             this.lblYer.TabIndex = 129;
-            // 
-            // pnlMusteriListe
-            // 
-            this.pnlMusteriListe.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMusteriListe.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlMusteriListe.BorderRadius = 1;
-            this.pnlMusteriListe.BorderThickness = 1;
-            this.pnlMusteriListe.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.pnlMusteriListe.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.pnlMusteriListe.Location = new System.Drawing.Point(55, 748);
-            this.pnlMusteriListe.Name = "pnlMusteriListe";
-            this.pnlMusteriListe.PanelColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlMusteriListe.PanelColor2 = System.Drawing.Color.WhiteSmoke;
-            this.pnlMusteriListe.ShadowColor = System.Drawing.Color.DarkGray;
-            this.pnlMusteriListe.ShadowDept = 2;
-            this.pnlMusteriListe.ShadowDepth = 0;
-            this.pnlMusteriListe.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.pnlMusteriListe.ShadowTopLeftVisible = false;
-            this.pnlMusteriListe.Size = new System.Drawing.Size(1093, 274);
-            this.pnlMusteriListe.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.pnlMusteriListe.TabIndex = 128;
-            // 
-            // lblCizgi
-            // 
-            this.lblCizgi.AutoSize = true;
-            this.lblCizgi.Location = new System.Drawing.Point(61, 732);
-            this.lblCizgi.Name = "lblCizgi";
-            this.lblCizgi.Size = new System.Drawing.Size(1087, 13);
-            this.lblCizgi.TabIndex = 127;
-            this.lblCizgi.Text = resources.GetString("lblCizgi.Text");
-            // 
-            // lblMus
-            // 
-            this.lblMus.AutoSize = true;
-            this.lblMus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMus.Location = new System.Drawing.Point(60, 712);
-            this.lblMus.Name = "lblMus";
-            this.lblMus.Size = new System.Drawing.Size(261, 20);
-            this.lblMus.TabIndex = 126;
-            this.lblMus.Text = "Personelin İlgilendiği Müşteri Bilgileri";
             // 
             // btnVazgec
             // 
@@ -279,7 +232,7 @@
             this.btnVazgec.IdleIconLeftImage = null;
             this.btnVazgec.IdleIconRightImage = null;
             this.btnVazgec.IndicateFocus = false;
-            this.btnVazgec.Location = new System.Drawing.Point(50, 1028);
+            this.btnVazgec.Location = new System.Drawing.Point(64, 708);
             this.btnVazgec.Name = "btnVazgec";
             this.btnVazgec.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnVazgec.OnDisabledState.BorderRadius = 30;
@@ -369,7 +322,7 @@
             this.btnKaydet.IdleIconLeftImage = null;
             this.btnKaydet.IdleIconRightImage = null;
             this.btnKaydet.IndicateFocus = false;
-            this.btnKaydet.Location = new System.Drawing.Point(980, 1028);
+            this.btnKaydet.Location = new System.Drawing.Point(994, 708);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnKaydet.OnDisabledState.BorderRadius = 30;
@@ -1491,7 +1444,6 @@
             this.bunifuShadowPanel3.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel3.BorderRadius = 1;
             this.bunifuShadowPanel3.BorderThickness = 1;
-            this.bunifuShadowPanel3.Controls.Add(this.lblc_p);
             this.bunifuShadowPanel3.Controls.Add(this.btnFoto);
             this.bunifuShadowPanel3.Controls.Add(this.pbxProfil);
             this.bunifuShadowPanel3.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
@@ -1508,16 +1460,6 @@
             this.bunifuShadowPanel3.Size = new System.Drawing.Size(394, 258);
             this.bunifuShadowPanel3.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel3.TabIndex = 110;
-            // 
-            // lblc_p
-            // 
-            this.lblc_p.AutoSize = true;
-            this.lblc_p.Location = new System.Drawing.Point(281, 24);
-            this.lblc_p.Name = "lblc_p";
-            this.lblc_p.Size = new System.Drawing.Size(35, 13);
-            this.lblc_p.TabIndex = 2;
-            this.lblc_p.Text = "label4";
-            this.lblc_p.Visible = false;
             // 
             // btnFoto
             // 
@@ -1918,7 +1860,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1199, 1100);
+            this.ClientSize = new System.Drawing.Size(1199, 791);
             this.Controls.Add(this.pnlBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Personel";
@@ -1929,7 +1871,6 @@
             this.pnlKisiselBilgi.ResumeLayout(false);
             this.pnlKisiselBilgi.PerformLayout();
             this.bunifuShadowPanel3.ResumeLayout(false);
-            this.bunifuShadowPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).EndInit();
             this.ResumeLayout(false);
 
@@ -1979,10 +1920,6 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dt;
-        private Bunifu.UI.WinForms.BunifuShadowPanel pnlMusteriListe;
-        private System.Windows.Forms.Label lblCizgi;
-        private System.Windows.Forms.Label lblMus;
         private System.Windows.Forms.Label lblYer;
-        public System.Windows.Forms.Label lblc_p;
     }
 }

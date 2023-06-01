@@ -195,6 +195,12 @@
     <Compile Include="Personel.Designer.cs">
       <DependentUpon>Personel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Personel_Detay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel_Detay.Designer.cs">
+      <DependentUpon>Personel_Detay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resimleme.cs" />
@@ -285,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="personelListesi.resx">
       <DependentUpon>personelListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel_Detay.resx">
+      <DependentUpon>Personel_Detay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Takvim.resx">

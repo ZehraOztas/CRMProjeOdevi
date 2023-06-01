@@ -94,6 +94,7 @@
             // 
             // pnlListe
             // 
+            this.pnlListe.AutoScroll = true;
             this.pnlListe.ColumnCount = 4;
             this.pnlListe.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00625F));
             this.pnlListe.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00625F));
@@ -142,6 +143,7 @@
             this.btnSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnSil.TabIndex = 23;
             this.btnSil.TabStop = false;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnDuzenle
             // 
@@ -152,6 +154,7 @@
             this.btnDuzenle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnDuzenle.TabIndex = 22;
             this.btnDuzenle.TabStop = false;
+            this.btnDuzenle.Click += new System.EventHandler(this.btnDuzenle_Click);
             // 
             // btnEkle
             // 
@@ -162,6 +165,7 @@
             this.btnEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.btnEkle.TabIndex = 21;
             this.btnEkle.TabStop = false;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // personelListesi
             // 

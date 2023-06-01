@@ -33,6 +33,7 @@ namespace NewCRM
             {
                 rbtnSec.Checked = false;
                 kart.BackColor = Color.WhiteSmoke;
+                Personel_Bilgileri.calisanId = null;
             }
         }
 
@@ -57,8 +58,8 @@ namespace NewCRM
             backcolor();
             Personel_Bilgileri.calisanId = lblid.Text;
 
-            Personel f = new Personel();
-            f.lblc_p.Text = "Çalışan";
+            Personel_Detay f = new Personel_Detay();
+            
             Personel_Bilgileri.calisanId = lblid.Text;
             personelListesi pl = (personelListesi)Application.OpenForms["personelListesi"];
             pl.Close();

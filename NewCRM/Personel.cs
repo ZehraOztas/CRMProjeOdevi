@@ -57,7 +57,7 @@ namespace NewCRM
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
-            SqlCommand guncelle = new SqlCommand("UPDATE PersonelTablosu SET tel1=@tel1, tel2=@tel2, ep1=@ep1 , ep2=@ep2, adres=@adres, il=@il, ilce=@ilce, posta_kodu=@pkod, foto=@foto WHERE tc=@tc", baglanti);
+            SqlCommand guncelle = new SqlCommand("UPDATE PersonelTablosu SET tel1=@tel1, tel2=@tel2, ep1=@ep1 , ep2=@ep2, adres=@adres, il=@il, ilce=@ilce, posta_kodu=@pkod WHERE tc=@tc", baglanti);
             baglanti.Open();
             guncelle.Parameters.AddWithValue("@tel1", txtTel1.Text);
             guncelle.Parameters.AddWithValue("@tel2", txtTel2.Text);
@@ -67,7 +67,6 @@ namespace NewCRM
             guncelle.Parameters.AddWithValue("@il", cbxIl.Text);
             guncelle.Parameters.AddWithValue("@ilce", cbxIlce.Text);
             guncelle.Parameters.AddWithValue("@pkod", txtPosta.Text);
-            guncelle.Parameters.AddWithValue("@foto", lblYer.Text);
             guncelle.Parameters.AddWithValue("@tc", txtTc.Text);
             guncelle.ExecuteNonQuery();
             baglanti.Close();
@@ -104,116 +103,62 @@ namespace NewCRM
 
         private void Personel_Load(object sender, EventArgs e)
         {
-            SayfaAc();
-            if (Personel_Bilgileri.yetki == 1)
+            SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
+            SqlCommand listele = new SqlCommand("SELECT * FROM PersonelTablosu WHERE tc=@id", baglanti);
+            listele.Parameters.AddWithValue("@id", Personel_Bilgileri.tc);
+            baglanti.Open();
+            SqlDataReader oku = listele.ExecuteReader();
+
+            if (oku.Read())
             {
-                pnlKisiselBilgi.Enabled = true;
-            }            
-          
-            if (Personel_Bilgileri.yetki == 1 && lblc_p.Text == "Çalışan")
-            {                
-                lblCizgi.Visible = true;
-                lblMus.Visible = true;
-                pnlMusteriListe.Visible = true;
-                lblYer.Location = new Point(366, 1078);
+                txtTc.Text = oku.GetString(oku.GetOrdinal("tc"));
+                txtAd.Text = oku.GetString(oku.GetOrdinal("ad"));
+                txtsad.Text = oku.GetString(oku.GetOrdinal("soyad"));
 
-                SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
-                SqlCommand listele = new SqlCommand("SELECT * FROM PersonelTablosu WHERE p_id=@id", baglanti);
-                listele.Parameters.AddWithValue("@id", Personel_Bilgileri.calisanId);
-                baglanti.Open();
-                SqlDataReader oku = listele.ExecuteReader();
-
-                if (oku.Read())
+                if (oku.GetString(oku.GetOrdinal("cinsiyet")) == "Kadın")
                 {
-                    txtTc.Text = oku.GetString(oku.GetOrdinal("tc"));
-                    txtAd.Text = oku.GetString(oku.GetOrdinal("ad"));
-                    txtsad.Text = oku.GetString(oku.GetOrdinal("soyad"));
-
-                    if (oku.GetString(oku.GetOrdinal("cinsiyet")) == "Kadın")
-                    {
-                        rbtnKadin.Checked = true;
-                    }
-                    else
-                    {
-                        rbtnErkek.Checked = true;
-                    }
-                    dt.Value = oku.GetDateTime(oku.GetOrdinal("dogum_tarihi"));
-                    txtPozisyon.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
-                    txtTel1.Text = oku.GetString(oku.GetOrdinal("tel1"));
-                    txtTel2.Text = oku.GetString(oku.GetOrdinal("tel2"));
-                    txtEp1.Text = oku.GetString(oku.GetOrdinal("ep1"));
-                    txtEp2.Text = oku.GetString(oku.GetOrdinal("ep2"));
-                    txtAdres.Text = oku.GetString(oku.GetOrdinal("adres"));
-                    cbxIl.Text = oku.GetString(oku.GetOrdinal("il"));
-                    cbxIlce.Text = oku.GetString(oku.GetOrdinal("ilce"));
-                    txtPosta.Text = oku.GetString(oku.GetOrdinal("posta_kodu"));
-                }
-                oku.Close();
-                baglanti.Close();
-
-                //Panele seçtiğimiz personelin müşterileri listelenir.
-                PersonelinMusterisi f = new PersonelinMusterisi();
-                f.TopLevel = false; // Üst düzey form olmadığını belirtmek için
-                f.Dock = DockStyle.Fill;
-                pnlMusteriListe.Controls.Add(f);
-
-                f.Show();
-            }
-
-            else //if (lblc_p.Text == "Personel")
-            {
-                lblMus.Visible = false;
-                lblCizgi.Visible = false;
-                pnlMusteriListe.Visible = false;
-
-                btnKaydet.Location = new Point(958, 705);
-                btnVazgec.Location = new Point(28, 705);
-            }
-        }
-
-            private void btnFoto_Click(object sender, EventArgs e)
-            {
-                //   try
-                // {
-                OpenFileDialog dosya = new OpenFileDialog();
-                dosya.FileName = "Resim Seç";
-                dosya.Filter = "Resim Dosyası |*.jpg;*.jpeg;*.png |  Tüm Dosyalar |*.*\";";
-
-                if (dosya.ShowDialog() == DialogResult.OK)
-                {
-                    pbxProfil.ImageLocation = dosya.FileName;
-
-                    string currentFilePath = pbxProfil.ImageLocation;
-                    string newFileName = Personel_Bilgileri.ad + Personel_Bilgileri.sad + "Profil";
-                    string currentFileExtension = Path.GetExtension(currentFilePath); //Resim yolunu alır.
-                    string debugFolderPath = Path.Combine(Application.StartupPath, "personelFoto" + currentFileExtension);//Klosöre kaydeder
-                    string newFilePath = Path.Combine(debugFolderPath, newFileName);//yeni yolu alır.
-
-                    if (File.Exists(newFilePath))
-                    {
-                        File.Delete(newFilePath);
-                        System.IO.File.Copy(currentFilePath, newFilePath, true);
-                    }
-
-                    //else
-                    //{
-                    //    File.Copy(currentFilePath, newFilePath);
-                    //}
-
-                    // System.IO.File.Copy(currentFilePath, newFilePath, true);
-
-                    lblYer.Text = newFilePath;
+                    rbtnKadin.Checked = true;
                 }
                 else
                 {
-                    //pbxProfil.ImageLocation = Image.FromFile(Personel_Bilgileri.foto);
+                    rbtnErkek.Checked = true;
                 }
+                dt.Value = oku.GetDateTime(oku.GetOrdinal("dogum_tarihi"));
+                txtPozisyon.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
+                txtTel1.Text = oku.GetString(oku.GetOrdinal("tel1"));
+                txtTel2.Text = oku.GetString(oku.GetOrdinal("tel2"));
+                txtEp1.Text = oku.GetString(oku.GetOrdinal("ep1"));
+                txtEp2.Text = oku.GetString(oku.GetOrdinal("ep2"));
+                txtAdres.Text = oku.GetString(oku.GetOrdinal("adres"));
+                cbxIl.Text = oku.GetString(oku.GetOrdinal("il"));
+                cbxIlce.Text = oku.GetString(oku.GetOrdinal("ilce"));
+                txtPosta.Text = oku.GetString(oku.GetOrdinal("posta_kodu"));
+            }
+            oku.Close();
+            baglanti.Close();
+        }
 
-                /*  }
-                  catch (Exception hata)
-                  {
-                      MessageBox.Show(hata.Message);
-                  }*/
+        private void btnFoto_Click(object sender, EventArgs e)
+        {
+            //   try
+            // {
+            OpenFileDialog dosya = new OpenFileDialog();
+            dosya.FileName = "Resim Seç";
+            dosya.Filter = "Resim Dosyası |*.jpg;*.jpeg;*.png |  Tüm Dosyalar |*.*\";";
+
+            if (dosya.ShowDialog() == DialogResult.OK)
+            {
+                pbxProfil.ImageLocation = dosya.FileName;
+
+                string currentFilePath = pbxProfil.ImageLocation;
+                string newFileName = Personel_Bilgileri.ad + Personel_Bilgileri.sad + "Profil";
+                string currentFileExtension = Path.GetExtension(currentFilePath); //Resim yolunu alır.
+                string debugFolderPath = Path.Combine(Application.StartupPath, "personelFoto" + currentFileExtension);//Klosöre kaydeder
+                string newFilePath = Path.Combine(debugFolderPath, newFileName);//yeni yolu alır.
+
+
+
             }
         }
     }
+}
