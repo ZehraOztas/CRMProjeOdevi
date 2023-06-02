@@ -50,7 +50,7 @@
             this.pnlKisiler.Size = new System.Drawing.Size(210, 77);
             this.pnlKisiler.TabIndex = 0;
             this.pnlKisiler.Click += new System.EventHandler(this.pnlKisiler_Click);
-//            this.pnlKisiler.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlKisiler_Paint);
+            this.pnlKisiler.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlKisiler_Paint);
             // 
             // lbltip
             // 

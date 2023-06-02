@@ -582,3 +582,5 @@ C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.UC_Muste
 C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.Musteri_Detay.resources
 C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.MusteriListe.resources
 C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.UC_MusteriListe.resources
+C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.MailGomderme.resources
+C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.Form_Alert.resources

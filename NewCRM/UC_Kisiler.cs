@@ -64,5 +64,10 @@ namespace NewCRM
         {
             FormGetir();
         }
+
+        private void pnlKisiler_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

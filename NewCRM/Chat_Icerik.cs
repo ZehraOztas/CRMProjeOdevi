@@ -104,5 +104,19 @@ namespace NewCRM
             MessageChat();
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            BackModel backmodel = new BackModel();
+            MailGomderme percikarcard = new MailGomderme();
+            percikarcard.StartPosition = FormStartPosition.CenterScreen;
+            backmodel.FormBorderStyle = FormBorderStyle.None;
+            backmodel.Opacity = .50d;
+            backmodel.BackColor = Color.Black;
+            backmodel.ShowInTaskbar = false;
+            backmodel.Show();
+            percikarcard.Owner = backmodel;
+            percikarcard.ShowDialog();
+            backmodel.Dispose();
+        }
     }
 }

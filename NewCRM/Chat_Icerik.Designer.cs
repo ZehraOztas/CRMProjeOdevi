@@ -41,11 +41,13 @@
             this.lblAd = new System.Windows.Forms.Label();
             this.pbxProfil = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pnlİcerik = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlMesaj.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxGonder)).BeginInit();
             this.pnlTittle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMesaj
@@ -170,6 +172,7 @@
             this.pnlTittle.BorderColor = System.Drawing.Color.Transparent;
             this.pnlTittle.BorderRadius = 25;
             this.pnlTittle.BorderThickness = 1;
+            this.pnlTittle.Controls.Add(this.pictureBox2);
             this.pnlTittle.Controls.Add(this.lblAd);
             this.pnlTittle.Controls.Add(this.pbxProfil);
             this.pnlTittle.Dock = System.Windows.Forms.DockStyle.Top;
@@ -215,6 +218,18 @@
             this.pnlİcerik.Size = new System.Drawing.Size(994, 490);
             this.pnlİcerik.TabIndex = 4;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(938, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Chat_Icerik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,6 +248,7 @@
             this.pnlTittle.ResumeLayout(false);
             this.pnlTittle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,5 +263,6 @@
         public System.Windows.Forms.Label lblAd;
         public Bunifu.UI.WinForms.BunifuPictureBox pbxProfil;
         private System.Windows.Forms.Panel pnlİcerik;
+        public System.Windows.Forms.PictureBox pictureBox2;
     }
 }

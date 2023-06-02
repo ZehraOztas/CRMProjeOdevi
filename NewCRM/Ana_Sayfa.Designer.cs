@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ana_Sayfa));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -39,38 +38,39 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ana_Sayfa));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblSirket = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pnlGecis = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pnlKapa = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblAd = new System.Windows.Forms.Label();
-            this.pbxTakvim = new System.Windows.Forms.PictureBox();
-            this.pbxKfoto = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.btnProjeler = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnPersonelBilgileri = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pbxCikis = new System.Windows.Forms.PictureBox();
             this.btnMesajlar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnMusteri = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnProfil = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.lblSirket = new Bunifu.UI.WinForms.BunifuLabel();
             this.pbxLogo = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.btnForum = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.pnlGecis = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.pnlKapa = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.btnCikis = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSifre = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnPBilgileri = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblAd = new System.Windows.Forms.Label();
+            this.pbxTakvim = new System.Windows.Forms.PictureBox();
+            this.pbxKfoto = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuShadowPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCikis)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.pnlKapa.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTakvim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxKfoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCikis)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -116,143 +116,6 @@
             this.panel1.Size = new System.Drawing.Size(265, 808);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // lblSirket
-            // 
-            this.lblSirket.AllowParentOverrides = false;
-            this.lblSirket.AutoEllipsis = false;
-            this.lblSirket.CursorType = null;
-            this.lblSirket.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.lblSirket.ForeColor = System.Drawing.Color.White;
-            this.lblSirket.Location = new System.Drawing.Point(47, 187);
-            this.lblSirket.Name = "lblSirket";
-            this.lblSirket.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblSirket.Size = new System.Drawing.Size(138, 45);
-            this.lblSirket.TabIndex = 1;
-            this.lblSirket.Text = "Şirket Adı";
-            this.lblSirket.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lblSirket.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // pnlGecis
-            // 
-            this.pnlGecis.BackColor = System.Drawing.Color.Transparent;
-            this.pnlGecis.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlGecis.BorderRadius = 15;
-            this.pnlGecis.BorderThickness = 1;
-            this.pnlGecis.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.pnlGecis.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.pnlGecis.Location = new System.Drawing.Point(272, 100);
-            this.pnlGecis.Name = "pnlGecis";
-            this.pnlGecis.PanelColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlGecis.PanelColor2 = System.Drawing.Color.WhiteSmoke;
-            this.pnlGecis.ShadowColor = System.Drawing.Color.Empty;
-            this.pnlGecis.ShadowDept = 2;
-            this.pnlGecis.ShadowDepth = 10;
-            this.pnlGecis.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.pnlGecis.ShadowTopLeftVisible = false;
-            this.pnlGecis.Size = new System.Drawing.Size(1227, 699);
-            this.pnlGecis.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.pnlGecis.TabIndex = 2;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 25;
-            this.bunifuElipse2.TargetControl = this;
-            // 
-            // pnlKapa
-            // 
-            this.pnlKapa.BackColor = System.Drawing.Color.Transparent;
-            this.pnlKapa.BorderColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlKapa.BorderRadius = 1;
-            this.pnlKapa.BorderThickness = 1;
-            this.pnlKapa.Controls.Add(this.btnCikis);
-            this.pnlKapa.Controls.Add(this.btnSifre);
-            this.pnlKapa.Controls.Add(this.btnPBilgileri);
-            this.pnlKapa.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.pnlKapa.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            this.pnlKapa.Location = new System.Drawing.Point(1116, 83);
-            this.pnlKapa.Name = "pnlKapa";
-            this.pnlKapa.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
-            this.pnlKapa.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
-            this.pnlKapa.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(151)))), ((int)(((byte)(249)))));
-            this.pnlKapa.ShadowDept = 2;
-            this.pnlKapa.ShadowDepth = 5;
-            this.pnlKapa.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
-            this.pnlKapa.ShadowTopLeftVisible = false;
-            this.pnlKapa.Size = new System.Drawing.Size(370, 187);
-            this.pnlKapa.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.pnlKapa.TabIndex = 3;
-            this.pnlKapa.Visible = false;
-            // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.BorderRadius = 80;
-            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
-            this.bunifuGradientPanel1.Controls.Add(this.lblAd);
-            this.bunifuGradientPanel1.Controls.Add(this.pbxTakvim);
-            this.bunifuGradientPanel1.Controls.Add(this.pbxKfoto);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(793, -31);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(726, 125);
-            this.bunifuGradientPanel1.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(690, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 28);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // lblAd
-            // 
-            this.lblAd.AutoSize = true;
-            this.lblAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAd.ForeColor = System.Drawing.Color.White;
-            this.lblAd.Location = new System.Drawing.Point(483, 99);
-            this.lblAd.Name = "lblAd";
-            this.lblAd.Size = new System.Drawing.Size(44, 16);
-            this.lblAd.TabIndex = 4;
-            this.lblAd.Text = "label1";
-            // 
-            // pbxTakvim
-            // 
-            this.pbxTakvim.Image = ((System.Drawing.Image)(resources.GetObject("pbxTakvim.Image")));
-            this.pbxTakvim.Location = new System.Drawing.Point(436, 92);
-            this.pbxTakvim.Name = "pbxTakvim";
-            this.pbxTakvim.Size = new System.Drawing.Size(22, 23);
-            this.pbxTakvim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbxTakvim.TabIndex = 3;
-            this.pbxTakvim.TabStop = false;
-            this.pbxTakvim.Click += new System.EventHandler(this.pbxTakvim_Click);
-            // 
-            // pbxKfoto
-            // 
-            this.pbxKfoto.AllowFocused = false;
-            this.pbxKfoto.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbxKfoto.AutoSizeHeight = true;
-            this.pbxKfoto.BorderRadius = 38;
-            this.pbxKfoto.Image = ((System.Drawing.Image)(resources.GetObject("pbxKfoto.Image")));
-            this.pbxKfoto.IsCircle = true;
-            this.pbxKfoto.Location = new System.Drawing.Point(614, 43);
-            this.pbxKfoto.Name = "pbxKfoto";
-            this.pbxKfoto.Size = new System.Drawing.Size(77, 77);
-            this.pbxKfoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxKfoto.TabIndex = 2;
-            this.pbxKfoto.TabStop = false;
-            this.pbxKfoto.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.pbxKfoto.Click += new System.EventHandler(this.pbxKfoto_Click);
             // 
             // btnProjeler
             // 
@@ -717,6 +580,22 @@
             this.btnProfil.UseDefaultRadiusAndThickness = true;
             this.btnProfil.Click += new System.EventHandler(this.btnProfil_Click);
             // 
+            // lblSirket
+            // 
+            this.lblSirket.AllowParentOverrides = false;
+            this.lblSirket.AutoEllipsis = false;
+            this.lblSirket.CursorType = null;
+            this.lblSirket.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.lblSirket.ForeColor = System.Drawing.Color.White;
+            this.lblSirket.Location = new System.Drawing.Point(47, 187);
+            this.lblSirket.Name = "lblSirket";
+            this.lblSirket.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblSirket.Size = new System.Drawing.Size(138, 45);
+            this.lblSirket.TabIndex = 1;
+            this.lblSirket.Text = "Şirket Adı";
+            this.lblSirket.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblSirket.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // pbxLogo
             // 
             this.pbxLogo.AllowFocused = false;
@@ -822,6 +701,57 @@
             this.btnForum.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnForum.UseDefaultRadiusAndThickness = true;
             this.btnForum.Click += new System.EventHandler(this.btnForum_Click_1);
+            // 
+            // pnlGecis
+            // 
+            this.pnlGecis.BackColor = System.Drawing.Color.Transparent;
+            this.pnlGecis.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlGecis.BorderRadius = 15;
+            this.pnlGecis.BorderThickness = 1;
+            this.pnlGecis.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.pnlGecis.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.pnlGecis.Location = new System.Drawing.Point(272, 100);
+            this.pnlGecis.Name = "pnlGecis";
+            this.pnlGecis.PanelColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlGecis.PanelColor2 = System.Drawing.Color.WhiteSmoke;
+            this.pnlGecis.ShadowColor = System.Drawing.Color.Empty;
+            this.pnlGecis.ShadowDept = 2;
+            this.pnlGecis.ShadowDepth = 10;
+            this.pnlGecis.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.pnlGecis.ShadowTopLeftVisible = false;
+            this.pnlGecis.Size = new System.Drawing.Size(1227, 699);
+            this.pnlGecis.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.pnlGecis.TabIndex = 2;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 25;
+            this.bunifuElipse2.TargetControl = this;
+            // 
+            // pnlKapa
+            // 
+            this.pnlKapa.BackColor = System.Drawing.Color.Transparent;
+            this.pnlKapa.BorderColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlKapa.BorderRadius = 1;
+            this.pnlKapa.BorderThickness = 1;
+            this.pnlKapa.Controls.Add(this.btnCikis);
+            this.pnlKapa.Controls.Add(this.btnSifre);
+            this.pnlKapa.Controls.Add(this.btnPBilgileri);
+            this.pnlKapa.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.pnlKapa.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.pnlKapa.Location = new System.Drawing.Point(1116, 83);
+            this.pnlKapa.Name = "pnlKapa";
+            this.pnlKapa.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
+            this.pnlKapa.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
+            this.pnlKapa.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(151)))), ((int)(((byte)(249)))));
+            this.pnlKapa.ShadowDept = 2;
+            this.pnlKapa.ShadowDepth = 5;
+            this.pnlKapa.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Dropped;
+            this.pnlKapa.ShadowTopLeftVisible = false;
+            this.pnlKapa.Size = new System.Drawing.Size(370, 187);
+            this.pnlKapa.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.pnlKapa.TabIndex = 3;
+            this.pnlKapa.Visible = false;
             // 
             // btnCikis
             // 
@@ -1093,6 +1023,76 @@
             this.btnPBilgileri.UseDefaultRadiusAndThickness = true;
             this.btnPBilgileri.Click += new System.EventHandler(this.btnPBilgileri_Click);
             // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.BorderRadius = 80;
+            this.bunifuGradientPanel1.Controls.Add(this.pictureBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.lblAd);
+            this.bunifuGradientPanel1.Controls.Add(this.pbxTakvim);
+            this.bunifuGradientPanel1.Controls.Add(this.pbxKfoto);
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(50)))), ((int)(((byte)(188)))));
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(793, -31);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(726, 125);
+            this.bunifuGradientPanel1.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(690, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // lblAd
+            // 
+            this.lblAd.AutoSize = true;
+            this.lblAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAd.ForeColor = System.Drawing.Color.White;
+            this.lblAd.Location = new System.Drawing.Point(483, 99);
+            this.lblAd.Name = "lblAd";
+            this.lblAd.Size = new System.Drawing.Size(44, 16);
+            this.lblAd.TabIndex = 4;
+            this.lblAd.Text = "label1";
+            // 
+            // pbxTakvim
+            // 
+            this.pbxTakvim.Image = ((System.Drawing.Image)(resources.GetObject("pbxTakvim.Image")));
+            this.pbxTakvim.Location = new System.Drawing.Point(436, 92);
+            this.pbxTakvim.Name = "pbxTakvim";
+            this.pbxTakvim.Size = new System.Drawing.Size(22, 23);
+            this.pbxTakvim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxTakvim.TabIndex = 3;
+            this.pbxTakvim.TabStop = false;
+            this.pbxTakvim.Click += new System.EventHandler(this.pbxTakvim_Click);
+            // 
+            // pbxKfoto
+            // 
+            this.pbxKfoto.AllowFocused = false;
+            this.pbxKfoto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbxKfoto.AutoSizeHeight = true;
+            this.pbxKfoto.BorderRadius = 38;
+            this.pbxKfoto.Image = ((System.Drawing.Image)(resources.GetObject("pbxKfoto.Image")));
+            this.pbxKfoto.IsCircle = true;
+            this.pbxKfoto.Location = new System.Drawing.Point(614, 43);
+            this.pbxKfoto.Name = "pbxKfoto";
+            this.pbxKfoto.Size = new System.Drawing.Size(77, 77);
+            this.pbxKfoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxKfoto.TabIndex = 2;
+            this.pbxKfoto.TabStop = false;
+            this.pbxKfoto.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            this.pbxKfoto.Click += new System.EventHandler(this.pbxKfoto_Click);
+            // 
             // Ana_Sayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1111,14 +1111,14 @@
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCikis)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.pnlKapa.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxTakvim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxKfoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxCikis)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
