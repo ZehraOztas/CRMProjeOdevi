@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace NewCRM
 {
-    public partial class UC_PersonelinMusterisi : UserControl
+    public partial class UC_MusteriNotlar : UserControl
     {
-        public UC_PersonelinMusterisi()
+        public UC_MusteriNotlar()
         {
             InitializeComponent();
         }
@@ -22,25 +22,24 @@ namespace NewCRM
             {
                 rbtnSec.Checked = true;
                 pnlBack.BackColor = Color.AliceBlue;
-                Personel_Bilgileri.m_id = lblid.Text;
+                Personel_Bilgileri.nid = lblnid.Text;
             }
             else
             {
                 rbtnSec.Checked = false;
                 pnlBack.BackColor = Color.WhiteSmoke;
-                Personel_Bilgileri.m_id = null;
+                Personel_Bilgileri.nid = null;
             }
         }
 
-        private void btnDuzenle_Click(object sender, EventArgs e)
+        private void pbxDuzenle_Click(object sender, EventArgs e)
         {
-            backcolor();
-            Personel_Bilgileri.m_id = lblid.Text;
-            Musteri_Detay f = new Musteri_Detay();
-            PersonelinMusterisi pm = (PersonelinMusterisi)Application.OpenForms["PersonelinMusterisi"];
-            pm.Close();
-            Ana_Sayfa ans = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
-            ans.formGetir(f);
+
+        }
+
+        private void pbxDuzenle_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

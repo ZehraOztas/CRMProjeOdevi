@@ -11,15 +11,11 @@ using System.Windows.Forms;
 
 namespace NewCRM
 {
-    public partial class UC_PersonelListesi : UserControl
+    public partial class UC_MusteriListe : UserControl
     {
-        public UC_PersonelListesi()
+        public UC_MusteriListe()
         {
             InitializeComponent();
-        }
-        private void bunifuCards1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
         private void backcolor()
         {
@@ -27,34 +23,37 @@ namespace NewCRM
             {
                 rbtnSec.Checked = true;
                 kart.BackColor = Color.AliceBlue;
-                Personel_Bilgileri.calisanId = lblid.Text;
+                Personel_Bilgileri.m_id = lblid.Text;
             }
             else
             {
                 rbtnSec.Checked = false;
                 kart.BackColor = Color.WhiteSmoke;
-                Personel_Bilgileri.calisanId = null;
+                Personel_Bilgileri.m_id = null;
             }
         }
 
-
-        private void bunifuCards1_Click(object sender, EventArgs e)
+        private void rbtnSec_Click(object sender, EventArgs e)
         {
             backcolor();
         }
 
-        private void btnMusteriBilgileriDegisikleri_Click_1(object sender, EventArgs e)
+        private void btnMusteriBilgileriDegisikleri_Click(object sender, EventArgs e)
         {
             backcolor();
-            Personel_Bilgileri.calisanId = lblid.Text;
+            Personel_Bilgileri.m_id = lblid.Text;
 
-            Personel_Detay f = new Personel_Detay();
-
-            Personel_Bilgileri.calisanId = lblid.Text;
-            personelListesi pl = (personelListesi)Application.OpenForms["personelListesi"];
+            Musteri_Detay f = new Musteri_Detay();
+            f.btnMusteriBilgileriDegisikleri.Text = "Güncelle";
+            MusteriListe pl = (MusteriListe)Application.OpenForms["MusteriListe"];
             pl.Close();
             Ana_Sayfa ans = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
             ans.formGetir(f);
+        }
+
+        private void UC_MusteriListe_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -76,7 +76,12 @@ namespace NewCRM
             if (Personel_Bilgileri.yetki == 1)
             {
                 btnPersonelBilgileri.Visible = true;
-                
+                btnProjeler.Visible = true;
+            }
+            else
+            {
+                btnPersonelBilgileri.Visible = false;
+                btnProjeler.Visible = false;
             }
         }
 
@@ -149,6 +154,17 @@ namespace NewCRM
         private void btnPersonelBilgileri_Click(object sender, EventArgs e)
         {
             personelListesi f = new personelListesi();
+            formGetir(f);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnProjeler_Click(object sender, EventArgs e)
+        {
+            MusteriListe f = new MusteriListe();
             formGetir(f);
         }
     }

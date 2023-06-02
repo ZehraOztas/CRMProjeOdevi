@@ -578,3 +578,7 @@ C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.csproj.C
 C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.exe
 C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.pdb
 C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.Personel_Detay.resources
+C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.UC_MusteriNotlar.resources
+C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.Musteri_Detay.resources
+C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.MusteriListe.resources
+C:\Users\oztas\OneDrive\Masaüstü\Yeni klasör\NewCRM\obj\Debug\NewCRM.UC_MusteriListe.resources

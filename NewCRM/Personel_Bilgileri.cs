@@ -37,6 +37,7 @@ namespace NewCRM
         public static int ay;
 
         public static string calisanId;
+        public static string yoneten;
 
     }
 }

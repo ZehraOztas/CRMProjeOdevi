@@ -55,7 +55,7 @@
             this.pnlicerik.PanelColor2 = System.Drawing.Color.WhiteSmoke;
             this.pnlicerik.ShadowColor = System.Drawing.Color.DarkGray;
             this.pnlicerik.ShadowDept = 2;
-            this.pnlicerik.ShadowDepth = 3;
+            this.pnlicerik.ShadowDepth = 5;
             this.pnlicerik.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
             this.pnlicerik.ShadowTopLeftVisible = false;
             this.pnlicerik.Size = new System.Drawing.Size(1093, 239);
@@ -67,7 +67,7 @@
             // 
             this.lblAdSoyad.AutoSize = true;
             this.lblAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAdSoyad.Location = new System.Drawing.Point(37, 14);
+            this.lblAdSoyad.Location = new System.Drawing.Point(53, 14);
             this.lblAdSoyad.Name = "lblAdSoyad";
             this.lblAdSoyad.Size = new System.Drawing.Size(75, 16);
             this.lblAdSoyad.TabIndex = 17;
@@ -77,7 +77,7 @@
             // 
             this.lblCalistigiYer.AutoSize = true;
             this.lblCalistigiYer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCalistigiYer.Location = new System.Drawing.Point(172, 14);
+            this.lblCalistigiYer.Location = new System.Drawing.Point(182, 14);
             this.lblCalistigiYer.Name = "lblCalistigiYer";
             this.lblCalistigiYer.Size = new System.Drawing.Size(91, 16);
             this.lblCalistigiYer.TabIndex = 20;
@@ -87,7 +87,7 @@
             // 
             this.lblPozisyon.AutoSize = true;
             this.lblPozisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPozisyon.Location = new System.Drawing.Point(377, 14);
+            this.lblPozisyon.Location = new System.Drawing.Point(337, 14);
             this.lblPozisyon.Name = "lblPozisyon";
             this.lblPozisyon.Size = new System.Drawing.Size(70, 16);
             this.lblPozisyon.TabIndex = 21;
@@ -97,7 +97,7 @@
             // 
             this.lblDurum.AutoSize = true;
             this.lblDurum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDurum.Location = new System.Drawing.Point(864, 14);
+            this.lblDurum.Location = new System.Drawing.Point(895, 14);
             this.lblDurum.Name = "lblDurum";
             this.lblDurum.Size = new System.Drawing.Size(100, 16);
             this.lblDurum.TabIndex = 22;
@@ -107,7 +107,7 @@
             // 
             this.lblPrjAdi.AutoSize = true;
             this.lblPrjAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblPrjAdi.Location = new System.Drawing.Point(738, 14);
+            this.lblPrjAdi.Location = new System.Drawing.Point(723, 14);
             this.lblPrjAdi.Name = "lblPrjAdi";
             this.lblPrjAdi.Size = new System.Drawing.Size(71, 16);
             this.lblPrjAdi.TabIndex = 23;
@@ -117,7 +117,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(509, 14);
+            this.label1.Location = new System.Drawing.Point(480, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 16);
             this.label1.TabIndex = 24;
