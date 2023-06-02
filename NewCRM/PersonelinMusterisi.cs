@@ -18,7 +18,7 @@ namespace NewCRM
             InitializeComponent();
         }
 
-        private void PersonelinMusterisi_Load(object sender, EventArgs e)
+        private void PersonelinMusterisi_Load(object sender, EventArgs e)//Personele ait müşteriler listelenir.
         {
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 

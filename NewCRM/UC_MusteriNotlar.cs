@@ -17,6 +17,11 @@ namespace NewCRM
         {
             InitializeComponent();
         }
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
         private void backcolor()
         {
             if (rbtnSec.Checked == false)
@@ -78,7 +83,7 @@ namespace NewCRM
             }
             catch
             {
-                MessageBox.Show("Daha sonra tekrar deneyiniz.");
+                this.Alert("İşleminiz gerçekleştirilemedi.", Form_Alert.enmType.Error);
             }
         }
     }

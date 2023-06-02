@@ -87,6 +87,7 @@ namespace NewCRM
             cmd.ExecuteNonQuery();
             baglan.Close();
             txtIcerik.Clear();
+            pnlİcerik.Controls.Clear();
             MessageChat();
         }
 

@@ -25,6 +25,11 @@ namespace NewCRM
         SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
         public String deger = "";
 
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
         public void NotGetir()
         {
 
@@ -113,7 +118,7 @@ namespace NewCRM
             {
                 if (string.IsNullOrEmpty(txtADs.Text) || string.IsNullOrEmpty(txtcalistigiYer.Text) || string.IsNullOrEmpty(txtEp.Text) || string.IsNullOrEmpty(txtPozisyonu.Text) || string.IsNullOrEmpty(txtPrjAdi.Text) || string.IsNullOrEmpty(txtSoyad.Text) || string.IsNullOrEmpty(txtTel.Text) || string.IsNullOrEmpty(cbxDurum.Text) || cbxDurum.Text == "Seçiniz")
                 {
-                    MessageBox.Show("Lütfen boş geçmeyiniz.");
+                    this.Alert("Lütfen boş geçmeyiniz.", Form_Alert.enmType.Info);
                 }
                 else
                 {
@@ -133,7 +138,8 @@ namespace NewCRM
                     baglan.Open();
                     kaydet.ExecuteNonQuery();
                     baglan.Close();
-                    MessageBox.Show("İşleminiz gerçekleştirildi.");
+
+                    this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
                     Listele();
                 }
             }
@@ -142,7 +148,7 @@ namespace NewCRM
             {
                 if (string.IsNullOrEmpty(txtADs.Text) || string.IsNullOrEmpty(txtcalistigiYer.Text) || string.IsNullOrEmpty(txtEp.Text) || string.IsNullOrEmpty(txtPozisyonu.Text) || string.IsNullOrEmpty(txtPrjAdi.Text) || string.IsNullOrEmpty(txtSoyad.Text) || string.IsNullOrEmpty(txtTel.Text) || string.IsNullOrEmpty(cbxDurum.Text) || cbxDurum.Text == "Seçiniz")
                 {
-                    MessageBox.Show("Lütfen boş geçmeyiniz.");
+                    this.Alert("Lütfen boş geçmeyiniz.", Form_Alert.enmType.Info);
                 }
                 else
                 {
@@ -162,7 +168,7 @@ namespace NewCRM
                     baglan.Open();
                     kaydet.ExecuteNonQuery();
                     baglan.Close();
-                    MessageBox.Show("İşleminiz gerçekleştirildi.");
+                    this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
                     Listele();
                 }
 

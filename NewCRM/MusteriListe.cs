@@ -18,9 +18,15 @@ namespace NewCRM
             InitializeComponent();
         }
 
-
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
         private void MusteriListe_Load(object sender, EventArgs e)
         {
+            //Oluşturulan usercontrol'e tüm müşterilerin değerlerini ekler.
+
             Personel_Bilgileri.m_id = null;
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
             SqlCommand listele = new SqlCommand("SELECT m_id, ad, soyad, calistigi_yer, son_tarih, projeyi_yoneten, proje_adi, durum, ep,tel FROM Musteri", baglan);
@@ -43,6 +49,7 @@ namespace NewCRM
                 pnlListe.Controls.Add(uc);
             }
 
+            //Burada Musteri adlı tablodan gelen projeyi_yoneten satırındaki verilerin PersonelTablosundaki veriyle aynı olduğundan buradan Personelin adını çekiyoruz.
             SqlCommand ad = new SqlCommand("SELECT ad, soyad FROM PersonelTablosu WHERE tc=@tc", baglan);
             ad.Parameters.AddWithValue("@tc", Personel_Bilgileri.yoneten);
 
@@ -75,7 +82,7 @@ namespace NewCRM
         {
             if (Personel_Bilgileri.m_id == null)
             {
-                MessageBox.Show("işlemi gerçekleştirmek istediğiniz kaydı seçiniz.");
+                this.Alert("İşlemi gerçekleştirmek istediğiniz kaydı seçiniz.", Form_Alert.enmType.Warning);
             }
             else
             {
@@ -92,7 +99,7 @@ namespace NewCRM
         {
             if (Personel_Bilgileri.m_id == null)
             {
-                MessageBox.Show("işlemi gerçekleştirmek istediğiniz kaydı seçiniz.");
+                this.Alert("İşlemi gerçekleştirmek istediğiniz kaydı seçiniz.", Form_Alert.enmType.Warning);
             }
             else
             {
@@ -102,7 +109,7 @@ namespace NewCRM
                 baglan.Open();
                 silme.ExecuteNonQuery();
                 baglan.Close();
-                MessageBox.Show("Başarıyla silindi");
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
                 this.Close();
                 MusteriListe f = new MusteriListe();
                 Ana_Sayfa ans = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];

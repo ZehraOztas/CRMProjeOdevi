@@ -14,6 +14,12 @@ namespace NewCRM
 {
     public partial class Login : Form
     {
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
+
         public Login()
         {
             InitializeComponent();
@@ -54,7 +60,7 @@ namespace NewCRM
             }
             else
             {
-                MessageBox.Show("Hatalı işlem yapıldı. Lütfen kullanıcı adınızı veya şifrenizi kontrol ederek tekrar deneyiniz.");
+                this.Alert("Lütfen bilgilerinizi kontrol ediniz.", Form_Alert.enmType.Error);
                 txtKad.Clear();
                 txtSifre.Clear();
                 txtKad.Focus();

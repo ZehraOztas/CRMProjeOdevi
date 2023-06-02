@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MailGomderme));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -37,12 +42,9 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MailGomderme));
             this.pnlBack = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtAlici = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnGonder = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lblEk = new System.Windows.Forms.Label();
@@ -52,11 +54,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtAlici = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlBack.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEk)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlBack
@@ -92,6 +92,91 @@
             this.pnlBack.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlBack.TabIndex = 0;
             this.pnlBack.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.bunifuShadowPanel1_ControlAdded);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(619, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 140;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // txtAlici
+            // 
+            this.txtAlici.AcceptsReturn = false;
+            this.txtAlici.AcceptsTab = false;
+            this.txtAlici.AnimationSpeed = 200;
+            this.txtAlici.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtAlici.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtAlici.BackColor = System.Drawing.Color.Transparent;
+            this.txtAlici.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtAlici.BackgroundImage")));
+            this.txtAlici.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtAlici.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtAlici.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtAlici.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtAlici.BorderRadius = 20;
+            this.txtAlici.BorderThickness = 1;
+            this.txtAlici.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtAlici.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAlici.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtAlici.DefaultText = "";
+            this.txtAlici.FillColor = System.Drawing.Color.White;
+            this.txtAlici.HideSelection = true;
+            this.txtAlici.IconLeft = null;
+            this.txtAlici.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAlici.IconPadding = 10;
+            this.txtAlici.IconRight = null;
+            this.txtAlici.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAlici.Lines = new string[0];
+            this.txtAlici.Location = new System.Drawing.Point(100, 26);
+            this.txtAlici.MaxLength = 32767;
+            this.txtAlici.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtAlici.Modified = false;
+            this.txtAlici.Multiline = false;
+            this.txtAlici.Name = "txtAlici";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlici.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtAlici.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlici.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAlici.OnIdleState = stateProperties4;
+            this.txtAlici.Padding = new System.Windows.Forms.Padding(3);
+            this.txtAlici.PasswordChar = '\0';
+            this.txtAlici.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtAlici.PlaceholderText = "Enter text";
+            this.txtAlici.ReadOnly = false;
+            this.txtAlici.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtAlici.SelectedText = "";
+            this.txtAlici.SelectionLength = 0;
+            this.txtAlici.SelectionStart = 0;
+            this.txtAlici.ShortcutsEnabled = true;
+            this.txtAlici.Size = new System.Drawing.Size(487, 32);
+            this.txtAlici.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtAlici.TabIndex = 139;
+            this.txtAlici.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtAlici.TextMarginBottom = 0;
+            this.txtAlici.TextMarginLeft = 3;
+            this.txtAlici.TextMarginTop = 0;
+            this.txtAlici.TextPlaceholder = "Enter text";
+            this.txtAlici.UseSystemPasswordChar = false;
+            this.txtAlici.WordWrap = true;
             // 
             // label4
             // 
@@ -244,7 +329,7 @@
             this.txticerik.MaxLength = 32767;
             this.txticerik.MinimumSize = new System.Drawing.Size(1, 1);
             this.txticerik.Modified = false;
-            this.txticerik.Multiline = false;
+            this.txticerik.Multiline = true;
             this.txticerik.Name = "txticerik";
             stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties5.FillColor = System.Drawing.Color.Empty;
@@ -388,91 +473,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Alıcı Kişi:";
             // 
-            // txtAlici
-            // 
-            this.txtAlici.AcceptsReturn = false;
-            this.txtAlici.AcceptsTab = false;
-            this.txtAlici.AnimationSpeed = 200;
-            this.txtAlici.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtAlici.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtAlici.BackColor = System.Drawing.Color.Transparent;
-            this.txtAlici.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtAlici.BackgroundImage")));
-            this.txtAlici.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtAlici.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtAlici.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtAlici.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtAlici.BorderRadius = 20;
-            this.txtAlici.BorderThickness = 1;
-            this.txtAlici.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtAlici.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAlici.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtAlici.DefaultText = "";
-            this.txtAlici.FillColor = System.Drawing.Color.White;
-            this.txtAlici.HideSelection = true;
-            this.txtAlici.IconLeft = null;
-            this.txtAlici.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAlici.IconPadding = 10;
-            this.txtAlici.IconRight = null;
-            this.txtAlici.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAlici.Lines = new string[0];
-            this.txtAlici.Location = new System.Drawing.Point(100, 26);
-            this.txtAlici.MaxLength = 32767;
-            this.txtAlici.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtAlici.Modified = false;
-            this.txtAlici.Multiline = false;
-            this.txtAlici.Name = "txtAlici";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlici.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtAlici.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlici.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAlici.OnIdleState = stateProperties4;
-            this.txtAlici.Padding = new System.Windows.Forms.Padding(3);
-            this.txtAlici.PasswordChar = '\0';
-            this.txtAlici.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtAlici.PlaceholderText = "Enter text";
-            this.txtAlici.ReadOnly = false;
-            this.txtAlici.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtAlici.SelectedText = "";
-            this.txtAlici.SelectionLength = 0;
-            this.txtAlici.SelectionStart = 0;
-            this.txtAlici.ShortcutsEnabled = true;
-            this.txtAlici.Size = new System.Drawing.Size(487, 32);
-            this.txtAlici.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtAlici.TabIndex = 139;
-            this.txtAlici.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtAlici.TextMarginBottom = 0;
-            this.txtAlici.TextMarginLeft = 3;
-            this.txtAlici.TextMarginTop = 0;
-            this.txtAlici.TextPlaceholder = "Enter text";
-            this.txtAlici.UseSystemPasswordChar = false;
-            this.txtAlici.WordWrap = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(619, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 140;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // MailGomderme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -485,8 +485,8 @@
             this.Load += new System.EventHandler(this.MailGomderme_Load);
             this.pnlBack.ResumeLayout(false);
             this.pnlBack.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxEk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxEk)).EndInit();
             this.ResumeLayout(false);
 
         }

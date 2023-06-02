@@ -111,6 +111,7 @@
             this.lblnid.Size = new System.Drawing.Size(31, 15);
             this.lblnid.TabIndex = 71;
             this.lblnid.Text = "n_id";
+            this.lblnid.Visible = false;
             // 
             // pbxSil
             // 

@@ -19,8 +19,14 @@ namespace NewCRM
         {
             InitializeComponent();
         }
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
 
         public string tip;
+
         private void list()//Seçtiğimiz kişinin id numarasını alarak o kişi ile yaptığımız Projeleri combobox'ın içerisine ekliyor.
         {
             using (baglan)
@@ -105,7 +111,7 @@ namespace NewCRM
             asd.formGetir(f);
         }
 
-        private void btnKaydet_Click(object sender, EventArgs e)//Yapmak istenilen işlem türünü gerçekleştiriyor.
+        private void btnKaydet_Click(object sender, EventArgs e)//Kaydetme veya güncelleme işleminden yapmak istenilen işlem türünü gerçekleştiriyor.
         {
             DateTime now = DateTime.Now;
             SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
@@ -122,8 +128,8 @@ namespace NewCRM
                 ekle.Parameters.AddWithValue("@proje_adi", cbxListe.Text);
 
                 ekle.ExecuteNonQuery();
-                baglanti.Close();
-                MessageBox.Show("Kaydedildi");
+                baglanti.Close(); 
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
             }
             else if (tip == "Güncelle")
             {
@@ -134,7 +140,8 @@ namespace NewCRM
                 baglanti.Open();
                 guncelle.ExecuteNonQuery();
                 baglanti.Close();
-                MessageBox.Show("Kayıt güncellendi");
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
+
             }
         }
     }

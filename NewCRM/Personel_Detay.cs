@@ -18,7 +18,12 @@ namespace NewCRM
             InitializeComponent();
         }
 
-        private void Personel_Detay_Load(object sender, EventArgs e)
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
+        private void Personel_Detay_Load(object sender, EventArgs e)//Burada eğer btnKaydet'in texti Güncelle ise seçili personelin verilerini lister ancak seçili değilse formun içindeki nesneler boş olarak görüntülenir.
         {
             if (btnKaydet.Text == "Güncelle")
             {
@@ -84,7 +89,7 @@ namespace NewCRM
 
         }
 
-        private void btnKaydet_Click(object sender, EventArgs e)
+        private void btnKaydet_Click(object sender, EventArgs e)//Buttonun textine göre güncelleme ya da kaydetme işlemi yapar. Müşteri kaydettikten sonra buttonun textini de Güncelle olarak değiştireceği için aynı kaydı tekrar kaydetmez.
         {
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
@@ -126,7 +131,7 @@ namespace NewCRM
                 baglan.Open();
                 guncelle.ExecuteNonQuery();
                 baglan.Close();
-                MessageBox.Show("Değişiklikler kaydedildi.");
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
             }
 
             else if (btnKaydet.Text =="Kaydet")
@@ -170,7 +175,7 @@ namespace NewCRM
                 ekle.ExecuteReader();
                 baglan.Close();
                 btnKaydet.Text = "Güncelle";
-                MessageBox.Show("Yeni Kayıt başarıyla oluşturuldu");
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
             }
         }
     }

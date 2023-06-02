@@ -18,7 +18,11 @@ namespace NewCRM
         {
             InitializeComponent();
         }
-
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
         private void TakvimListe_Load(object sender, EventArgs e)
         {
 

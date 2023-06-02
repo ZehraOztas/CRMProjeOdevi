@@ -18,11 +18,18 @@ namespace NewCRM
             InitializeComponent();
         }
 
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
+
         public string deger;
         private void EventForm_Load(object sender, EventArgs e)
         { 
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
 
+            //Burada form açıldığı zaman eğer değer güncelleme işlemi yapmak istiyorsak formumuzdak nesnelere veriler eklenerek gelir.
             if (deger == "Güncelle")
             {
                 SqlCommand yaz = new SqlCommand("SELECT * FROM TakvimTablosu WHERE id=@id", baglan);
@@ -85,10 +92,10 @@ namespace NewCRM
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            //Deger'in tipine göre işlem gerçekleştirir.
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
-            if (deger == "Yeni Kayıt")
+            if (deger == "Yeni Kayıt") //Yeni kişi ekler.
             {
-
                 SqlCommand ekle = new SqlCommand("INSERT INTO TakvimTablosu(tarih,proje_adi,musteri_adi, icerik, kaydeden, baslangic_saat, bitis_saat) VALUES (@tarih,@proje_adi,@musteri_adi, @not,@k, @bas, @bit)", baglan);
                 ekle.Parameters.AddWithValue("@tarih", dtpTarih.Value);
                 ekle.Parameters.AddWithValue("@proje_adi", cbxProje.Text);
@@ -101,11 +108,11 @@ namespace NewCRM
                 baglan.Open();
                 ekle.ExecuteNonQuery();
                 baglan.Dispose();
-                MessageBox.Show("Kaydedildi.");
+                this.Alert("Kayıt başarıyla oluşturuldu.", Form_Alert.enmType.Success);
                 UC_Days uc = new UC_Days();
             }
 
-            else if (deger == "Güncelle")
+            else if (deger == "Güncelle")//Güncelleme yapar.
             {
                 SqlCommand ekle = new SqlCommand("UPDATE TakvimTablosu SET tarih=@tarih,proje_adi=@proje_adi,musteri_adi=@musteri_adi, icerik=@not, kaydeden=@k, baslangic_saat=@bas, bitis_saat=@bit WHERE id=@id", baglan);
                 ekle.Parameters.AddWithValue("id", lblid.Text);
@@ -120,7 +127,7 @@ namespace NewCRM
                 baglan.Open();
                 ekle.ExecuteNonQuery();
                 baglan.Dispose();
-                MessageBox.Show("Güncellendi.");
+                this.Alert("Yapılan değişiklikler kaydedildi.", Form_Alert.enmType.Success);
                 UC_Days uc = new UC_Days();
             }
 

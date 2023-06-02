@@ -18,7 +18,11 @@ namespace NewCRM
         {
             InitializeComponent();
         }
-
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
         private void SayfaAc()
         {
             txtTc.Text = Personel_Bilgileri.tc;
@@ -54,7 +58,7 @@ namespace NewCRM
 
         }
 
-        private void btnKaydet_Click(object sender, EventArgs e)
+        private void btnKaydet_Click(object sender, EventArgs e)//Güncelleme işlemi yapar.
         {
             SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
             SqlCommand guncelle = new SqlCommand("UPDATE PersonelTablosu SET tel1=@tel1, tel2=@tel2, ep1=@ep1 , ep2=@ep2, adres=@adres, il=@il, ilce=@ilce, posta_kodu=@pkod WHERE tc=@tc", baglanti);
@@ -70,8 +74,7 @@ namespace NewCRM
             guncelle.Parameters.AddWithValue("@tc", txtTc.Text);
             guncelle.ExecuteNonQuery();
             baglanti.Close();
-
-            MessageBox.Show("Yaptığınız Değişiklikler Kaydedildi");
+            this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
 
             Personel_Bilgileri.ep1 = txtEp1.Text;
             Personel_Bilgileri.ep2 = txtEp2.Text;
@@ -84,7 +87,7 @@ namespace NewCRM
             SayfaAc();
         }
 
-        private void btnVazgec_Click(object sender, EventArgs e)
+        private void btnVazgec_Click(object sender, EventArgs e)//Eğer değişiklik yapmak istemezsek eski bilgileri geri ytükler. Bunu da loginde giriş yaparken claas'a eklediğimiz verilerden çekerek yapar.
         {
             txtEp1.Text = Personel_Bilgileri.ep1;
             txtEp2.Text = Personel_Bilgileri.ep2;
@@ -101,7 +104,7 @@ namespace NewCRM
 
         }
 
-        private void Personel_Load(object sender, EventArgs e)
+        private void Personel_Load(object sender, EventArgs e)//Form açıldığı zaman verileri çeker.
         {
             SqlConnection baglanti = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
             SqlCommand listele = new SqlCommand("SELECT * FROM PersonelTablosu WHERE tc=@id", baglanti);
@@ -138,7 +141,7 @@ namespace NewCRM
             baglanti.Close();
         }
 
-        private void btnFoto_Click(object sender, EventArgs e)
+        private void btnFoto_Click(object sender, EventArgs e)//Resim seçeriz ve resmi debug klasörüne de ekler..
         {
             //   try
             // {

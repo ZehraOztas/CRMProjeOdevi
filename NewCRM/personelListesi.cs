@@ -17,8 +17,13 @@ namespace NewCRM
         {
             InitializeComponent();
         }
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
 
-        private void personelListesi_Load(object sender, EventArgs e)
+        private void personelListesi_Load(object sender, EventArgs e)//Form açıldığında UC_PersonelListesi adlı usercontrol çekerek o usercontrol'a değerler verilir.
         {
             Personel_Bilgileri.calisanId = null;
             SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
@@ -52,7 +57,7 @@ namespace NewCRM
             Personel_Bilgileri.m_id = null;
         }
 
-        private void btnEkle_Click(object sender, EventArgs e)
+        private void btnEkle_Click(object sender, EventArgs e)//Başka form açarak ekleme işlemi yapılır.
         {
             Personel_Bilgileri.calisanId = null;
             Personel_Detay f = new Personel_Detay();
@@ -65,11 +70,11 @@ namespace NewCRM
 
         }
 
-        private void btnDuzenle_Click(object sender, EventArgs e)
+        private void btnDuzenle_Click(object sender, EventArgs e)//Personel ait tc bilgileri elimizde ise işlem için farlı form açılır. Değilse hata mesajı verilir.
         {
             if (Personel_Bilgileri.calisanId == null)
             {
-                MessageBox.Show("İşlem yapmak istediğiniz kaydı seçiniz.");
+                this.Alert("İşlem yapmak istediğiniz kaydı seçiniz.", Form_Alert.enmType.Warning);
             }
             else
             {
@@ -82,11 +87,11 @@ namespace NewCRM
             }
         }
 
-        private void btnSil_Click(object sender, EventArgs e)
+        private void btnSil_Click(object sender, EventArgs e)//Personele ait tc verisi elimizde kayıt silinir değilse hata mesajı verilir.
         {
             if (Personel_Bilgileri.calisanId == null)
-            {
-                MessageBox.Show("İşlem yapmak istediğiniz kaydı seçiniz.");
+            {                
+                this.Alert("İşlem yapmak istediğiniz kaydı seçiniz.", Form_Alert.enmType.Warning);
             }
             else
             {
@@ -96,7 +101,7 @@ namespace NewCRM
                 baglan.Open();
                 sil.ExecuteNonQuery();
                 baglan.Close();
-                MessageBox.Show("İşlem başarıyla gerçekleştirildi.");
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
                 this.Close();
                 personelListesi f = new personelListesi();
                 Ana_Sayfa ans = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];

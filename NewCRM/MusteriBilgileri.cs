@@ -23,55 +23,39 @@ namespace NewCRM
 
         SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
         DataClassesMusteriBilgileriDataContext dcMb = new DataClassesMusteriBilgileriDataContext();
-
-        private void tekrariEngelle()// Listeleme işlemii yaparken tekrar yaparak aynı verileri yazdırıyordu. Bunu engellemek için
+        public void Alert(string msg, Form_Alert.enmType type)
         {
-            
-
-            int personelSayisi = dcMb.Musteri.Count(); // Mevcut personel sayısını alın
-
-            // Panele eklenen nesne sayısını alın
-            int nesneSayisi = pnlMusteriBilgileri.Controls.OfType<UC_MusteriBilgileri>().Count();
-            while (pnlMusteriBilgileri.Controls.OfType<UC_MusteriBilgileri>().Count() > personelSayisi)
-            {
-                pnlMusteriBilgileri.Controls.RemoveAt(pnlMusteriBilgileri.Controls.Count - 1);
-            }
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
         }
-
         private void filtre(string durum) //Burada filtreleme işlemi yapıyoruz. Combobox'in index numarasına göre aldığımız duruma göre listeleme işlemi yapıyoruz.
-        {         
+        {
             pnlMusteriBilgileri.Controls.Clear();
-            foreach (var deg in dcMb.Musteri)
+
+            SqlCommand command = new SqlCommand("SELECT ad,soyad,ep,tel,calistigi_yer, pozisyonu, son_tarih, durum, proje_adi FROM Musteri WHERE durum = @d AND projeyi_yoneten=@y ORDER BY son_tarih desc", baglan);
+            command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
+            command.Parameters.AddWithValue("@d", durum);
+            baglan.Open();
+            SqlDataReader oku = command.ExecuteReader();
+            while (oku.Read())
             {
-                SqlCommand command = new SqlCommand("SELECT ad,soyad,ep,tel,calistigi_yer, pozisyonu, son_tarih, durum, proje_adi FROM Musteri WHERE durum = @d AND projeyi_yoneten=@y ORDER BY son_tarih desc", baglan);
-                command.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
-                command.Parameters.AddWithValue("@d", durum);
-                baglan.Open();
-                SqlDataReader oku = command.ExecuteReader();
-                while (oku.Read())
-                {
-                    UC_MusteriBilgileri uc = new UC_MusteriBilgileri(); // kontrol nesnesi oluşturulur
-                    uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
-                    uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
-                    uc.lblTel.Text = oku.GetString(oku.GetOrdinal("tel"));
-                    uc.lblCalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
-                    uc.lblPozisyon.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
-                    uc.dtpSontarih.Text = oku.GetDateTime(oku.GetOrdinal("son_tarih")).ToString();
-                    uc.lblDurum.Text = oku.GetString(oku.GetOrdinal("durum"));
-                    uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
-                    uc.Dock = DockStyle.Top;
-                    uc.rbtnSec.Checked = false;
-                    uc.pnlBack.BackColor = Color.WhiteSmoke;
-                    pnlMusteriBilgileri.Controls.Add(uc);
-                }
-                oku.Close();
-                tekrariEngelle();
+                UC_MusteriBilgileri uc = new UC_MusteriBilgileri(); // kontrol nesnesi oluşturulur
+                uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
+                uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
+                uc.lblTel.Text = oku.GetString(oku.GetOrdinal("tel"));
+                uc.lblCalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
+                uc.lblPozisyon.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
+                uc.dtpSontarih.Text = oku.GetDateTime(oku.GetOrdinal("son_tarih")).ToString();
+                uc.lblDurum.Text = oku.GetString(oku.GetOrdinal("durum"));
+                uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
+                uc.Dock = DockStyle.Top;
+                uc.rbtnSec.Checked = false;
+                uc.pnlBack.BackColor = Color.WhiteSmoke;
+                pnlMusteriBilgileri.Controls.Add(uc);
             }
+            oku.Close();
             baglan.Close();
-            
         }
-
-
 
         private void listele() //Form açıldığı zaman yapılacak listeleme
         {
@@ -115,7 +99,7 @@ namespace NewCRM
 
         private void txtAra_TextChanged(object sender, EventArgs e)//Textbox'a yazdıklarımıza göre arama yapması için 
         {
-            
+
             pnlMusteriBilgileri.Controls.Clear();
             if (txtAra.Text == " " || txtAra.Text == "")
             {
@@ -123,35 +107,29 @@ namespace NewCRM
             }
             else
             {
-                foreach (var deg in dcMb.Musteri)
+                SqlCommand ara = new SqlCommand("SELECT ad,soyad,ep,tel,calistigi_yer, pozisyonu, ilk_tarih, son_tarih, durum, proje_adi FROM Musteri WHERE (ad LIKE @ad+'%' or soyad LIKE @sad+'%' or calistigi_yer LIKE '%'+@cyer+'%')and(projeyi_yoneten=@y)", baglan);
+                ara.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
+                ara.Parameters.AddWithValue("@ad", txtAra.Text);
+                ara.Parameters.AddWithValue("@sad", txtAra.Text);
+                ara.Parameters.AddWithValue("@cyer", txtAra.Text);
+                baglan.Open();
+                SqlDataReader oku = ara.ExecuteReader();
+                while (oku.Read())
                 {
-                    SqlCommand ara = new SqlCommand("SELECT ad,soyad,ep,tel,calistigi_yer, pozisyonu, ilk_tarih, son_tarih, durum, proje_adi FROM Musteri WHERE (ad LIKE @ad+'%' or soyad LIKE @sad+'%' or calistigi_yer LIKE '%'+@cyer+'%')and(projeyi_yoneten=@y)", baglan);
-                    ara.Parameters.AddWithValue("@y", Personel_Bilgileri.tc);
-                    ara.Parameters.AddWithValue("@ad", txtAra.Text);
-                    ara.Parameters.AddWithValue("@sad", txtAra.Text);
-                    ara.Parameters.AddWithValue("@cyer", txtAra.Text);
-                    baglan.Open();
-                    SqlDataReader oku = ara.ExecuteReader();
-                    while (oku.Read())
-                    {
-
-
-                        UC_MusteriBilgileri uc = new UC_MusteriBilgileri();
-                        uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
-                        uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
-                        uc.lblTel.Text = oku.GetString(oku.GetOrdinal("tel"));
-                        uc.lblCalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
-                        uc.lblPozisyon.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
-                        uc.dtpSontarih.Text = oku.GetDateTime(oku.GetOrdinal("son_tarih")).ToString();
-                        uc.lblDurum.Text = oku.GetString(oku.GetOrdinal("durum"));
-                        uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
-                        uc.rbtnSec.Checked = false;
-                        uc.pnlBack.BackColor = Color.WhiteSmoke;
-                        pnlMusteriBilgileri.Controls.Add(uc);
-                    }
-                    baglan.Close();
-                    tekrariEngelle();
+                    UC_MusteriBilgileri uc = new UC_MusteriBilgileri();
+                    uc.lblAdSoyad.Text = oku.GetString(oku.GetOrdinal("ad")) + " " + oku.GetString(oku.GetOrdinal("soyad"));
+                    uc.lblEp.Text = oku.GetString(oku.GetOrdinal("ep"));
+                    uc.lblTel.Text = oku.GetString(oku.GetOrdinal("tel"));
+                    uc.lblCalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
+                    uc.lblPozisyon.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
+                    uc.dtpSontarih.Text = oku.GetDateTime(oku.GetOrdinal("son_tarih")).ToString();
+                    uc.lblDurum.Text = oku.GetString(oku.GetOrdinal("durum"));
+                    uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
+                    uc.rbtnSec.Checked = false;
+                    uc.pnlBack.BackColor = Color.WhiteSmoke;
+                    pnlMusteriBilgileri.Controls.Add(uc);
                 }
+                baglan.Close();
             }
         }
 
@@ -225,7 +203,7 @@ namespace NewCRM
         {
             if (Personel_Bilgileri.m_id == null)
             {
-                MessageBox.Show("Bilgilerini değiştirmek istediğiniz kişiyi seçiniz.");
+                this.Alert("Bilgilerini değiştirmek istediğiniz kişiyi seçiniz.", Form_Alert.enmType.Warning);
             }
             else
             {
@@ -243,7 +221,7 @@ namespace NewCRM
         {
             if (Personel_Bilgileri.m_id == null)
             {
-                MessageBox.Show("Bilgilerini silmek istediğiniz kişiyi seçiniz.");
+                this.Alert("Bilgilerini değiştirmek istediğiniz kişiyi seçiniz.", Form_Alert.enmType.Warning);
             }
             else
             {

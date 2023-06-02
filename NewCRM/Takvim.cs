@@ -20,9 +20,13 @@ namespace NewCRM
         {
             InitializeComponent();
         }
-        
-        public static int static_month, static_year, static_day;
-        private void displaDays()
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
+        public static int static_month, static_year, static_day;//Static değer atayınca farklı formlarda çağırabilmek daha kolaylaştığından, static olarak atadık.
+        private void displaDays()//Takvim için usercontrol çağırır ve takvim bilgilerine göre değerler ekler.
         {
             DateTime now = DateTime.Now;
             month = now.Month;
@@ -55,7 +59,7 @@ namespace NewCRM
 
         }
 
-        private void btnnext_Click(object sender, EventArgs e)
+        private void btnnext_Click(object sender, EventArgs e)//Bir sonraki ay için aynı işlemler yapılır
         {
             //lear container
             daycontainer.Controls.Clear();
@@ -88,7 +92,7 @@ namespace NewCRM
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)//Yapılacak işlemler sayfasını açarak yeni kayıt oluşturmamızı sağlar.
         {
             EventForm f = new EventForm();
             this.Close();
@@ -97,11 +101,11 @@ namespace NewCRM
             asd.formGetir(f);
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)//Seçili kaydı silme işlemi yapar.
         {
             if (Personel_Bilgileri.takvimId == null)
             {
-                MessageBox.Show("İlk önce değiştirmek istediğiniz kaydı seçiniz.");
+                this.Alert("İşlemi gerçekleştirmek istediğiniz kaydı seçiniz.", Form_Alert.enmType.Warning);
             }
             else
             {
@@ -111,7 +115,7 @@ namespace NewCRM
                 baglan.Open();
                 sil.ExecuteNonQuery();
                 baglan.Close();
-                MessageBox.Show("silindi");
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
             }
         }
 
@@ -133,8 +137,8 @@ namespace NewCRM
         private void btnSil_Click(object sender, EventArgs e)
         {
             if (Personel_Bilgileri.takvimId == null)
-            {
-                MessageBox.Show("Silmek istediğiniz kişiyi seçiniz.");
+            {                
+                this.Alert("İşlem yapmak istediğiniz kaydı seçiniz.", Form_Alert.enmType.Warning);
             }
             else
             {
@@ -144,8 +148,7 @@ namespace NewCRM
                 baglan.Open();
                 sil.ExecuteNonQuery();
                 baglan.Close();
-                MessageBox.Show("Kayıt silindi.");
-            }
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);            }
         }
 
         private void btnprevious_Click(object sender, EventArgs e)

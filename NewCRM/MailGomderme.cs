@@ -26,12 +26,24 @@ namespace NewCRM
         {
 
         }
-
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
         private void btnMusteriBilgileriDegisikleri_Click(object sender, EventArgs e)
         {
-            SendMail sm = new SendMail();
-            sm.Microsoft(gondericiAd, gondericiMail, gondericiSifre, aliciMail, txtBaslik.Text, txticerik.Text, lblEk.Text);
-            MessageBox.Show("İşlem başarıyla gerçekleştirildi.");
+            try
+            {
+                SendMail sm = new SendMail();
+                sm.Microsoft(gondericiAd, gondericiMail, gondericiSifre, aliciMail, txtBaslik.Text, txticerik.Text, lblEk.Text);
+                this.Alert("Mailiniz başarıyla gönderildi.", Form_Alert.enmType.Success);
+            }
+            catch
+            {
+                this.Alert(" İşlem gerçekleştirilemedi.", Form_Alert.enmType.Error);
+            }
+
         }
 
         private void pbxEk_Click(object sender, EventArgs e)

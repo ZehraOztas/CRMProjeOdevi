@@ -97,6 +97,7 @@
             this.lblid.Size = new System.Drawing.Size(35, 13);
             this.lblid.TabIndex = 37;
             this.lblid.Text = "label1";
+            this.lblid.Visible = false;
             // 
             // rbtnSec
             // 

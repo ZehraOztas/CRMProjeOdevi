@@ -23,9 +23,14 @@ namespace NewCRM
         {
 
         }
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
+        }
 
         private void Musteri_Detay_Load(object sender, EventArgs e)
-        {
+        { //Burada seçtiğimiz müşterilerin bilgileri gelir.
             if (btnMusteriBilgileriDegisikleri.Text == "Güncelle")
             {
                 SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
@@ -47,17 +52,8 @@ namespace NewCRM
                     txtPrjYoneten.Text = Personel_Bilgileri.yoneten;
                 }
                 oku.Close();
-
-                //SqlDataReader okuma = ad.ExecuteReader();
-
-                //while (okuma.Read())
-                //{
-                //    txtPrjYoneten.Text = okuma.GetString(okuma.GetOrdinal("ad")) + " " + okuma.GetString(okuma.GetOrdinal("soyad"));
-                //}
-                //  okuma.Close();
-
                 baglan.Close();
-
+                //Müşteriye ait notları çeker
                 SqlCommand komut = new SqlCommand("SELECT n_id,icerik,eklenen_tarih,proje_adi FROM Notlar WHERE musteri_id=@id ORDER BY eklenen_tarih desc", baglan);
                 komut.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
                 baglan.Open();
@@ -105,7 +101,7 @@ namespace NewCRM
                 baglan.Open();
                 guncelle.ExecuteReader();
                 baglan.Close();
-                MessageBox.Show("Kayıt güncellendi.");
+                this.Alert("Yapılan değişikler kaydedildi.", Form_Alert.enmType.Success);
             }
             else if (btnMusteriBilgileriDegisikleri.Text == "Kaydet")
             {
@@ -124,8 +120,8 @@ namespace NewCRM
                 baglan.Open();
                 guncelle.ExecuteReader();
                 baglan.Close();
-                MessageBox.Show("İşleminiz başarıyla kaydedildi.");
 
+                this.Alert("İşleminiz başarıyla gerçekleştirildi.", Form_Alert.enmType.Success);
             }
         }
 
