@@ -121,6 +121,7 @@
             this.pbxSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbxSil.TabIndex = 69;
             this.pbxSil.TabStop = false;
+            this.pbxSil.Click += new System.EventHandler(this.pbxSil_Click);
             // 
             // pbxPrjAd
             // 
@@ -191,12 +192,12 @@
             this.pbxDuzenle.TabStop = false;
             this.pbxDuzenle.Click += new System.EventHandler(this.pbxDuzenle_Click_1);
             // 
-            // MusteriNotlar
+            // UC_MusteriNotlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnlBack);
-            this.Name = "MusteriNotlar";
+            this.Name = "UC_MusteriNotlar";
             this.Size = new System.Drawing.Size(1089, 73);
             this.pnlBack.ResumeLayout(false);
             this.pnlBack.PerformLayout();

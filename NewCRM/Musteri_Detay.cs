@@ -57,6 +57,28 @@ namespace NewCRM
                 //  okuma.Close();
 
                 baglan.Close();
+
+                SqlCommand komut = new SqlCommand("SELECT n_id,icerik,eklenen_tarih,proje_adi FROM Notlar WHERE musteri_id=@id ORDER BY eklenen_tarih desc", baglan);
+                komut.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
+                baglan.Open();
+                SqlDataReader okuma = komut.ExecuteReader();
+
+                while (okuma.Read())
+                {
+                    UC_MusteriNotlar uc = new UC_MusteriNotlar();
+
+                    uc.lblPrjAdi.Text = okuma.GetString(okuma.GetOrdinal("proje_adi"));
+                    uc.lblNot.Text = okuma.GetString(okuma.GetOrdinal("icerik"));
+                    uc.dtpTarih.Value = okuma.GetDateTime(okuma.GetOrdinal("eklenen_tarih"));
+                    uc.lblYoneten.Text = Personel_Bilgileri.yoneten;
+                    uc.lblnid.Text = okuma.GetInt32(okuma.GetOrdinal("n_id")).ToString();
+
+                    uc.Dock = DockStyle.Top;
+                    pnlNotlar.Controls.Add(uc);
+                }
+
+                okuma.Close();
+                baglan.Close();
             }
             
 
@@ -105,6 +127,23 @@ namespace NewCRM
                 MessageBox.Show("İşleminiz başarıyla kaydedildi.");
 
             }
+        }
+
+        private void btnNotEkle_Click(object sender, EventArgs e)
+        {
+            BackModel backmodel = new BackModel();
+            NotlarForm percikarcard = new NotlarForm();
+            percikarcard.tip = "Yeni Kayıt";
+            percikarcard.btnKaydet.Text = "Kaydet";
+            percikarcard.StartPosition = FormStartPosition.CenterScreen;
+            backmodel.FormBorderStyle = FormBorderStyle.None;
+            backmodel.Opacity = .50d;
+            backmodel.BackColor = Color.Black;
+            backmodel.ShowInTaskbar = false;
+            backmodel.Show();
+            percikarcard.Owner = backmodel;
+            percikarcard.ShowDialog();
+            backmodel.Dispose();
         }
     }
 }

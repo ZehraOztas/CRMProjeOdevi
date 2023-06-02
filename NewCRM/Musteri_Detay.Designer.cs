@@ -1501,6 +1501,7 @@
             this.btnNotEkle.TextMarginLeft = 0;
             this.btnNotEkle.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnNotEkle.UseDefaultRadiusAndThickness = true;
+            this.btnNotEkle.Click += new System.EventHandler(this.btnNotEkle_Click);
             // 
             // Musteri_Detay
             // 

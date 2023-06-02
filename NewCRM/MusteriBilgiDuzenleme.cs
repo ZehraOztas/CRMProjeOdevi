@@ -27,29 +27,28 @@ namespace NewCRM
 
         public void NotGetir()
         {
-            foreach (var deg in dc.Notlar)//Burada da o kişiye ait notları
+
+            SqlCommand komut = new SqlCommand("SELECT n_id,icerik,eklenen_tarih,proje_adi FROM Notlar WHERE musteri_id=@id ORDER BY eklenen_tarih desc", baglan);
+            komut.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
+            baglan.Open();
+            SqlDataReader oku = komut.ExecuteReader();
+
+            while (oku.Read())
             {
-                SqlCommand komut = new SqlCommand("SELECT n_id,icerik,eklenen_tarih,proje_adi FROM Notlar WHERE musteri_id=@id ORDER BY eklenen_tarih desc", baglan);
-                komut.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
-                baglan.Open();
-                SqlDataReader oku = komut.ExecuteReader();
+                UC_Notlar uc = new UC_Notlar();
 
-                while (oku.Read())
-                {
-                    UC_Notlar uc = new UC_Notlar();
+                uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
+                uc.lblNot.Text = oku.GetString(oku.GetOrdinal("icerik"));
+                uc.dtpTarih.Value = oku.GetDateTime(oku.GetOrdinal("eklenen_tarih"));
+                uc.lblnid.Text = oku.GetInt32(oku.GetOrdinal("n_id")).ToString();
 
-                    uc.lblPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
-                    uc.lblNot.Text = oku.GetString(oku.GetOrdinal("icerik"));
-                    uc.dtpTarih.Value = oku.GetDateTime(oku.GetOrdinal("eklenen_tarih"));
-                    uc.lblnid.Text = oku.GetInt32(oku.GetOrdinal("n_id")).ToString();
-
-                    uc.Dock = DockStyle.Top;
-                    pnlNotlar.Controls.Add(uc);
-                }
-
-                oku.Close();
-                baglan.Close();
+                uc.Dock = DockStyle.Top;
+                pnlNotlar.Controls.Add(uc);
             }
+
+            oku.Close();
+            baglan.Close();
+
         }
         private void Listele() //Başlagıçta seçtiğimiz kişinin verilerini çekiyoruz.
         {
@@ -57,41 +56,40 @@ namespace NewCRM
             pnlNotlar.Controls.Clear();
 
             //İlk önce seçtiğimiz kişinin verisini çekiyoruz.
-            foreach (var deg in dc.Musteri)
-            {
+            
                 SqlCommand command = new SqlCommand("SELECT * FROM Musteri WHERE m_id=@id ORDER BY son_tarih desc", baglan);
                 command.Parameters.AddWithValue("@id", Personel_Bilgileri.m_id);
                 baglan.Open();
                 SqlDataReader oku = command.ExecuteReader();
 
-                if (oku.Read())
-                {
-                    txtADs.Text = oku.GetString(oku.GetOrdinal("ad"));
-                    txtSoyad.Text = oku.GetString(oku.GetOrdinal("soyad"));
-                    txtcalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
-                    txtPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
-                    txtPozisyonu.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
-                    txtTel.Text = oku.GetString(oku.GetOrdinal("tel"));
-                    txtEp.Text = oku.GetString(oku.GetOrdinal("ep"));
-                    dtpIlkİletisim.Value = oku.GetDateTime(oku.GetOrdinal("ilk_tarih"));
-                    dtpBirSonraki.Value = oku.GetDateTime(oku.GetOrdinal("son_tarih"));
-                    cbxDurum.Text = oku.GetString(oku.GetOrdinal("durum")) ;
-                    /*      byte[] goruntu = oku["foto"] as byte[]; // Resim sütununu byte dizisine dönüştür
+            if (oku.Read())
+            {
+                txtADs.Text = oku.GetString(oku.GetOrdinal("ad"));
+                txtSoyad.Text = oku.GetString(oku.GetOrdinal("soyad"));
+                txtcalistigiYer.Text = oku.GetString(oku.GetOrdinal("calistigi_yer"));
+                txtPrjAdi.Text = oku.GetString(oku.GetOrdinal("proje_adi"));
+                txtPozisyonu.Text = oku.GetString(oku.GetOrdinal("pozisyonu"));
+                txtTel.Text = oku.GetString(oku.GetOrdinal("tel"));
+                txtEp.Text = oku.GetString(oku.GetOrdinal("ep"));
+                dtpIlkİletisim.Value = oku.GetDateTime(oku.GetOrdinal("ilk_tarih"));
+                dtpBirSonraki.Value = oku.GetDateTime(oku.GetOrdinal("son_tarih"));
+                cbxDurum.Text = oku.GetString(oku.GetOrdinal("durum"));
+                /*      byte[] goruntu = oku["foto"] as byte[]; // Resim sütununu byte dizisine dönüştür
 
-                          if (goruntu != null)
-                          {
-                              pbxFooto.Image = resim.ResimGetirme(goruntu); // ResimGetirme yöntemine byte dizisini geçir
-                          }
-                          else
-                          {
-                              // Veritabanında resim yoksa, varsayılan bir resim veya boş bir resim gösterebilirsiniz
-                              pbxFooto.Image = Properties.Resources.indir; // Varsayılan bir resim kullanabilirsiniz
-                                                                           // veya
-                                                                           //pbxFooto.Image = null; // Boş bir resim göstermek için PictureBox'ın Image özelliğini null yapabilirsiniz
-                          }**/
-                    oku.Close();
-                    baglan.Close();
-                }
+                      if (goruntu != null)
+                      {
+                          pbxFooto.Image = resim.ResimGetirme(goruntu); // ResimGetirme yöntemine byte dizisini geçir
+                      }
+                      else
+                      {
+                          // Veritabanında resim yoksa, varsayılan bir resim veya boş bir resim gösterebilirsiniz
+                          pbxFooto.Image = Properties.Resources.indir; // Varsayılan bir resim kullanabilirsiniz
+                                                                       // veya
+                                                                       //pbxFooto.Image = null; // Boş bir resim göstermek için PictureBox'ın Image özelliğini null yapabilirsiniz
+                      }**/
+                oku.Close();
+                baglan.Close();
+
             }
         }
         private void MusteriBilgiDuzenleme_Load(object sender, EventArgs e)
@@ -174,12 +172,19 @@ namespace NewCRM
 
         private void btnNotEkle_Click(object sender, EventArgs e) //Bu form kapatılıp yerine Notlar formu açılıyor.
         {
-            NotlarForm f = new NotlarForm();
-            f.tip = "Yeni Kayıt";
-            MusteriBilgiDuzenleme mbl = (MusteriBilgiDuzenleme)Application.OpenForms["MusteriBilgiDuzenleme"];
-            mbl.Close();
-            Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
-            asd.formGetir(f);
+            BackModel backmodel = new BackModel();
+            NotlarForm percikarcard = new NotlarForm();
+            percikarcard.tip = "Yeni Kayıt";
+            percikarcard.btnKaydet.Text = "Kaydet";
+            percikarcard.StartPosition = FormStartPosition.CenterScreen;
+            backmodel.FormBorderStyle = FormBorderStyle.None;
+            backmodel.Opacity = .50d;
+            backmodel.BackColor = Color.Black;
+            backmodel.ShowInTaskbar = false;
+            backmodel.Show();
+            percikarcard.Owner = backmodel;
+            percikarcard.ShowDialog();
+            backmodel.Dispose();
         }
 
         private void btnFotoSec_Click(object sender, EventArgs e)//Fotoğraf seçilir.

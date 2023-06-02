@@ -21,14 +21,20 @@ namespace NewCRM
         SqlConnection baglan = new SqlConnection("Data Source=ZEHRA\\SQLEXPRESS;Initial Catalog=CRM1;Integrated Security=True");
         private void pbxDuzenle_Click(object sender, EventArgs e) //Form Geçişi sağlanır.
         {
-            NotlarForm f = new NotlarForm();
-            f.tip = "Güncelle";
-            f.btnKaydet.Text = "Güncelle";
+            BackModel backmodel = new BackModel();
+            NotlarForm percikarcard = new NotlarForm(); 
+            percikarcard.tip = "Güncelle";
+            percikarcard.btnKaydet.Text = "Güncelle";
             Personel_Bilgileri.nid = lblnid.Text;
-            MusteriBilgiDuzenleme mbl = (MusteriBilgiDuzenleme)Application.OpenForms["MusteriBilgiDuzenleme"];
-            mbl.Close();
-            Ana_Sayfa asd = (Ana_Sayfa)Application.OpenForms["Ana_Sayfa"];
-            asd.formGetir(f);
+            percikarcard.StartPosition = FormStartPosition.CenterScreen;
+            backmodel.FormBorderStyle = FormBorderStyle.None;
+            backmodel.Opacity = .50d;
+            backmodel.BackColor = Color.Black;
+            backmodel.ShowInTaskbar = false;
+            backmodel.Show();
+            percikarcard.Owner = backmodel;
+            percikarcard.ShowDialog();
+            backmodel.Dispose();
         }
 
         private void pbxSil_Click(object sender, EventArgs e)//Silme işlemi yapılır.
